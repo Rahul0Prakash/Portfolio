@@ -1,23 +1,96 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <link rel="stylesheet" href="globals.css" />
-    <link rel="stylesheet" href="styleguide.css" />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="nav-bar">
-      <div class="logo">
-        <div class="placeholder-logo"><div class="text-wrapper">Rahul Prakash</div></div>
-      </div>
-      <div class="frame">
-        <div class="div">
-          <div class="about-me"><div class="text-wrapper-2">About Me</div></div>
-          <div class="projects"><div class="text-wrapper-2">Work</div></div>
-          <div class="resume"><div class="text-wrapper-2 ">Resumé</div></div>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rahul Prakash's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav id="navbar">
+        <div class="logo">
+            <!-- Company or personal logo -->
+            <!-- <a href="#"><img src="images/logo.png" alt="My Logo"></a> -->
+            <a href="#">Rahul Prakash</a>
         </div>
-      </div>
+        <div class="nav-links">
+        <ul>
+            <!-- Navigation links -->
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#resume">Resume</a></li>
+        </ul>
+        </div>
+
+    </nav>
+
+    <!-- Landing Page Section -->
+    <section class="landing">
+        <h1>Welcome to My Portfolio</h1>
+        <!-- This image is the main landing page image -->
+        <img src="images/landing-image.jpg" alt="Landing Image">
+    </section>
+
+    <!-- About Me Section -->
+    <div style="padding-top: 10rem;">
+    <section class="about-me" id="about">
+        <h2>About Me</h2>
+        <div class="about-columns">
+            <!-- First Column with information -->
+            <div class="about-column">
+                <h3>My Journey</h3>
+                <p>Text about your professional journey. This column contains information about your skills, background, and career growth.</p>
+            </div>
+            <!-- Second Column with more details -->
+            <div class="about-column">
+                <h3>Current Focus</h3>
+                <p>Text about your current interests, what you're working on, and your ambitions.</p>
+            </div>
+        </div>
+    </section>
     </div>
-  </body>
+
+    <!-- Work Section with Projects -->
+    <section class="work" id="work">
+        <h2>My Work</h2>
+        <div class="projects">
+        <!-- First Project -->
+            <div class="project">
+                <h3>Project 1 Name</h3>
+                <p>Short one-line description of the project.</p>
+                <p>End product: description of the outcome.</p>
+            </div>
+            <!-- Second Project -->
+            <div class="project">
+                <h3>Project 2 Name</h3>
+                <p>Short one-line description of the project.</p>
+                <p>End product: description of the outcome.</p>
+            </div>
+            <!-- Third Project -->
+            <div class="project">
+                <h3>Project 3 Name</h3>
+                <p>Short one-line description of the project.</p>
+                <p>End product: description of the outcome.</p>
+            </div>
+            <!-- Fourth Project -->
+            <div class="project">
+                <h3>Project 4 Name</h3>
+                <p>Short one-line description of the project.</p>
+                <p>End product: description of the outcome.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section with copyright note -->
+    <footer>
+        <p>&copy; 2024 Your Name. All Rights Reserved.</p>
+    </footer>
+
+    <!-- JavaScript to handle scroll-based navbar behavior -->
+    <script src="script.js"></script>
+
+</body>
 </html>

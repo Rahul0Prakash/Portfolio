@@ -1,111 +1,202 @@
-.nav-bar {
-  height: 65px;
-  padding: 6px var(--size-space-0) 6px var(--size-space-0);
-  position: relative;
-  background-color: #1d1d1f80;
-  border-radius: 20px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+
+/* Basic styles to demonstrate layout */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  background-color: #0D0D0D;
+  color: #f5f5f7;
+  scroll-behavior: smooth; /* Add smooth scrolling */
 }
 
-.nav-bar .logo {
-  padding: 0px 150px;
-  position: relative;
-  flex: 0 0 auto;
-  margin-top: -5px;
-  margin-bottom: -5px;
-  display: inline-flex;
+/* Navigation bar styling */
+nav {
+  position: fixed;
+  top: 4rem; /* ~64px equivalent in rem */
+  left: 8%;
+  right: 8%;
+  background-color: rgba(255, 255, 255, 0.1); /* Translucent background */
+  backdrop-filter: blur(35px); /* Blur effect */
+  padding: 0;
+  display: flex;
+  border-radius: 1.25rem;
+  justify-content: space-around;
   align-items: center;
-  justify-content: center;
+  z-index: 999; /* Make sure nav stays on top */
+  transition: top 0.4s ease; /* Smooth reappearance */
 }
 
-.nav-bar .placeholder-logo {
-  display: inline-flex;
-  align-items: center;
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
   justify-content: center;
-  padding: 15px 25px;
-  position: relative;
-  flex: 0 0 auto;
-  border-radius: 20px;
+  align-items: center;
+  gap: 1.5625rem;  /* 25px */
 }
 
-.nav-bar .text-wrapper {
-  position: relative;
-  width: fit-content;
-  margin-top: -1px;
-  font-family: "SF Pro Display-Regular", Helvetica;
-  font-weight: 400;
-  color: #e4e4e4;
-  font-size: 28px;
+nav ul li {
+  display: inline;
+}
+
+
+nav ul li a {
+  text-decoration: none;
+  color: #2121c9;
+}
+
+/* Landing page styles */
+.landing {
   text-align: center;
-  letter-spacing: 0;
-  line-height: normal;
-  white-space: nowrap;
+  padding: 100px 20px;
 }
 
-.nav-bar .frame {
-  display: inline-flex;
-  min-width: 461px;
-  height: 60px;
-  align-items: center;
-  justify-content: center;
-  padding: 0px 150px;
-  position: relative;
-  flex: 0 0 auto;
-  margin-top: -3.5px;
-  margin-bottom: -3.5px;
+.landing img {
+  width: 80%;
+  max-width: 500px;
+  margin-top: 20px;
 }
 
-.nav-bar .div {
-  position: relative;
-  align-self: stretch;
-  width: 645px;
-}
+/* About Me section */
 
-.nav-bar .about-me {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 18px 50px;
-  position: absolute;
-  top: 0;
-  left: -18px;
-  border-radius: 20px;
-}
-
-.nav-bar .text-wrapper-2 {
-  position: relative;
-  width: fit-content;
-  margin-top: -1px;
-  font-family: "SF Pro Display-Regular", Helvetica;
-  font-weight: 400;
-  color: #e4e4e4;
-  font-size: 20px;
+.about-me {
+  color: var(--Foreground-Color, #E4E4E4);
   text-align: center;
-  letter-spacing: 0;
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
   line-height: normal;
-  white-space: nowrap;
+  padding: 40px 20px;
+  
 }
 
-.nav-bar .projects {
-  padding: 18px 50px;
-  position: absolute;
-  top: 0;
-  left: 257px;
-  border-radius: 20px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+.about-columns {
+  display: flex;
+  justify-content: space-between;
 }
 
-.nav-bar .resume {
-  padding: 18px 50px;
-  position: absolute;
-  top: 0;
-  left: 501px;
-  border-radius: 20px;
+.about-column {
+  width: 95%;
+}
+
+/* Work section with projects */
+.work {
+  color: var(--Foreground-Color, #E4E4E4);
+  text-align: center;
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 40px 20px;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.project {
+  background-color: #0e7aed;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #1c1c1c;
+}
+/* Hide/show nav on scroll */
+.hidden {
+  top: -100px; /* Hide nav off screen */
+}
+
+/* Logo styling with margin on left and right */
+.logo {
   display: inline-flex;
-  align-items: center;
+  padding:9px 25px; /* Converted from 1.125px 3.125px */
   justify-content: center;
+  height: 100%; 
+  align-items: center;
+
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-left: 3.125rem; /* 50px in rem units */
+  margin-right: 9.375rem; /* 150px in rem units */
+}
+
+.logo:hover {
+  color: #E4E4E4;
+  height: 100%; 
+  display: flex; /* For flexible button layout */
+  height: auto; /* Height is 18px */
+  width: auto; /* This ensures the button has auto width */
+  border-radius: 1.25rem;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #D4FA86; /* Green border on hover */
+  background-color: transparent; /* Keep background transparent */
+  transform: scale(1.015); /* Scales the button to 120% of its original size */
+  transition: transform 0.35s ease; /* Smooth transition for scaling */
+
+}
+
+.logo.active {
+  background-color: #D4FA86; /* Green background */
+  color: #000000; /* Black text */
+  border: 2px solid #D4FA86; /* Border matches background */
+}
+
+/* Navigation links styling */
+.nav-links {
+  display: inline-flex;
+  padding:9px 25px; /* Converted from 1.125px 3.125px */
+  justify-content: center;
+  height: 100%; 
+  align-items: center;
+}
+
+.nav-links a {
+  display: inline-flex; /* For flexible button layout */
+  padding: 9px  25px; /* Side padding (left & right) is 50px */
+  height: 100%; /* Height is 18px */
+  width: auto; /* This ensures the button has auto width */
+  border-radius: 1.25rem;
+  justify-content: center;
+  align-items: center;
+  color: #E4E4E4; /* Text color */
+  font-size: 1.25rem; /* Example font size */
+  border: 2px solid transparent; ;
+  cursor: pointer;
+  cursor: grab;
+  transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.nav-links a:hover {
+  color: #E4E4E4;
+  height: 100%; 
+  display: flex; /* For flexible button layout */
+  height: auto; /* Height is 18px */
+  width: auto; /* This ensures the button has auto width */
+  border-radius: 1.25rem;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #D4FA86; /* Green border on hover */
+  background-color: transparent; /* Keep background transparent */
+  transform: scale(1.015); /* Scales the button to 120% of its original size */
+  transition: transform 0.35s ease; /* Smooth transition for scaling */
+
+}
+
+.nav-links a.active {
+  background-color: #D4FA86; /* Green background */
+  color: #000000; /* Black text */
+  border: 2px solid #D4FA86; /* Border matches background */
 }
