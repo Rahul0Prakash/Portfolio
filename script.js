@@ -1,47 +1,89 @@
+const navbar = document.getElementById('navbar');
 
-let navbar = document.getElementById('navbar');
-let lastScrollTop = 0;
+let lastScrollTop = 0; // Tracks the last scroll position
 
 window.addEventListener('scroll', function() {
-    let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
-    
+    // Get the current scroll position using document.documentElement.scrollTop
+    const currentScroll = document.documentElement.scrollTop;
+
     if (currentScroll > lastScrollTop) {
-        // Scrolling down, hide the navbar
-        navbar.classList.add('hidden');
+        // User is scrolling down - hide the navbar
+        navbar.style.top = '-100px'; // Move the navbar up out of view
     } else {
-        // Scrolling up, show the navbar
-        navbar.classList.remove('hidden');
+        // User is scrolling up - show the navbar
+        navbar.style.top = '4rem'; // Bring the navbar back into view
     }
 
-    lastScrollTop = currentScroll;
+    // Update the last scroll position to the current position
+    lastScrollTop = Math.max(currentScroll, 0); // Ensure we don't end up with negative values
 });
-// Select the nav links (exclude the logo)
+// Select the nav links and logo
 const navLinks = document.querySelectorAll('.nav-links a');
-
-// Select the logo separately
 const logo = document.querySelector('.logo');
 
-// Create a function to handle the 'active' class
+// Handle active class assignment to nav links
 function handleActiveClass(clickedElement) {
-  // Remove 'active' class from all nav links
-  navLinks.forEach(item => item.classList.remove('active'));
-  
-  // Add 'active' class to the clicked nav link
+  // Remove active class from all nav links
+  navLinks.forEach(item => item.classList.remove('active')); 
+  // Add active class to the clicked nav link
   clickedElement.classList.add('active');
 }
 
-// Add click event listener to nav links (logo not included)
+// Add click event listener to nav links
 navLinks.forEach(link => {
   link.addEventListener('click', function() {
-      handleActiveClass(this); // Call the function with the clicked link
+    handleActiveClass(this); // Apply active class to clicked link
   });
 });
 
-// Optional: If you still want the logo to do something (e.g., navigate home),
-// you can add a separate event listener for it, but it won't change the active state.
+// Add functionality for the logo (navigate to homepage and reset nav items)
 logo.addEventListener('click', function() {
-  // Perform any action here, but don't apply 'active' class
-  window.location.href = 'index.html#';
+  // Scroll smoothly to the top
   window.scrollTo({ top: 0, behavior: 'smooth' });
+  // Remove active state from all nav links
   navLinks.forEach(item => item.classList.remove('active'));
 });
+
+// Select the "About Me" and "Work" links
+const aboutMeLink = document.querySelector('a[href="#about"]');
+const workLink = document.querySelector('a[href="#work"]');
+
+// Function to handle smooth scrolling to a section, with offset
+function scrollToSectionWithOffset(sectionId) {
+  const section = document.querySelector(sectionId);
+  const sectionTop = section.getBoundingClientRect().top + window.scrollY;
+  const viewportHeight = window.innerHeight;
+
+  // Convert the rem offset to pixels (assuming 1rem = 16px)
+  const offsetInPixels = 8 * 16;
+
+  // Calculate the final position by subtracting the offset
+  const offset = sectionTop - offsetInPixels;
+
+
+  // Scroll to the calculated position
+  window.scrollTo({
+    top: offset ,
+    behavior: 'smooth'
+  });
+  console.log(offset);
+}
+
+// Add click event listeners for the "About Me" and "Work" links
+aboutMeLink.addEventListener('click', function(event) {
+  event.preventDefault(); // Prevent the default anchor link behavior
+  scrollToSectionWithOffset('#about');
+});
+
+workLink.addEventListener('click', function(event) {
+  event.preventDefault(); // Prevent the default anchor link behavior
+  scrollToSectionWithOffset('#work');
+});
+
+// Float image link to external page
+const float_img = document.getElementById('float-container');
+float_img.addEventListener('click', function() {
+  window.open('https://linktr.ee/Rahul_Prakash', '_blank');
+});
+
+

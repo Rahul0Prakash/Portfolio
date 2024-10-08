@@ -1,29 +1,42 @@
-
-/* Basic styles to demonstrate layout */
-body, html {
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+/* Basic styles for HTML and body */
+body, html {
+  margin: 0 auto;
+  padding: 0;
+  font-feature-settings: 'liga' off, 'clig' off;
   font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   background-color: #0D0D0D;
   color: #f5f5f7;
-  scroll-behavior: smooth; /* Add smooth scrolling */
+  scroll-behavior: smooth; /* Smooth scrolling */
+  height: 100vh; /* Full view height */
+  max-width: 108.125rem; /* Restrict width */
 }
-
+body{
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  overflow-y: scroll;
+}
 /* Navigation bar styling */
 nav {
   position: fixed;
-  top: 4rem; /* ~64px equivalent in rem */
+  top: 4rem; /* 64px equivalent in rem */
   left: 8%;
   right: 8%;
-  background-color: rgba(255, 255, 255, 0.1); /* Translucent background */
-  backdrop-filter: blur(35px); /* Blur effect */
-  padding: 0;
-  display: flex;
+  backdrop-filter: blur(100px); /* Blur effect */
   border-radius: 1.25rem;
-  justify-content: space-around;
-  align-items: center;
-  z-index: 999; /* Make sure nav stays on top */
-  transition: top 0.4s ease; /* Smooth reappearance */
+  padding: 0rem 3.125rem 0rem 0rem; /* top, right, bottom, left */
+  height: auto;
+  display: flex;
+  justify-content: space-between; /* Spread out logo and nav links */
+  align-items: center; /* Align all items vertically */
+  z-index: 999; /* Ensure nav stays on top */
+  transition: top 0.35s ease; /* Smooth show/hide on scroll */
+  background-color: rgba(255, 255, 255, 0.102);
+  box-sizing: border-box;
 }
 
 nav ul {
@@ -33,170 +46,384 @@ nav ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 1.5625rem;  /* 25px */
+  gap: 1.5625rem; /* 25px */
 }
 
-nav ul li {
-  display: inline;
-}
-
-
-nav ul li a {
-  text-decoration: none;
-  color: #2121c9;
-}
-
-/* Landing page styles */
-.landing {
-  text-align: center;
-  padding: 100px 20px;
-}
-
-.landing img {
-  width: 80%;
-  max-width: 500px;
-  margin-top: 20px;
-}
-
-/* About Me section */
-
-.about-me {
-  color: var(--Foreground-Color, #E4E4E4);
-  text-align: center;
-  font-feature-settings: 'liga' off, 'clig' off;
-  font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-  font-size: 1.25rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  padding: 40px 20px;
-  
-}
-
-.about-columns {
-  display: flex;
-  justify-content: space-between;
-}
-
-.about-column {
-  width: 95%;
-}
-
-/* Work section with projects */
-.work {
-  color: var(--Foreground-Color, #E4E4E4);
-  text-align: center;
-  font-feature-settings: 'liga' off, 'clig' off;
-  font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-  font-size: 1.25rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  padding: 40px 20px;
-}
-
-.projects {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-}
-
-.project {
-  background-color: #0e7aed;
-  padding: 20px;
-  border-radius: 5px;
-}
-
-/* Footer */
-footer {
-  text-align: center;
-  padding: 20px;
-  background-color: #1c1c1c;
-}
-/* Hide/show nav on scroll */
-.hidden {
-  top: -100px; /* Hide nav off screen */
-}
-
-/* Logo styling with margin on left and right */
+/* Shared styles for .nav-links a and .logo */
+.nav-links a,
 .logo {
   display: inline-flex;
-  padding:9px 25px; /* Converted from 1.125px 3.125px */
   justify-content: center;
-  height: 100%; 
   align-items: center;
-
+  padding: 9px 25px; /* Consistent padding for both */
   font-size: 1.25rem;
-  font-weight: bold;
-  margin-left: 3.125rem; /* 50px in rem units */
-  margin-right: 9.375rem; /* 150px in rem units */
+  border-radius: 1.25rem;
+  line-height: 2.5rem; /* Consistent line-height */
+  text-decoration: none; /* Remove underline for links */
+  cursor: pointer;
+  color: #E4E4E4; /* Text color */
+  text-shadow: 
+      -1px -1px 0 #000, /* Top-left shadow */
+      1px -1px 0 #000,  /* Top-right shadow */
+      -1px 1px 0 #000,  /* Bottom-left shadow */
+      1px 1px 0 #000;   /* Bottom-right shadow */
+  transition: transform 0.35s ease, background-color 0.3s ease; /* Smooth hover and scale */
 }
 
-.logo:hover {
-  color: #E4E4E4;
-  height: 100%; 
-  display: flex; /* For flexible button layout */
-  height: auto; /* Height is 18px */
-  width: auto; /* This ensures the button has auto width */
-  border-radius: 1.25rem;
-  justify-content: center;
-  align-items: center;
-  border: 2px solid #D4FA86; /* Green border on hover */
-  background-color: transparent; /* Keep background transparent */
-  transform: scale(1.015); /* Scales the button to 120% of its original size */
-  transition: transform 0.35s ease; /* Smooth transition for scaling */
+.nav-links a {
+  border: 2px solid transparent; /* Initially transparent border */
+}
 
+.nav-links a:hover,
+.logo:hover {
+  color: #D4FA86; /* Green color on hover */
+  transform: scale(1.025); /* Slight scale on hover */
+}
+/*
+.nav-links a.active {
+  color: #D4FA86; 
+  font-weight: 700;
+  padding: 9px 25px;
+}
+*/
+.logo {
+  margin-left: 3.125rem; /* 50px in rem units */
+  margin-right: 9.375rem; /* 150px in rem units */
 }
 
 .logo.active {
   background-color: #D4FA86; /* Green background */
   color: #000000; /* Black text */
-  border: 2px solid #D4FA86; /* Border matches background */
 }
 
-/* Navigation links styling */
-.nav-links {
-  display: inline-flex;
-  padding:9px 25px; /* Converted from 1.125px 3.125px */
+/* Highlighted link styling */
+.highlight {
+  color: #D4FA86; /* Specific highlight color */
+  font-weight: bold; /* Bold link */
+}
+.highlight:hover {
+  color: hsl(0, 0%, 100%); /* Change to white on hover */
+}
+
+/* Subheading styling */
+.Subheading {
+  color: #D4FA86;
+  padding-left: 6.25rem;
+  padding-top: 0rem;
+  padding-bottom: 1.5rem;
+  font-weight: 600; /* Make bold */
+}
+
+/* Container for superimposed images */
+.image-container {
+  position: relative;
+  width: 100%;
+  max-width: 108.125rem; /* Restrict to opaque image width */
+  height: 30rem; /* Height of the opaque image */
+  margin: 0 auto; /* Center the container */
+}
+
+/* Opaque main image */
+.opaque-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('images/wavy.png') no-repeat center;
+  background-size: cover;
+  z-index: 1;
+}
+
+/* PNG image on top */
+.png-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 120%; /* Match the size of the opaque image */
+  height: 100%;
+  background: url('images/scrolling-image.png');
+  background-size: 120%; /* Ensure it scales proportionally */
+  z-index: 2;
+}
+
+/* Landing Section */
+.landing-section {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  height: 100%; 
   align-items: center;
+  padding: 15% 10% 5% 10%;
+  max-width: 60rem;
+  margin: 0 auto;
+  text-align: left;
 }
 
-.nav-links a {
-  display: inline-flex; /* For flexible button layout */
-  padding: 9px  25px; /* Side padding (left & right) is 50px */
-  height: 100%; /* Height is 18px */
-  width: auto; /* This ensures the button has auto width */
-  border-radius: 1.25rem;
-  justify-content: center;
-  align-items: center;
-  color: #E4E4E4; /* Text color */
-  font-size: 1.25rem; /* Example font size */
-  border: 2px solid transparent; ;
-  cursor: pointer;
-  cursor: grab;
-  transition: background-color 0.3s ease; /* Smooth hover effect */
-}
-
-.nav-links a:hover {
+/* Headings Styling */
+h1 {
   color: #E4E4E4;
-  height: 100%; 
-  display: flex; /* For flexible button layout */
-  height: auto; /* Height is 18px */
-  width: auto; /* This ensures the button has auto width */
-  border-radius: 1.25rem;
-  justify-content: center;
-  align-items: center;
-  border: 2px solid #D4FA86; /* Green border on hover */
-  background-color: transparent; /* Keep background transparent */
-  transform: scale(1.015); /* Scales the button to 120% of its original size */
-  transition: transform 0.35s ease; /* Smooth transition for scaling */
-
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
 }
 
-.nav-links a.active {
-  background-color: #D4FA86; /* Green background */
-  color: #000000; /* Black text */
-  border: 2px solid #D4FA86; /* Border matches background */
+h2 {
+  color: #E4E4E4;
+  padding: 0rem;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  color: #E4E4E4;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-weight: 400;
+}
+
+/* Paragraph styling */
+p {
+  color: #E4E4E4;
+  font-size: 1.063rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* About Me Section */
+.about-me {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  align-items: center;
+}
+
+/* Columns in the about section */
+.about-columns {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 2.5rem;
+  width: 100%;
+  padding-left: 6.25rem;
+  padding-right: 6.25rem;
+  box-sizing: border-box;
+}
+
+/* Column styles */
+.about-column {
+  flex: 1;
+  margin-bottom: 2rem;
+  min-width: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: circle;
+  list-style-position: outside;
+  padding-left: 2rem;
+}
+
+ul li {
+  margin-bottom: 0.5rem;
+}
+
+/* Responsive adjustments for mobile */
+@media (max-width: 768px) {
+  .about-columns {
+    flex-direction: column;
+  }
+
+  .about-column {
+    margin-bottom: 2rem;
+  }
+}
+
+/* Work Section */
+.work {
+  font-size: 1.25rem;
+  padding: 2.5rem 1.25rem;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+  padding-left: 6.25rem;
+  padding-right: 6.25rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.project {
+  background-color: #0D0D0D;
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  flex: 1;
+  min-width: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.project:hover {
+  background-color: #1c1c1c;
+  z-index: 100;
+  padding: 0.5rem;
+  border-radius: 1.25rem;
+  transform: scale(1.01);
+  transition: transform 0.35s ease;
+}
+
+.project-img {
+  width: 100%;
+  height: auto;
+  border-radius: 1.25rem;
+  padding-bottom: 1.56rem;
+}
+
+/* Project Name */
+.project-name {
+  color: #E4E4E4;
+  font-weight: 500;
+  line-height: 1.56rem;
+  font-size: 1.063rem;
+  text-align: left;
+}
+
+/* Project Description */
+.project-description {
+  font-size: 0.66rem;
+  font-weight: 400;
+  line-height: 1.25rem;
+}
+
+/* Outcome Description */
+.outcome-description {
+  font-size: 0.6rem;
+  text-align: left;
+  font-weight: 700;
+  line-height: 1.25rem;
+}
+
+/* Responsive adjustments for projects */
+@media (max-width: 768px) {
+  .projects {
+    grid-template-columns: 1fr;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    gap: 2rem;
+  }
+}
+
+/* Footer Styling */
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 5rem 1rem;
+  background-color: #0D0D0D;
+  color: #f5f5f7;
+}
+
+/* Floating Image in Footer */
+.float-container {
+  perspective: 1000px;
+}
+
+.float-image {
+  width: 300px;
+  height: auto;
+  border-radius: 50%;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.float-image:hover {
+  transform: rotateX(1deg) rotateY(-1deg) translateZ(30px);
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.6), 5px 5px 15px #D4FA86;
+}
+
+/* Social Links in Footer */
+.footer-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.social-links img {
+  width: auto;
+  height: 3rem;
+  transition: filter 0.3s ease;
+}
+
+.social-links a {
+  color: #D4FA86;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.social-links:hover img {
+  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7500%) hue-rotate(360deg) brightness(118%) contrast(119%);
+}
+
+.social-links:hover a {
+  color: #ffffff;
+}
+
+.social-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.social-img {
+  width: 50rem;
+  height: 5rem;
+}
+
+@media (max-width: 768px) {
+  .footer-text {
+    flex-direction: column;
+  }
+
+  .social-links {
+    margin-bottom: 1rem;
+  }
+}
+
+/* Scroll Down Arrow */
+.scroll-down-arrow {
+  position: absolute;
+  bottom: 1.563rem;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 9rem;
+  color: #000000;
+  cursor: pointer;
+  z-index: 1000;
+  animation: bounce 1.5s infinite;
+}
+
+/* Bounce Animation */
+@keyframes bounce {
+  0%, 100% {
+    transform: translate(-50%, 0);
+  }
+  50% {
+    transform: translate(-50%, -10px);
+  }
+}
+
+/* Hide/show navbar on scroll */
+.hidden {
+  top: -100px;
 }

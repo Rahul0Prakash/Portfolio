@@ -4,93 +4,153 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="images/Favicon.png" type="image/png"> <!-- Favicon in PNG format -->
     <title>Rahul Prakash's Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css"> <!-- Link to external CSS -->
 </head>
-<body>
 
+<body>
     <!-- Navigation Bar -->
     <nav id="navbar">
-        <div class="logo">
-            <!-- Company or personal logo -->
-            <!-- <a href="#"><img src="images/logo.png" alt="My Logo"></a> -->
-            <a href="#">Rahul Prakash</a>
-        </div>
+        <div class="logo" id="logo">Rahul Prakash</div> <!-- Logo as a text-based navigation element -->
         <div class="nav-links">
-        <ul>
-            <!-- Navigation links -->
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#work">Work</a></li>
-            <li><a href="#resume">Resume</a></li>
-        </ul>
+            <!-- Navigation links to the sections of the page -->
+            <a class="nav-item" href="#about">About Me</a>
+            <a class="nav-item" href="#work">Work</a>
+            <a class="nav-item" href="Rahul_CV.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
         </div>
-
     </nav>
 
     <!-- Landing Page Section -->
-    <section class="landing">
-        <h1>Welcome to My Portfolio</h1>
-        <!-- This image is the main landing page image -->
-        <img src="images/landing-image.jpg" alt="Landing Image">
+    <section class="landing-section">
+        <h1>Hi✋, I'm Rahul, a User Experience Enthusiast based in Essen, Germany</h1>
+        <p>I ride the wave of <a class="highlight" target="_blank" href="https://www.nngroup.com/videos/it-depends-ux-context/">
+            <i>‘it depends’</i></a> till dots connect and plans make sense.</p>
+    </section>
+
+    <!-- Image Section with Superimposed Images -->
+    <section>
+        <div class="image-container">
+            <div class="opaque-image"></div> <!-- Main opaque image -->
+            <div class="png-image"></div> <!-- Top PNG image -->
+        </div>
     </section>
 
     <!-- About Me Section -->
-    <div style="padding-top: 10rem;">
     <section class="about-me" id="about">
-        <h2>About Me</h2>
+        <h2 class="Subheading">About Me</h2>
         <div class="about-columns">
-            <!-- First Column with information -->
+            <!-- First Column: My Journey -->
             <div class="about-column">
                 <h3>My Journey</h3>
-                <p>Text about your professional journey. This column contains information about your skills, background, and career growth.</p>
+                <ul style="list-style-type: circle;">
+                    <!-- Highlight the different experiences and skills gained -->
+                    <li>Used Figma to prototype 10+ high-fidelity designs</li><br>
+                    <li>Conducted 8+ market analyses using Google Trends</li><br>
+                    <li>Facilitated brainstorming for 10+ key projects using Miro and FigJam boards</li><br>
+                    <li>Analyzed 20+ site visits with Google Analytics to track user behavior and performance</li><br>
+                    <li>Performed competitive audit using Similarweb and templates 
+                        <a class="highlight" target="_blank" rel="noopener noreferrer" href="https://coursera-assessments.s3.amazonaws.com/assessments/1623041973496/fa9ddd33-fcea-48d0-81c7-a316e4cb682b/Google%20UX%20Design%20Certificate%20-%20Competitive%20audit%20template%20-%20Template-2.pdf">[1]</a>
+                        <a class="highlight" target="_blank" rel="noopener noreferrer" href="https://www.atlassian.com/dam/jcr:11b8d765-5a53-4193-a70c-fb957c54f07f/Competitive%20Analysis.pdf">[2]</a>,
+                        benchmarking 5 competitors
+                    </li><br>
+                    <li>Developed skills in ChatGPT prompting and created 
+                        <a class="highlight" target="_blank" rel="noopener noreferrer" href="https://chatgpt.com/g/g-H6NlHYtlA-dachsberg-manager">a custom GPT</a> for 
+                        <a class="highlight" target="_blank" rel="noopener noreferrer" href="https://www.wg-gesucht.de/10851253.html">tenant</a> FAQs, reducing workload by 40% during busy periods
+                    </li>
+                </ul>
             </div>
-            <!-- Second Column with more details -->
+
+            <!-- Second Column: Ambitions and Vision -->
             <div class="about-column">
-                <h3>Current Focus</h3>
-                <p>Text about your current interests, what you're working on, and your ambitions.</p>
+                <h3>Ambitions in UX</h3>
+                <ul style="list-style-type: circle;">
+                    <li>Acquired basic web development skills to enhance my UX expertise</li><br>
+                    <li>Aspiring to become a <a class="highlight" target="_blank" rel="noopener noreferrer" href=https://jakobnielsenphd.substack.com/p/ux-unicorn>"unicorn"</a> in UI/UX, seamlessly combining user experience and interface design</li><br>
+                </ul>
+                
+                <h3>Vision for the Future</h3>
+                <ul style="list-style-type: circle;">
+                    <li>Aiming to contribute to global projects while fostering a user-centric mindset among peers</li><br>
+                    <li>Passionate about creating inclusive and sustainable designs that address both user needs and environmental concerns</li><br>
+                </ul>
             </div>
         </div>
     </section>
-    </div>
 
     <!-- Work Section with Projects -->
     <section class="work" id="work">
-        <h2>My Work</h2>
+        <h2 class="Subheading">My Work</h2>
         <div class="projects">
-        <!-- First Project -->
+            <!-- Project cards displaying the various projects completed -->
             <div class="project">
-                <h3>Project 1 Name</h3>
-                <p>Short one-line description of the project.</p>
-                <p>End product: description of the outcome.</p>
+                <img class="project-img" src="images/projects/FLF.png" alt="Screens of UI related to Lufthansa's innovation space">
+                <span class="project-name">Revamping Lufthansa’s FlyingLab Factory</span>
+                <span class="project-description">Streamlining the booking process and enhancing user experience in the innovation space</span>
+                <span class="outcome-description">COURSEWORK · PRODUCT DESIGN · WEB · 2022</span>
             </div>
-            <!-- Second Project -->
+            <!-- Example Project 2 -->
             <div class="project">
-                <h3>Project 2 Name</h3>
-                <p>Short one-line description of the project.</p>
-                <p>End product: description of the outcome.</p>
+                <img class="project-img" src="images/projects/Balancify.png" alt="UI screens for the Balancify app">
+                <span class="project-name">Balancify: Work-Life Balance App</span>
+                <span class="project-description">Designing an app to track emotions and improve work-life balance</span>
+                <span class="outcome-description">CASE STUDY · PRODUCT DESIGN · APP · 2022</span>
             </div>
-            <!-- Third Project -->
+            <!-- Example Project 3 -->
             <div class="project">
-                <h3>Project 3 Name</h3>
-                <p>Short one-line description of the project.</p>
-                <p>End product: description of the outcome.</p>
+                <img class="project-img" src="images/projects/AudiVerse.png" alt="UI screens for AudiVerse extension">
+                <span class="project-name">AudiVerse: Extension of myAudi App</span>
+                <span class="project-description">Enhancing Audi’s customer feedback system through gamification</span>
+                <span class="outcome-description">COURSEWORK · APP EXTENSION · GAMIFICATION · APP · 2023</span>
             </div>
-            <!-- Fourth Project -->
+            <!-- Example Project 4 -->
             <div class="project">
-                <h3>Project 4 Name</h3>
-                <p>Short one-line description of the project.</p>
-                <p>End product: description of the outcome.</p>
+                <img class="project-img" src="images/projects/Moodglide.png" alt="UI screens for MoodGlide device">
+                <span class="project-name">MoodGlide: Emotion Selector Device</span>
+                <span class="project-description">Developing an emotion selector device to assist individuals with <a class="highlight" target="_blank" rel="noopener noreferrer" href="https://www.alexithymia.us/">Alexithymia</a></span>
+                <span class="outcome-description">PRODUCT DESIGN · HARDWARE · 2023</span>
             </div>
         </div>
     </section>
 
-    <!-- Footer Section with copyright note -->
-    <footer>
-        <p>&copy; 2024 Your Name. All Rights Reserved.</p>
+    <!-- Footer Section -->
+    <footer class="footer">
+        <!-- Circular image and text-based footer links -->
+        <div class="footer-text">
+            <div class="float-container" id="float-container">
+                <img src="images/Rahul_Mit_Bg.png" alt="Image of Rahul Prakash" class="float-image">
+            </div>
+            <span class="social-links">
+                <img src="images/linkedin.svg" class="social-img"> 
+                <a href="https://www.linkedin.com/in/rahul-prakash-651106145/" target="_blank">LinkedIn</a>
+            </span>
+            <span class="social-links">
+                <img src="images/Email.svg" class="social-img">
+                <a href="mailto:rahul.prksh1998@gmail.com" target="_blank">Email</a>
+            </span>
+            <span class="social-links">
+                <img src="images/whatsapp.svg" class="social-img">
+                <a href="https://wa.me/qr/JUSH3EORLHRFP1" target="_blank">WhatsApp</a>
+            </span>
+            <span class="social-links">
+                <img src="images/github.svg" class="social-img">
+                <a href="https://github.com/Rahul0Prakash/Portfolio" target="_blank">Github</a>
+            </span>
+        </div>
+        <br>
+        <p>&copy; 2024 Rahul Prakash</p>
+        <span class="project-description">
+            This site was first designed on Figma with styling inspired by 
+            <a class="highlight" target="_blank" rel="noopener noreferrer" href="https://developer.apple.com/design/human-interface-guidelines/color">
+                Apple’s design system</a>.<br>
+            The basic skeleton was written in HTML, with values extracted from Figma's dev mode.<br>
+            ChatGPT assisted with programming using CSS and JavaScript.<br>
+            Apple® and its design system are trademarks of Apple Inc.
+        </span>
     </footer>
 
     <!-- JavaScript to handle scroll-based navbar behavior -->
-    <script src="script.js"></script>
+    <script src="script.js"></script> <!-- Link to JavaScript -->
 
 </body>
 </html>
