@@ -50,8 +50,7 @@ nav ul {
 }
 
 /* Shared styles for .nav-links a and .logo */
-.nav-links a,
-.logo {
+.nav-links a{
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -69,7 +68,23 @@ nav ul {
       1px 1px 0 #000;   /* Bottom-right shadow */
   transition: transform 0.35s ease, background-color 0.3s ease; /* Smooth hover and scale */
 }
+.logo {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  /*padding: 9px 25px; /* Consistent padding for both */
+  height: auto; /* Keeps the aspect ratio */
+  vertical-align: middle; 
+  text-decoration: none; /* Remove underline for links */
+  cursor: pointer;
+  flex-shrink: 0; /* Prevents the SVG from shrinking unexpectedly */
+  padding: 5px; /* Adjust for visual alignment */
+  line-height: normal; /* Remove unnecessary text line height */
+  width: 12.5rem; /* Adjust to your desired size */
+  overflow: hidden;
 
+  transition: transform 0.35s ease, background-color 0.3s ease; /* Smooth hover and scale */
+}
 .nav-links a {
   border: 2px solid transparent; /* Initially transparent border */
 }
@@ -77,15 +92,16 @@ nav ul {
 .nav-links a:hover,
 .logo:hover {
   color: #D4FA86; /* Green color on hover */
-  transform: scale(1.025); /* Slight scale on hover */
+  transform: scale(1.05); /* Slight scale on hover */
+  transition: background-color 0.3s ease, transform 0.35s ease; /* Smooth transition */
 }
-/*
+
 .nav-links a.active {
   color: #D4FA86; 
   font-weight: 700;
   padding: 9px 25px;
 }
-*/
+
 .logo {
   margin-left: 3.125rem; /* 50px in rem units */
   margin-right: 9.375rem; /* 150px in rem units */
@@ -93,7 +109,7 @@ nav ul {
 
 .logo.active {
   background-color: #D4FA86; /* Green background */
-  color: #000000; /* Black text */
+ /* color: #000000; /* Black text */
 }
 
 /* Highlighted link styling */
