@@ -15,7 +15,7 @@
     </div>
     <!-- Navigation Bar -->
  
-    <nav id="navbar">
+    <nav id="nav">
         <img src="images/youXrahul.svg" class="logo" id="logo" alt="logo"></img> <!-- Logo as a text-based navigation element -->
         <div class="nav-links">
             <!-- Navigation links to the sections of the page -->
@@ -36,14 +36,14 @@
         <p>I ride the wave of <a class="highlight" target="_blank" href="https://www.nngroup.com/videos/it-depends-ux-context/">
             <i>‘it depends’</i></a> till dots connect and plans make sense.</p>
     </section>
-
-    <!-- Image Section with Superimposed Images -->
-    <section>
-        <div class="image-container">
-            <div class="opaque-image"></div> <!-- Main opaque image -->
-            <div class="png-image"></div> <!-- Top PNG image -->
-        </div>
-    </section>
+        <!-- Image Section with Superimposed Images -->
+        <section>
+            <div class="image-container">
+                <div class="opaque-image"></div> <!-- Main opaque image -->
+                <div class="png-image"></div> <!-- Top PNG image -->
+            </div>
+        </section>
+    
 
     <!-- About Me Section -->
     <section class="about-me" id="about">
@@ -116,53 +116,58 @@
             <div class="project">
                 <img class="project-img" src="images/projects/Moodglide.png" alt="UI screens for MoodGlide device">
                 <span class="project-name">MoodGlide: Emotion Selector Device</span>
-                <span class="project-description">Developing an emotion selector device to assist individuals with <a class="highlight" target="_blank" rel="noopener noreferrer" href="https://www.alexithymia.us/">Alexithymia</a></span>
+                <span class="project-description">Developing an emotion selector device to assist individuals with <a class="highlight_apple" target="_blank" rel="noopener noreferrer" href="https://www.alexithymia.us/">Alexithymia</a></span>
                 <span class="outcome-description">PRODUCT DESIGN · HARDWARE · 2023</span>
             </div>
         </div>
     </section>
 
-    <!-- Footer Section -->
-    <footer class="footer">
-        <!-- Circular image and text-based footer links -->
-        <div class="footer-text">
-            <div class="float-container" id="float-container">
-                <img src="images/Rahul.png" alt="Image of Rahul Prakash" class="float-image">
-            </div>
-
-            <span class="social-links">
-                <img src="images/linkedin.svg" class="social-img" data-href="https://www.linkedin.com/in/rahul-prakash-651106145/" alt="Rahul's LinkedIn"> 
-                <a href="https://www.linkedin.com/in/rahul-prakash-651106145/" target="_blank">LinkedIn
-                    
-                </a>
-            </span>
-            <span class="social-links">
-                <img src="images/Email.svg" class="social-img"  data-href="mailto:rahul.prksh1998@gmail.com" alt="Rahul's Email ID">
-                <a href="mailto:rahul.prksh1998@gmail.com" target="_blank">Email</a>
-            </span>
-            <span class="social-links">
-                <img src="images/Whatsapp.svg" class="social-img" data-href="https://wa.me/qr/JUSH3EORLHRFP1"  alt="Rahul's WhatsApp">
-                <a href="https://wa.me/qr/JUSH3EORLHRFP1" target="_blank">WhatsApp</a>
-            </span>
-            <span class="social-links">
-                <img src="images/Github.svg" class="social-img" data-href="https://github.com/Rahul0Prakash/Portfolio" alt="Rahul's Github">
-                <a href="https://github.com/Rahul0Prakash/Portfolio" target="_blank">Github</a>
-            </span>
+  <!-- Footer Section -->
+  <footer class="footer">
+    <!-- Circular image and text-based footer links -->
+    
+        <div class="float-container" id="float-container">
+            <img src="images/Rahul.png" alt="Image of Rahul Prakash" class="float-image">
         </div>
-        <br>
-        <p>&copy; 2024 Rahul Prakash</p>
-        <span class="project-description">
-            This site was first designed on Figma with styling inspired by 
-            <a class="highlight" target="_blank" rel="noopener noreferrer" href="https://developer.apple.com/design/human-interface-guidelines/color">
-                Apple’s design system</a>.<br>
-            The basic skeleton was written in HTML, with values extracted from Figma's dev mode.<br>
-            ChatGPT assisted with programming using CSS and JavaScript.<br>
-            Apple® and its design system are trademarks of Apple Inc.
-        </span>
-    </footer>
 
-    <!-- JavaScript to handle scroll-based navbar behavior -->
-    <script src="script.js"></script> <!-- Link to JavaScript -->
+    <br>
+    <div class="footer-text">
+        <span class="social-links">
+            <img src="images/Email.svg" class="social-img"  data-href="mailto:rahul.prksh1998@gmail.com" alt="Rahul's Email ID">
+            <a href="mailto:rahul.prksh1998@gmail.com" target="_blank">Email</a>
+        </span>
+        <span class="social-links">
+            <img src="images/linkedin.svg" class="social-img" data-href="https://www.linkedin.com/in/rahul-prakash-651106145/" alt="Rahul's LinkedIn"> 
+            <a href="https://www.linkedin.com/in/rahul-prakash-651106145/" target="_blank">LinkedIn
+            </a>
+        </span>
+
+        <span class="social-links">
+            <img src="images/Whatsapp.svg" class="social-img" data-href="https://wa.me/qr/JUSH3EORLHRFP1"  alt="Rahul's WhatsApp">
+            <a href="https://wa.me/qr/JUSH3EORLHRFP1" target="_blank">WhatsApp</a>
+        </span>
+        <span class="social-links">
+            <img src="images/Github.svg" class="social-img" data-href="https://github.com/Rahul0Prakash/Portfolio" alt="Rahul's Github">
+            <a href="https://github.com/Rahul0Prakash/Portfolio" target="_blank">Github</a>
+        </span>
+    </div>
+
+
+</footer>
+
+<span class="footnote">
+    <p>&copy; 2024 Rahul Prakash</p>
+<span>This site was first designed on Figma with styling inspired by 
+    <a class="highlight_apple" target="_blank" rel="noopener noreferrer" href="https://developer.apple.com/design/human-interface-guidelines/color">
+        Apple’s design system.</a>
+</span>
+    The basic skeleton was written in HTML, with values extracted from Figma's dev mode.<br>
+    ChatGPT assisted with programming using CSS and JavaScript.<br>
+    Apple® and its design system are trademarks of Apple Inc.
+    <br><br>
+</span>
+<!-- JavaScript to handle scroll-based navbar behavior -->
+<script src="script.js"></script> <!-- Link to JavaScript -->
 
 </body>
 </html>

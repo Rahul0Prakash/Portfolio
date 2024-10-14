@@ -1,21 +1,33 @@
-const navbar = document.getElementById('navbar');
 
-let lastScrollTop = 0; // Tracks the last scroll position
+
+window.addEventListener('load', function() {
+  const preloader = document.getElementById('preloader');
+  preloader.style.display = 'none'; // Or preloader.remove();
+});
+// Select the navbar element
+window.addEventListener('scroll', function() {
+  let currentScroll = window.scrollY || document.documentElement.scrollTop;
+  console.log("Current Scroll:", currentScroll);
+});
+const navbar = document.querySelector('nav');
+
+let lastScrollTop = 0; // Tracks the last known scroll position
+
 
 window.addEventListener('scroll', function() {
-    // Get the current scroll position using document.documentElement.scrollTop
-    const currentScroll = document.documentElement.scrollTop;
+  let currentScroll = window.scrollY || document.documentElement.scrollTop;
+  console.log("Current Scroll:", currentScroll);
+  console.log("Last Scroll:", lastScrollTop);
 
-    if (currentScroll > lastScrollTop) {
-        // User is scrolling down - hide the navbar
-        navbar.style.top = '-100px'; // Move the navbar up out of view
-    } else {
-        // User is scrolling up - show the navbar
-        navbar.style.top = '4rem'; // Bring the navbar back into view
-    }
+  if (currentScroll > lastScrollTop) {
+      console.log("Scrolling Down: Hiding Navbar");
+      navbar.style.top = '-100px';
+  } else {
+      console.log("Scrolling Up: Showing Navbar");
+      navbar.style.top = '4rem';
+  }
 
-    // Update the last scroll position to the current position
-    lastScrollTop = Math.max(currentScroll, 0); // Ensure we don't end up with negative values
+  lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
 });
 // Select the nav links and logo
 const navLinks = document.querySelectorAll('.nav-links a');
@@ -45,9 +57,17 @@ logo.addEventListener('click', function() {
 });
 
 // Select the "About Me" and "Work" links
-const aboutMeLink = document.querySelector('a[href="#about"]');
-const workLink = document.querySelector('a[href="#work"]');
 
+// Add click event listeners for the "About Me" and "Work" links
+document.querySelector('a[href="#about"]').addEventListener('click', function(event) {
+  event.preventDefault();
+  scrollToSectionWithOffset('#about');
+});
+
+document.querySelector('a[href="#work"]').addEventListener('click', function(event) {
+  event.preventDefault();
+  scrollToSectionWithOffset('#work');
+});
 // Function to handle smooth scrolling to a section, with offset
 function scrollToSectionWithOffset(sectionId) {
   const section = document.querySelector(sectionId);
@@ -68,17 +88,6 @@ function scrollToSectionWithOffset(sectionId) {
   });
   console.log(offset);
 }
-
-// Add click event listeners for the "About Me" and "Work" links
-aboutMeLink.addEventListener('click', function(event) {
-  event.preventDefault(); // Prevent the default anchor link behavior
-  scrollToSectionWithOffset('#about');
-});
-
-workLink.addEventListener('click', function(event) {
-  event.preventDefault(); // Prevent the default anchor link behavior
-  scrollToSectionWithOffset('#work');
-});
 
 // Float image link to external page
 const float_img = document.getElementById('float-container');
@@ -102,7 +111,7 @@ window.addEventListener('load', function() {
   preloader.style.transition = 'opacity 0.5s ease-out';
   setTimeout(function() {
       preloader.style.display = 'none';
-  }, 5000); // Ensure transition completes before display is set to none
+  }, 400); // Ensure transition completes before display is set to none
 });
 
 const hamburger = document.getElementById('hamburger');
@@ -113,14 +122,3 @@ hamburger.addEventListener('click', () => {
 });
 
 
-window.addEventListener('scroll', function() {
-  const currentScroll = document.documentElement.scrollTop;
-
-  if (currentScroll > lastScrollTop) {
-      navbar.style.top = '-100px'; 
-  } else {
-      navbar.style.top = '4rem';
-  }
-
-  lastScrollTop = Math.max(currentScroll, 0);
-});
