@@ -86,4 +86,41 @@ float_img.addEventListener('click', function() {
   window.open('https://linktr.ee/Rahul_Prakash', '_blank');
 });
 
+document.querySelectorAll('.social-img').forEach((img) => {
+  img.addEventListener('click', function() {
+    const url = img.getAttribute('data-href');
+    if (url) {
+      window.open(url, '_blank'); // Open the link in a new tab
+    }
+  });
+});
 
+window.addEventListener('load', function() {
+  const preloader = document.getElementById('preloader');
+  preloader.style.opacity = '0';
+  preloader.style.visibility = 'hidden';
+  preloader.style.transition = 'opacity 0.5s ease-out';
+  setTimeout(function() {
+      preloader.style.display = 'none';
+  }, 5000); // Ensure transition completes before display is set to none
+});
+
+const hamburger = document.getElementById('hamburger');
+const nav = document.querySelector('nav ul');
+
+hamburger.addEventListener('click', () => {
+    nav.classList.toggle('open-nav');
+});
+
+
+window.addEventListener('scroll', function() {
+  const currentScroll = document.documentElement.scrollTop;
+
+  if (currentScroll > lastScrollTop) {
+      navbar.style.top = '-100px'; 
+  } else {
+      navbar.style.top = '4rem';
+  }
+
+  lastScrollTop = Math.max(currentScroll, 0);
+});

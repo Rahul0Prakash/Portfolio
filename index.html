@@ -10,7 +10,11 @@
 </head>
 
 <body>
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
     <!-- Navigation Bar -->
+ 
     <nav id="navbar">
         <img src="images/youXrahul.svg" class="logo" id="logo" alt="logo"></img> <!-- Logo as a text-based navigation element -->
         <div class="nav-links">
@@ -19,11 +23,16 @@
             <a class="nav-item" href="#work">Work</a>
             <a class="nav-item" href="RahulPrakash_CV.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
         </div>
+        <div class="hamburger" id="hamburger">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
     </nav>
 
     <!-- Landing Page Section -->
     <section class="landing-section">
-        <h1>Hi👋 , I'm Rahul, a User Experience Enthusiast based in Essen, Germany</h1>
+        <h1>Hi 👋 , I'm Rahul, a User Experience Enthusiast based in Essen, Germany</h1>
         <p>I ride the wave of <a class="highlight" target="_blank" href="https://www.nngroup.com/videos/it-depends-ux-context/">
             <i>‘it depends’</i></a> till dots connect and plans make sense.</p>
     </section>
@@ -45,15 +54,15 @@
                 <h3>My Journey</h3>
                 <ul style="list-style-type: circle;">
                     <!-- Highlight the different experiences and skills gained -->
-                    <li>Used Figma to prototype 10+ high-fidelity designs</li><br>
-                    <li>Conducted 8+ market analyses using Google Trends</li><br>
-                    <li>Facilitated brainstorming for 10+ key projects using Miro and FigJam boards</li><br>
-                    <li>Analyzed 20+ site visits with Google Analytics to track user behavior and performance</li><br>
+                    <li>Used Figma to prototype 10+ high-fidelity designs</li>
+                    <li>Conducted 8+ market analyses using Google Trends</li>
+                    <li>Facilitated brainstorming for 10+ key projects using Miro and FigJam boards</li>
+                    <li>Analyzed 20+ site visits with Google Analytics to track user behavior and performance</li>
                     <li>Performed competitive audit using Similarweb and templates 
                         <a class="highlight" target="_blank" rel="noopener noreferrer" href="https://coursera-assessments.s3.amazonaws.com/assessments/1623041973496/fa9ddd33-fcea-48d0-81c7-a316e4cb682b/Google%20UX%20Design%20Certificate%20-%20Competitive%20audit%20template%20-%20Template-2.pdf">[1]</a>
                         <a class="highlight" target="_blank" rel="noopener noreferrer" href="https://www.atlassian.com/dam/jcr:11b8d765-5a53-4193-a70c-fb957c54f07f/Competitive%20Analysis.pdf">[2]</a>,
                         benchmarking 5 competitors
-                    </li><br>
+                    </li>
                     <li>Developed skills in ChatGPT prompting and created 
                         <a class="highlight" target="_blank" rel="noopener noreferrer" href="https://chatgpt.com/g/g-H6NlHYtlA-dachsberg-manager">a custom GPT</a> for 
                         <a class="highlight" target="_blank" rel="noopener noreferrer" href="https://www.wg-gesucht.de/10851253.html">tenant</a> FAQs, reducing workload by 40% during busy periods
@@ -65,14 +74,14 @@
             <div class="about-column">
                 <h3>Ambitions in UX</h3>
                 <ul style="list-style-type: circle;">
-                    <li>Acquired basic web development skills to enhance my UX expertise</li><br>
-                    <li>Aspiring to become a <a class="highlight" target="_blank" rel="noopener noreferrer" href=https://jakobnielsenphd.substack.com/p/ux-unicorn>"unicorn"</a> in UI/UX, seamlessly combining user experience and interface design</li><br>
-                </ul>
+                    <li>Acquired basic web development skills to enhance my UX expertise</li>
+                    <li>Aspiring to become a <a class="highlight" target="_blank" rel="noopener noreferrer" href=https://jakobnielsenphd.substack.com/p/ux-unicorn>"unicorn"</a> in UI/UX, seamlessly combining user experience and interface design</li>
+                </ul><br>
                 
                 <h3>Vision for the Future</h3>
                 <ul style="list-style-type: circle;">
-                    <li>Aiming to contribute to global projects while fostering a user-centric mindset among peers</li><br>
-                    <li>Passionate about creating inclusive and sustainable designs that address both user needs and environmental concerns</li><br>
+                    <li>Aiming to contribute to global projects while fostering a user-centric mindset among peers</li>
+                    <li>Passionate about creating inclusive and sustainable designs that address both user needs and environmental concerns</li>
                 </ul>
             </div>
         </div>
@@ -118,22 +127,25 @@
         <!-- Circular image and text-based footer links -->
         <div class="footer-text">
             <div class="float-container" id="float-container">
-                <img src="images/Rahul_Mit_Bg.png" alt="Image of Rahul Prakash" class="float-image">
+                <img src="images/Rahul.png" alt="Image of Rahul Prakash" class="float-image">
             </div>
+
             <span class="social-links">
-                <img src="images/linkedin.svg" class="social-img"> 
-                <a href="https://www.linkedin.com/in/rahul-prakash-651106145/" target="_blank">LinkedIn</a>
+                <img src="images/linkedin.svg" class="social-img" data-href="https://www.linkedin.com/in/rahul-prakash-651106145/" alt="Rahul's LinkedIn"> 
+                <a href="https://www.linkedin.com/in/rahul-prakash-651106145/" target="_blank">LinkedIn
+                    
+                </a>
             </span>
             <span class="social-links">
-                <img src="images/Email.svg" class="social-img">
+                <img src="images/Email.svg" class="social-img"  data-href="mailto:rahul.prksh1998@gmail.com" alt="Rahul's Email ID">
                 <a href="mailto:rahul.prksh1998@gmail.com" target="_blank">Email</a>
             </span>
             <span class="social-links">
-                <img src="images/Whatsapp.svg" class="social-img">
+                <img src="images/Whatsapp.svg" class="social-img" data-href="https://wa.me/qr/JUSH3EORLHRFP1"  alt="Rahul's WhatsApp">
                 <a href="https://wa.me/qr/JUSH3EORLHRFP1" target="_blank">WhatsApp</a>
             </span>
             <span class="social-links">
-                <img src="images/Github.svg" class="social-img">
+                <img src="images/Github.svg" class="social-img" data-href="https://github.com/Rahul0Prakash/Portfolio" alt="Rahul's Github">
                 <a href="https://github.com/Rahul0Prakash/Portfolio" target="_blank">Github</a>
             </span>
         </div>

@@ -8,69 +8,129 @@
 body, html {
   margin: 0 auto;
   padding: 0;
-  font-feature-settings: 'liga' off, 'clig' off;
-  font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-family: "SF Pro Text", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   background-color: #0D0D0D;
   color: #f5f5f7;
   scroll-behavior: smooth; /* Smooth scrolling */
   height: 100vh; /* Full view height */
   max-width: 108.125rem; /* Restrict width */
-}
-body{
   overflow-x: hidden; /* Prevent horizontal scrolling */
-  overflow-y: scroll;
+  overflow-y: scroll; /* Enable vertical scroll */
 }
+
+/* Preloader styles */
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #0D0D0D;
+  z-index: 10000; /* Ensure preloader is above everything else */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader {
+  width: 50px;
+  height: 50px;
+  border: 5px solid #D4FA86;
+  border-top: 5px solid #f5f5f7;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Hamburger Menu */
+.hamburger {
+  display: none;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 20px;
+  width: 25px;
+  position: fixed;
+  top: 1.5rem;
+  right: 1.5rem;
+  z-index: 1001;
+}
+
+.hamburger .bar {
+  height: 3px;
+  width: 100%;
+  background-color: #E4E4E4;
+  transition: all 0.3s;
+}
+
+
 /* Navigation bar styling */
 nav {
   position: fixed;
-  top: 4rem; /* 64px equivalent in rem */
+  top: 4rem;
   left: 8%;
   right: 8%;
-  backdrop-filter: blur(100px); /* Blur effect */
+  backdrop-filter: blur(100px);
   border-radius: 1.25rem;
-  padding: 0rem 3.125rem 0rem 0rem; /* top, right, bottom, left */
   height: auto;
   display: flex;
-  justify-content: space-between; /* Spread out logo and nav links */
-  align-items: center; /* Align all items vertically */
-  z-index: 999; /* Ensure nav stays on top */
-  transition: top 0.35s ease; /* Smooth show/hide on scroll */
+  justify-content: space-between;
+  align-items: center;
+  z-index: 999;
   background-color: rgba(255, 255, 255, 0.102);
-  box-sizing: border-box;
+  padding: 0 3.125rem;
+  transition: top 0.35s ease;
 }
 
 nav ul {
   list-style-type: none;
-  margin: 0;
-  padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 1.5625rem; /* 25px */
+  gap: 1.5625rem;
 }
 
 /* Shared styles for .nav-links a and .logo */
-.nav-links a{
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  padding: 9px 25px; /* Consistent padding for both */
-  font-size: 1.25rem;
-  border-radius: 1.25rem;
-  line-height: 2.5rem; /* Consistent line-height */
-  text-decoration: none; /* Remove underline for links */
-  cursor: pointer;
-  color: #E4E4E4; /* Text color */
-  text-shadow: 
-      -1px -1px 0 #000, /* Top-left shadow */
-      1px -1px 0 #000,  /* Top-right shadow */
-      -1px 1px 0 #000,  /* Bottom-left shadow */
-      1px 1px 0 #000;   /* Bottom-right shadow */
-  transition: transform 0.35s ease, background-color 0.3s ease; /* Smooth hover and scale */
-}
+.nav-links a,
 .logo {
   display: inline-flex;
   justify-content: center;
+  align-items: center;
+  padding: 9px 25px;
+  font-size: 1.25rem;
+  border-radius: 1.25rem;
+  text-decoration: none;
+  color: #E4E4E4;
+  cursor: pointer;
+  transition: transform 0.35s ease, background-color 0.3s ease;
+  text-shadow: 
+      -1px -1px 0 #000, 
+      1px -1px 0 #000,  
+      -1px 1px 0 #000,  
+      1px 1px 0 #000;
+}
+
+.nav-links a:hover,
+.logo:hover {
+  color: #D4FA86;
+  transform: scale(1.05);
+}
+
+.nav-links a.active,
+.logo.active {
+  color: #D4FA86;
+  font-weight: 700;
+}
+
+/* Logo Specific */
+
+.logo {
+  display: inline-flex;
+  justify-content: left;
   align-items: center;
   /*padding: 9px 25px; /* Consistent padding for both */
   height: auto; /* Keeps the aspect ratio */
@@ -82,84 +142,54 @@ nav ul {
   line-height: normal; /* Remove unnecessary text line height */
   width: 12.5rem; /* Adjust to your desired size */
   overflow: hidden;
-
   transition: transform 0.35s ease, background-color 0.3s ease; /* Smooth hover and scale */
 }
-.nav-links a {
-  border: 2px solid transparent; /* Initially transparent border */
-}
-
-.nav-links a:hover,
-.logo:hover {
-  color: #D4FA86; /* Green color on hover */
-  transform: scale(1.05); /* Slight scale on hover */
-  transition: background-color 0.3s ease, transform 0.35s ease; /* Smooth transition */
-}
-
-.nav-links a.active {
-  color: #D4FA86; 
-  font-weight: 700;
-  padding: 9px 25px;
-}
-
-.logo {
-  margin-left: 3.125rem; /* 50px in rem units */
-  margin-right: 9.375rem; /* 150px in rem units */
-}
-
-.logo.active {
-  background-color: #D4FA86; /* Green background */
- /* color: #000000; /* Black text */
-}
-
 /* Highlighted link styling */
 .highlight {
-  color: #D4FA86; /* Specific highlight color */
-  font-weight: bold; /* Bold link */
+  color: #D4FA86;
+  font-weight: bold;
 }
+
 .highlight:hover {
-  color: hsl(0, 0%, 100%); /* Change to white on hover */
+  color: #ffffff; /* Change to white on hover */
 }
 
 /* Subheading styling */
 .Subheading {
   color: #D4FA86;
-  padding-left: 6.25rem;
-  padding-top: 0rem;
-  padding-bottom: 1.5rem;
-  font-weight: 600; /* Make bold */
+  padding: 10vh 5vw 0vh 5vw;
+  font-weight: 600;
 }
 
 /* Container for superimposed images */
 .image-container {
   position: relative;
   width: 100%;
-  max-width: 108.125rem; /* Restrict to opaque image width */
-  height: 30rem; /* Height of the opaque image */
-  margin: 0 auto; /* Center the container */
+  max-width: 108.125rem;
+  height: 30rem;
+  margin: 0 auto;
 }
 
 /* Opaque main image */
-.opaque-image {
+.opaque-image,
+.png-image {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+.opaque-image {
   background: url('images/Wavy.png') no-repeat center;
   background-size: cover;
   z-index: 1;
 }
 
-/* PNG image on top */
 .png-image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 120%; /* Match the size of the opaque image */
-  height: 100%;
+  width: 120%;
   background: url('images/scrolling-image.png');
-  background-size: 120%; /* Ensure it scales proportionally */
+  background-size: 120%;
   z-index: 2;
 }
 
@@ -169,140 +199,272 @@ nav ul {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 15% 10% 5% 10%;
+  padding: 15% 10% 5%;
   max-width: 60rem;
   margin: 0 auto;
   text-align: left;
 }
 
 /* Headings Styling */
-h1 {
+h1, h2, h3 {
   color: #E4E4E4;
+}
+
+h1 {
   font-size: 2.5rem;
   margin-bottom: 1.5rem;
 }
 
 h2 {
-  color: #E4E4E4;
-  padding: 0rem;
   font-size: 2rem;
   margin-bottom: 1rem;
 }
 
 h3 {
-  color: #E4E4E4;
   font-size: 1.5rem;
   margin-bottom: 0.5rem;
-  padding-bottom: 0.5rem;
   font-weight: 400;
 }
 
-/* Paragraph styling */
-p {
+/* Paragraph and Links Styling */
+p, a {
   color: #E4E4E4;
   font-size: 1.063rem;
-}
-
-a {
   text-decoration: none;
 }
 
 /* About Me Section */
 .about-me {
-  position: relative;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  box-sizing: border-box;
   align-items: center;
 }
 
-/* Columns in the about section */
 .about-columns {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   gap: 2.5rem;
   width: 100%;
-  padding-left: 6.25rem;
-  padding-right: 6.25rem;
-  box-sizing: border-box;
+  padding: 0 6.25rem;
 }
 
-/* Column styles */
 .about-column {
   flex: 1;
-  margin-bottom: 2rem;
-  min-width: 0;
-  box-sizing: border-box;
+  margin-bottom: 0rem;
 }
 
+/* List Styling */
 ul {
   list-style-type: circle;
-  list-style-position: outside;
   padding-left: 2rem;
 }
 
 ul li {
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
 }
 
-/* Responsive adjustments for mobile */
-@media (max-width: 768px) {
+/*PHONE view*/
+@media (max-width: 1000px) {
+  nav ul {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
   .about-columns {
     flex-direction: column;
+    padding: 0 1rem;
   }
 
-  .about-column {
-    margin-bottom: 2rem;
+  h1 {
+    font-size: 1.75rem;
+    padding: 10vh 10vw 1vh 10vw;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    padding: 0vh 10vw 1vh 5vw;
+  }
+
+  h3 {
+    font-size: 1.25rem;
+    padding: 1vh 10vw 1vh 5vw;
+  }
+
+  p {
+    font-size: 0.9rem;
+    padding: 0vh 5vw 1vh 5vw;
+    text-align: left;
+  }
+  a {
+    font-size: 0.9rem;
+  }
+  ul {
+    list-style-type: circle;
+    padding-left: 7vw;
+  }
+  
+  ul li {
+    margin-bottom: 1rem;
+    padding: 0vh 5vw 1vh 2vw;
+  }
+  .footer-text {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+    right: 3.5rem;
+    position: absolute;
+    top: auto; 
+  }
+
+  .nav-links.open-nav {
+    display: flex !important;
+    flex-direction: column;
+    position: fixed;
+    padding: 2vh 5vw;
+    z-index: 1000;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+  /* Opaque main image */
+  .opaque-image,
+  .png-image {
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 0rem;
+  }
+  .projects {
+    display: flex !important;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0 10vw 10vh 10vw;
+    width: 100%;
+  }
+
+  .project {
+    padding: 2vh 2vw;
+    transition: background-color 0.4s ease, transform 0.35s ease;
+  }
+
+  .project:hover {
+    background-color: #1c1c1c;
+    transform: scale(1.01);
+  }
+  /* Footer Styling */
+  .footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between; /* Ensure spacing between items */
+    padding: 2rem 0rem; /* Adjust padding for a cleaner layout */
+    background-color: #0D0D0D;
+    color: #f5f5f7;
+    width: 100%;
+  }
+
+  /* Container for floating image in the footer */
+  .float-container {
+    perspective: 500px;
+  }
+
+  .float-image {
+    width: 15px; /* Make the image larger to be more noticeable */
+    height: auto;
+    border-radius: 50%;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+  }
+
+  .float-image:hover {
+    transform: rotateX(1deg) rotateY(-1deg) translateZ(30px);
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.6), 2.5px 2.5px 7.5px #D4FA86;
+  }
+
+  /* Spacer to create space between image and social links */
+  .spacer {
+    flex-grow: 1; /* Takes up remaining space in the flex container */
+  }
+
+  /* Social Media Links Container */
+  .footer-text {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem; /* Adjust the gap for consistent spacing between icons */
+  }
+
+  /* Individual Social Link Styling */
+  .social-links {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+  }
+
+  .social-links img {
+    width: 7.5px; /* Set consistent size for social media icons */
+    height: 7.5px;
+    margin-right: 0.25rem; /* Space between icon and link text */
+    transition: filter 0.3s ease;
+  }
+
+  .social-links a {
+    color: #f5f5f7;
+    font-size: 0.675rem;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+
+  /* Hover Effects */
+  .social-links:hover img {
+    filter: brightness(0) saturate(100%) invert(93%) sepia(1%) saturate(172%) hue-rotate(170deg) brightness(100%) contrast(88%);
+  }
+
+  .social-links:hover a {
+    color: #D4FA86;
   }
 }
 
-/* Work Section */
-.work {
-  font-size: 1.25rem;
-  padding: 2.5rem 1.25rem;
+/* Projects Section - 2x2 Grid Layout for Larger Screens */
+@media (min-width: 1001px) {
+  .projects {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+    padding: 0 6.25rem;
+  }
 }
 
-.projects {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1.25rem;
-  padding-left: 6.25rem;
-  padding-right: 6.25rem;
-  width: 100%;
-  box-sizing: border-box;
-}
-
+/* Individual Project Styling */
 .project {
   background-color: #0D0D0D;
   padding: 1.25rem;
   display: flex;
   flex-direction: column;
-  align-items: left;
-  flex: 1;
-  min-width: 0;
-  box-sizing: border-box;
   overflow-x: hidden;
 }
 
 .project:hover {
   background-color: #1c1c1c;
-  z-index: 100;
-  padding: 0.5rem;
-  border-radius: 1.25rem;
   transform: scale(1.01);
-  transition: transform 0.35s ease;
 }
 
 .project-img {
   width: 100%;
   height: auto;
   border-radius: 1.25rem;
-  padding-bottom: 1.56rem;
 }
 
-/* Project Name */
+/* Project Name and Description */
 .project-name {
   color: #E4E4E4;
   font-weight: 500;
@@ -311,29 +473,11 @@ ul li {
   text-align: left;
 }
 
-/* Project Description */
-.project-description {
-  font-size: 0.66rem;
+.project-description,
+.outcome-description {
+  font-size: 0.675rem;
   font-weight: 400;
   line-height: 1.25rem;
-}
-
-/* Outcome Description */
-.outcome-description {
-  font-size: 0.6rem;
-  text-align: left;
-  font-weight: 700;
-  line-height: 1.25rem;
-}
-
-/* Responsive adjustments for projects */
-@media (max-width: 768px) {
-  .projects {
-    grid-template-columns: 1fr;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    gap: 2rem;
-  }
 }
 
 /* Footer Styling */
@@ -347,13 +491,12 @@ ul li {
   color: #f5f5f7;
 }
 
-/* Floating Image in Footer */
 .float-container {
   perspective: 1000px;
 }
 
 .float-image {
-  width: 300px;
+  width: 200px;
   height: auto;
   border-radius: 50%;
   transition: transform 0.5s ease, box-shadow 0.5s ease;
@@ -364,7 +507,6 @@ ul li {
   box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.6), 5px 5px 15px #D4FA86;
 }
 
-/* Social Links in Footer */
 .footer-text {
   display: flex;
   justify-content: center;
@@ -380,40 +522,18 @@ ul li {
   transition: filter 0.3s ease;
 }
 
-.social-links a {
-  color: #D4FA86;
-  font-size: 1rem;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
 .social-links:hover img {
-  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7500%) hue-rotate(360deg) brightness(118%) contrast(119%);
+  filter: brightness(0) saturate(100%) invert(93%) sepia(1%) saturate(172%) hue-rotate(170deg) brightness(100%) contrast(88%);
 }
 
 .social-links:hover a {
-  color: #ffffff;
+  color: #D4FA86;
 }
 
 .social-links {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.social-img {
-  width: 50rem;
-  height: 5rem;
-}
-
-@media (max-width: 768px) {
-  .footer-text {
-    flex-direction: column;
-  }
-
-  .social-links {
-    margin-bottom: 1rem;
-  }
 }
 
 /* Scroll Down Arrow */
@@ -425,18 +545,12 @@ ul li {
   font-size: 9rem;
   color: #000000;
   cursor: pointer;
-  z-index: 1000;
   animation: bounce 1.5s infinite;
 }
 
-/* Bounce Animation */
 @keyframes bounce {
-  0%, 100% {
-    transform: translate(-50%, 0);
-  }
-  50% {
-    transform: translate(-50%, -10px);
-  }
+  0%, 100% { transform: translate(-50%, 0); }
+  50% { transform: translate(-50%, -10px); }
 }
 
 /* Hide/show navbar on scroll */
