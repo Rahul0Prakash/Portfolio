@@ -91,11 +91,11 @@
       }
       
       .opaque-image {
-        background: url('../images/Wavy.png') no-repeat center;
+        background: url('../images/wavy.png') no-repeat center;
         background-size: cover;
         z-index: 1;
       }
-      
+   
       .png-image {
         width: 120%;
         background: url('../images/scrolling-image.png');
