@@ -4,9 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="icon" href="images/Favicon.png" type="image/png"> <!-- Favicon in PNG format -->
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon"> <!-- Favicon in ICO format -->
+    <link rel="icon" href="assets/images/Favicon.png" type="image/png"> <!-- Favicon in PNG format -->
+    <link rel="icon" sizes="16x16" href="assets/images/favicon-16x16.png" type="image/png">
+    <link rel="icon" sizes="32x32" href="assets/images/favicon-32x32.png" type="image/png">
+    <link rel="icon" sizes="512x512" href="assets/images/android-chrome-512x512" type="image/png">
+    <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png"> <!-- Apple Touch Icon -->
+
     <title>Rahul Prakash's Portfolio</title>
-    <link rel="stylesheet" href="style.css"> <!-- Link to external CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/navbar.css">
+    <link rel="stylesheet" href="assets/css/mobile.css">
 </head>
 
 <body>
@@ -16,7 +25,7 @@
     <!-- Navigation Bar -->
  
     <nav id="nav">
-        <img src="images/youXrahul.svg" class="logo" id="logo" alt="logo"></img> <!-- Logo as a text-based navigation element -->
+        <img src="assets/images/youXrahul.svg" class="logo" id="logo" alt="logo"></img> <!-- Logo as a text-based navigation element -->
         <div class="nav-links">
             <!-- Navigation links to the sections of the page -->
             <a class="nav-item" href="#about">About Me</a>
@@ -27,6 +36,18 @@
             <div class="bar"></div>
             <div class="bar"></div>
             <div class="bar"></div>
+        </div>
+        <!-- Dropdown Menu -->
+        <div class="dropdown-menu" id="dropdownMenu">
+                <span class="grid-item">
+                    <a href="#about">About Me</a>
+                  </span>
+                  <span class="grid-item">
+                    <a href="#work">Work</a>
+                  </span>
+                  <span class="grid-item">
+                    <a href="RahulPrakash_CV.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+                  </span>
         </div>
     </nav>
 
@@ -93,28 +114,28 @@
         <div class="projects">
             <!-- Project cards displaying the various projects completed -->
             <div class="project">
-                <img class="project-img" src="images/projects/FLF.png" alt="Screens of UI related to Lufthansa's innovation space">
+                <img class="project-img" src="assets/images/projects/FLF.png" alt="Screens of UI related to Lufthansa's innovation space">
                 <span class="project-name">Revamping Lufthansa’s FlyingLab Factory</span>
                 <span class="project-description">Streamlining the booking process and enhancing user experience in the innovation space</span>
                 <span class="outcome-description">COURSEWORK · PRODUCT DESIGN · WEB · 2022</span>
             </div>
             <!-- Example Project 2 -->
             <div class="project">
-                <img class="project-img" src="images/projects/Balancify.png" alt="UI screens for the Balancify app">
+                <img class="project-img" src="assets/images/projects/Balancify.png" alt="UI screens for the Balancify app">
                 <span class="project-name">Balancify: Work-Life Balance App</span>
                 <span class="project-description">Designing an app to track emotions and improve work-life balance</span>
                 <span class="outcome-description">CASE STUDY · PRODUCT DESIGN · APP · 2022</span>
             </div>
             <!-- Example Project 3 -->
             <div class="project">
-                <img class="project-img" src="images/projects/AudiVerse.png" alt="UI screens for AudiVerse extension">
+                <img class="project-img" src="assets/images/projects/AudiVerse.png" alt="UI screens for AudiVerse extension">
                 <span class="project-name">AudiVerse: Extension of myAudi App</span>
                 <span class="project-description">Enhancing Audi’s customer feedback system through gamification</span>
                 <span class="outcome-description">COURSEWORK · APP EXTENSION · GAMIFICATION · APP · 2023</span>
             </div>
             <!-- Example Project 4 -->
             <div class="project">
-                <img class="project-img" src="images/projects/Moodglide.png" alt="UI screens for MoodGlide device">
+                <img class="project-img" src="assets/images/projects/Moodglide.png" alt="UI screens for MoodGlide device">
                 <span class="project-name">MoodGlide: Emotion Selector Device</span>
                 <span class="project-description">Developing an emotion selector device to assist individuals with <a class="highlight_apple" target="_blank" rel="noopener noreferrer" href="https://www.alexithymia.us/">Alexithymia</a></span>
                 <span class="outcome-description">PRODUCT DESIGN · HARDWARE · 2023</span>
@@ -127,27 +148,27 @@
     <!-- Circular image and text-based footer links -->
     
         <div class="float-container" id="float-container">
-            <img src="images/Rahul.png" alt="Image of Rahul Prakash" class="float-image">
+            <img src="assets/images/Rahul.png" alt="Image of Rahul Prakash" class="float-image">
         </div>
 
     <br>
     <div class="footer-text">
         <span class="social-links">
-            <img src="images/Email.svg" class="social-img"  data-href="mailto:rahul.prksh1998@gmail.com" alt="Rahul's Email ID">
+            <img src="assets/images/Email.svg" class="social-img"  data-href="mailto:rahul.prksh1998@gmail.com" alt="Rahul's Email ID">
             <a href="mailto:rahul.prksh1998@gmail.com" target="_blank">Email</a>
         </span>
         <span class="social-links">
-            <img src="images/linkedin.svg" class="social-img" data-href="https://www.linkedin.com/in/rahul-prakash-651106145/" alt="Rahul's LinkedIn"> 
+            <img src="assets/images/linkedin.svg" class="social-img" data-href="https://www.linkedin.com/in/rahul-prakash-651106145/" alt="Rahul's LinkedIn"> 
             <a href="https://www.linkedin.com/in/rahul-prakash-651106145/" target="_blank">LinkedIn
             </a>
         </span>
 
         <span class="social-links">
-            <img src="images/Whatsapp.svg" class="social-img" data-href="https://wa.me/qr/JUSH3EORLHRFP1"  alt="Rahul's WhatsApp">
+            <img src="assets/images/Whatsapp.svg" class="social-img" data-href="https://wa.me/qr/JUSH3EORLHRFP1"  alt="Rahul's WhatsApp">
             <a href="https://wa.me/qr/JUSH3EORLHRFP1" target="_blank">WhatsApp</a>
         </span>
         <span class="social-links">
-            <img src="images/Github.svg" class="social-img" data-href="https://github.com/Rahul0Prakash/Portfolio" alt="Rahul's Github">
+            <img src="assets/images/Github.svg" class="social-img" data-href="https://github.com/Rahul0Prakash/Portfolio" alt="Rahul's Github">
             <a href="https://github.com/Rahul0Prakash/Portfolio" target="_blank">Github</a>
         </span>
     </div>
@@ -167,7 +188,9 @@
     <br><br>
 </span>
 <!-- JavaScript to handle scroll-based navbar behavior -->
-<script src="script.js"></script> <!-- Link to JavaScript -->
+<script src="assets/js/navbar.js"></script>
+<script src="assets/js/dropdown.js"></script>
+<script src="assets/js/script.js"></script>
 
 </body>
 </html>

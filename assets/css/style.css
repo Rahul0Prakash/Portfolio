@@ -1,0 +1,360 @@
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      
+      /* Basic styles for HTML and body */
+      body, html {
+        margin: 0 auto;
+        padding: 0;
+        font-feature-settings: 'liga' off, 'clig' off;
+        font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+        background-color: #0D0D0D;
+        color: #f5f5f7;
+        scroll-behavior: smooth; /* Smooth scrolling */
+        min-height: 100vh; /* Full view height */
+        max-width: 108.125rem; /* Restrict width */
+        overflow-x: hidden; /* Prevent horizontal scrolling */
+        overflow-y: auto; /* Enable vertical scroll */
+      }
+      
+      /* Preloader styles */
+      #preloader {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #0D0D0D;
+        z-index: 10000; /* Ensure preloader is above everything else */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      .loader {
+        width: 5rem;
+        height: 5rem;
+        border: 1rem solid #D4FA86;
+        border-top: 1rem solid #f5f5f7;
+        border-radius: 50%;
+        animation: spin 1s ease-out infinite;
+      }
+      /* Hide/show navbar on scroll */
+      .hidden {
+        top: -100px;
+      }
+      
+      @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+      
+      .highlight_apple {
+        color: #D4FA86;
+        font-weight: bold;
+        font-size: 0.66rem;
+        line-height: 1.25rem;
+      }
+      
+      .highlight_apple:hover {
+        color: #ffffff; /* Change to white on hover */
+        font-size: 0.66rem;
+        line-height: 1.25rem;
+        font-weight: bold;
+      }
+      /* Subheading styling */
+      .Subheading {
+        color: #D4FA86;
+        padding: 10vh 5vw 0vh 5vw;
+        font-weight: 600;
+      }
+      
+      /* Container for superimposed images */
+      .image-container {
+        position: relative;
+        width: 100%;
+        max-width: 108.125rem;
+        height: 30rem;
+        margin: 0 auto;
+      }
+      
+      /* Opaque main image */
+      .opaque-image,
+      .png-image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+      
+      .opaque-image {
+        background: url('../images/Wavy.png') no-repeat center;
+        background-size: cover;
+        z-index: 1;
+      }
+      
+      .png-image {
+        width: 120%;
+        background: url('../images/scrolling-image.png');
+        background-size: 120%;
+        z-index: 2;
+      }
+      
+      /* Landing Section */
+      .landing-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 12% 10% 3%;
+        max-width: 60rem;
+        min-height: 70vh;
+        height: auto;
+        margin: 0 auto;
+        text-align: left;
+      }
+      
+      /* Headings Styling */
+      h1, h2, h3 {
+        color: #E4E4E4;
+      }
+      
+      h1 {
+        font-size: 2.5rem;
+        margin-bottom: 1.5rem;
+      }
+      
+      h2 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+      }
+      
+      h3 {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+        font-weight: 400;
+      }
+      
+      /* Paragraph and Links Styling */
+      p, a {
+        color: #E4E4E4;
+        font-size: 1.063rem;
+        text-decoration: none;
+      }
+      
+      /* About Me Section */
+      .about-me {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+      }
+      
+      .about-columns {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 2.5rem;
+        width: 100%;
+        padding: 0 6.25rem;
+      }
+      
+      #dropdownMenu{
+        display: none;
+      }
+      .about-column {
+        flex: 1;
+        margin-bottom: 0rem;
+      }
+      
+      /* List Styling */
+      ul {
+        list-style-type: circle;
+        padding-left: 2rem;
+      }
+      
+      ul li {
+        margin-bottom: 1rem;
+      }
+      
+      
+      /* Projects Section - 2x2 Grid Layout for Larger Screens */
+      @media (min-width: 1001px) {
+        /* Individual Project Styling */
+        .projects {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          gap: 1.25rem;
+          padding-left: 6.25rem;
+          padding-right: 6.25rem;
+          width: 100%;
+          box-sizing: border-box;
+        }
+        .footnote {
+          display: grid;
+          font-size: 0.66rem;
+          font-weight: 400;
+          line-height: 1.25rem;
+          text-align: center;
+        }
+        .hamburger {
+          display: none; /* Hide hamburger on larger screens */
+        }
+      
+        .grid-item {
+          display: none; /* Ensure each grid item is treated as a block */
+        }
+      }
+      
+      .project {
+        background-color: #0D0D0D;
+        padding: 1.25rem;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        flex: 1;
+        min-width: 0;
+        box-sizing: border-box;
+        overflow-x: hidden;
+      }
+      
+      .project:hover {
+        background-color: #1c1c1c;
+        z-index: 100;
+        padding: 0.5rem;
+        border-radius: 1.25rem;
+        transform: scale(1.01);
+        transition: transform 0.40s ease;
+      }
+      
+      .project-img {
+        width: 100%;
+        height: auto;
+        border-radius: 1.25rem;
+        padding-bottom: 1.56rem;
+      }
+      
+      /* Project Name and Description */
+      .project-name {
+        color: #E4E4E4;
+        font-weight: 500;
+        line-height: 1.56rem;
+        font-size: 1.063rem;
+        text-align: left;
+      }
+      
+      /* Project Description */
+      .project-description {
+        font-size: 0.66rem;
+        font-weight: 400;
+        line-height: 1.25rem;
+      }
+      
+      /* Outcome Description */
+      .outcome-description {
+        font-size: 0.6rem;
+        text-align: left;
+        font-weight: 700;
+        line-height: 1.25rem;
+      }
+      
+      /* Footer Styling */
+      .footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 5rem 1rem;
+        background-color: #0D0D0D;
+        color: #f5f5f7;
+      }
+      
+      .float-container {
+        perspective: 1000px;
+      }
+      
+      .float-image {
+        width: 200px;
+        height: auto;
+        border-radius: 50%;
+        transition: transform 0.5s ease, box-shadow 0.5s ease;
+      }
+      
+      .float-image:hover {
+        transform: rotateX(1deg) rotateY(-1deg) translateZ(30px);
+        box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.6), 5px 5px 15px #D4FA86;
+      }
+      
+      .footer-text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        flex-wrap: wrap;
+        margin-bottom: 2rem;
+      }
+      
+      .social-links img {
+        width: auto;
+        height: 3rem;
+        transition: filter 0.3s ease;
+      }
+      
+      .social-links a {
+        color: #f5f5f7;
+        font-size: 1rem;
+        text-decoration: none;
+        transition: color 0.3s ease;
+      }
+      
+      .social-links:hover img {
+        /* Adjusting the filter to convert the SVG to green */
+        filter: brightness(0) saturate(100%) invert(93%) sepia(1%) saturate(172%) hue-rotate(170deg) brightness(100%) contrast(88%);
+        transition: filter 0.3s ease; /* Smooth transition for hover effect */
+      }
+      
+      .social-links:hover a {
+        color: #D4FA86; /* Change text to a specific green color on hover */
+      }
+      
+      .social-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      .social-img {
+        width: 50rem;
+        height: 5rem;
+      }
+      
+      
+      /* Scroll Down Arrow */
+      .scroll-down-arrow {
+        position: absolute;
+        bottom: 1.563rem;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 9rem;
+        color: #000000;
+        cursor: pointer;
+        z-index: 1000;
+        animation: bounce 1.5s infinite;
+      }
+      
+      /* Bounce Animation */
+      @keyframes bounce {
+        0%, 100% {
+          transform: translate(-50%, 0);
+        }
+        50% {
+          transform: translate(-50%, -10px);
+        }
+      }
+      
+      
+      
+      

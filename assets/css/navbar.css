@@ -1,0 +1,104 @@
+
+/* Hamburger Menu */
+.hamburger {
+        display: none;
+      }
+      
+      .hamburger .bar {
+        height: 3px;
+        width: 100%;
+        background-color: #D4FA86;
+        border: 2px;
+        transition: all 0.3s;
+      }
+      
+      .hamburger :hover {
+        width: 100%;
+        background-color: #D4FA86;
+        border: 2px;
+        transform: scale(1.1);
+      }
+      
+      
+      /* Navigation bar styling */
+      nav {
+        position: fixed;
+        top: 4rem;
+        left: 8%;
+        right: 8%;
+        backdrop-filter: blur(100px);
+        border-radius: 1.25rem;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 999;
+        background-color: rgba(255, 255, 255, 0.102);
+        padding: 0 3.125rem;
+        transition: top 0.3s ease-in-out; /* Smooth transition */
+      }
+      
+      nav ul {
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        gap: 1.5625rem;
+      }
+      
+      /* Shared styles for .nav-links a and .logo */
+      .nav-links a,
+      .logo {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        padding: 9px 25px;
+        font-size: 1.25rem;
+        border-radius: 1.25rem;
+        text-decoration: none;
+        color: #E4E4E4;
+        cursor: pointer;
+        font-weight: 600;
+        transition: transform 0.35s ease, background-color 0.3s ease;
+        text-shadow: 
+            -1px -1px 0 #000, 
+            1px -1px 0 #000,  
+            -1px 1px 0 #000,  
+            1px 1px 0 #000;
+      }
+      
+      .nav-links a:hover,
+      .logo:hover {
+        color: #D4FA86;
+        transform: scale(1.05);
+      }
+      
+      /* Logo Specific */
+      
+      .logo {
+        display: inline-flex;
+        justify-content: left;
+        align-items: center;
+        /*padding: 9px 25px; /* Consistent padding for both */
+        height: auto; /* Keeps the aspect ratio */
+        vertical-align: middle; 
+        text-decoration: none; /* Remove underline for links */
+        cursor: pointer;
+        flex-shrink: 0; /* Prevents the SVG from shrinking unexpectedly */
+        padding: 5px; /* Adjust for visual alignment */
+        line-height: normal; /* Remove unnecessary text line height */
+        width: 12.5rem; /* Adjust to your desired size */
+        overflow: hidden;
+        transition: transform 0.35s ease, background-color 0.3s ease; /* Smooth hover and scale */
+      }
+      /* Highlighted link styling */
+      .highlight {
+        color: #D4FA86;
+        font-weight: bold;
+      }
+      
+      .highlight:hover {
+        color: #ffffff; /* Change to white on hover */
+      }

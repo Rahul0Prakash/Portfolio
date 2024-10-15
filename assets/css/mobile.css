@@ -1,0 +1,315 @@
+
+/*PHONE view*/
+@media (max-width: 1000px) {
+
+        /* Dropdown menu styling */
+        .dropdown-menu {
+          display: none; /* Hide the dropdown menu by default */
+          position: absolute; /* Position it relative to the parent element */
+          top: 50px; /* Adjust depending on the position you want below the hamburger */
+          right: 10px; /* Adjust to the right to align with the hamburger */
+          background-color: rgba(13, 13, 13,1.025);
+          backdrop-filter: blur(100px);
+          border-radius: 10px; /* Rounded corners for a cleaner look */
+          box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.8); /* Add some shadow for depth */
+          padding: 10px; /* Add padding to the container */
+          z-index: 1000; /* Make sure dropdown appears above other elements */
+        }
+      
+        /* Individual dropdown item styling */
+        .dropdown-menu .grid-item {
+          display: block; /* Make each item take full width */
+          margin: 5px 0; /* Add some spacing between items */
+      
+      
+        }
+      
+        .dropdown-menu a {
+          display: block; /* Make each link take up its own row */
+          padding: 5rem 10rem; /* Add padding to make it easier to click */
+          color: #f5f5f7; /* Text color */
+          background-color: #1c1c1c;
+      
+          text-decoration: none; /* Remove underline */
+          transition: background-color 0.3s ease; /* Smooth hover effect */
+        }
+      
+        /* Hover effect for links */
+        .dropdown-menu a:hover {
+          color: #1c1c1c; /* Change text color on hover */
+          font-weight: 600;
+          background-color: #D4FA86; /* Change the background color on hover */
+          transform: translate(1.05);
+      
+        }
+      
+        /* Toggle dropdown open */
+        .hamburger.open + .dropdown-menu {
+          display: block; /* Show dropdown when the hamburger has the 'open' class */
+        }
+      
+      
+      
+          /* Hamburger button default styling */
+        .hamburger {
+          cursor: pointer;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          width: 30px; /* Width of the hamburger */
+          height: 24px; /* Height enough for 3 bars */
+          transition: all 0.3s ease; /* Smooth transition */
+        }
+      
+        .hamburger .bar {
+          height: 4px; /* Height of each bar */
+          width: 100%; /* Full width of the hamburger container */
+          background-color: #E4E4E4; /* Default color of bars */
+          transition: all 0.3s ease; /* Smooth transition */
+        }
+        .hamburger:hover {
+          color: #D4FA86;
+          transform: scale(1.1);
+        }
+        /* Open state of hamburger (turns into an "X" mark) */
+        .hamburger.open .bar:nth-child(1) {
+          transform: rotate(45deg) translateY(13.5px); /* Top bar rotates 45 degrees and moves down */
+        }
+      
+        .hamburger.open .bar:nth-child(2) {
+          opacity: 0; /* Hide middle bar */
+        }
+      
+        .hamburger.open .bar:nth-child(3) {
+          transform: rotate(315deg) translateY(-15px); /* Bottom bar rotates -45 degrees and moves up */
+        }
+      
+        /* Styling for the expand class */
+        #dropdownMenu.expand {
+          display: grid; /* Show dropdown when expanded */
+          backdrop-filter: blur(100px);
+          animation: slideDown 0.3s ease-in-out; /* Optional animation */
+        }
+      
+      
+        /* Optional animation to make the dropdown appear smoothly */
+        @keyframes slideDown {
+          from {
+              opacity: 0;
+              transform: translateY(-10px);
+          }
+          to {
+              opacity: 1;
+              transform: translateY(0);
+          }
+        }
+        @keyframes slideUp {
+          from {
+              opacity: 1;
+              transform: translateY(0);
+          }
+          to {
+              opacity: 0;
+              transform: translateY(10px);
+          }
+        }
+        
+        /* Styling for Links inside Grid Items */
+        .grid-item a {
+          display: block; /* Ensure the link takes up full width of the grid item */
+          font-weight:600;
+          padding: 9px 15px;
+          font-size: 1.25rem;
+          text-align: center;
+          border-radius: 1.25rem;
+          color: #E4E4E4;
+          backdrop-filter: blur(100px);
+          background-color: rgba(255, 255, 255, 0.102);
+          transition: background-color 0.3s ease;
+      
+        }
+        
+        .grid-item a:hover {
+          color: #1c1c1c; /* Change background color on hover */
+          transform: translate(1.05);
+          font-weight: 600;
+          transition: background-color 0.3s ease;
+       
+        }
+      
+        nav ul {
+          flex-direction: column;
+          padding: 1rem;
+        }
+      
+        /* Landing Section */
+        .landing-section {
+          padding: 25% 3% 0%;  /* Reduce padding for smaller screens */
+          max-width: 100%;      /* Allow the section to use full width of the screen */
+          min-height: 75vh;
+          text-align: center;   /* Center align text for better presentation on mobile */
+        }
+      
+        .about-columns {
+          flex-direction: column;
+          padding: 0 1rem;
+        }
+      
+        h1 {
+          /*font-size: 1.75rem;*/
+          text-align: center !important;
+          padding: 1vh 10vw 1vh 10vw;
+        }
+      
+        h2 {
+         /* font-size: 1.5rem;*/
+          padding: 0vh 10vw 1vh 5vw;
+        }
+      
+        h3 {
+          font-size: 1.25rem;
+          padding: 1vh 10vw 1vh 5vw;
+        }
+      
+        p {
+          font-size: 0.9rem;
+          padding: 0vh 5vw 1vh 5vw;
+          text-align: center;
+        }
+        a {
+          font-size: 0.9rem;
+        }
+        ul {
+          list-style-type: circle;
+          padding-left: 7vw;
+        }
+        
+        ul li {
+          margin-bottom: 1rem;
+          padding: 0vh 5vw 1vh 2vw;
+        }
+        .footer-text {
+          flex-direction: column;
+          gap: 1rem;
+          padding: 5vw;
+          box-sizing: border-box;
+        }
+      
+        .nav-links {
+          display: none;
+        }
+        .nav-links.open-nav {
+          display: flex !important;
+          flex-direction: column;
+          position: fixed;
+          padding: 2vh 5vw;
+          z-index: 1000;
+          border-radius: 0.5rem;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+          }
+        /* Opaque main image */
+        .opaque-image,
+        .png-image {
+          position:absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 80%;
+          padding-bottom: 0rem;
+        }
+        .projects {
+          display: flex !important;
+          flex-direction: column;
+          gap: 2rem;
+          border-radius: 1.25rem;
+          padding: 0 10vw 10vh 10vw;
+          width: 100%;
+        }
+      
+        .project {
+          padding: 2vh 2vw;
+          border-radius: 1.25rem;
+          transition: background-color 0.4s ease, transform 0.45s ease;
+        }
+      
+        .project:hover {
+          background-color: #1c1c1c;
+          border-radius: 1.25rem;
+          transform: scale(1.01);
+        }
+          /* Footer Styling */          
+        .footer {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-between; /* Spread the elements evenly */
+          padding: 1rem; /* Adjust padding for a cleaner, more compact layout */
+          background-color: #0D0D0D;
+          color: #f5f5f7;
+          max-width: 300px; /* Limit the maximum width to 600px to fit on smaller screens */
+          margin: 0 auto; /* Center the footer horizontally */
+        }
+      
+        /* Container for floating image in the footer */
+        .float-container {
+          perspective: 100px;
+        }
+      
+        .float-image {
+          width: 50px; /* Adjust the image size to be noticeable but fit in a compact layout */
+          height: auto;
+          border-radius: 50%;
+          transition: transform 0.5s ease, box-shadow 0.5s ease;
+        }
+      
+        .float-image:hover {
+          transform: rotateX(1deg) rotateY(-1deg) translateZ(10px);
+          box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.6), 2.5px 2.5px 7.5px #D4FA86;
+        }
+      
+        /* Social Media Links Container */
+        .footer-text {
+          display: flex;
+          padding: 0vw;
+          flex-direction: row;
+          align-items: center;
+          gap: 1rem; /* Adjust gap for balanced spacing between icons */
+        }
+      
+        /* Individual Social Link Styling */
+        .social-links {
+          display: flex;
+          align-items: center;
+          text-decoration: none;
+        }
+      
+        .social-links img {
+          width: 20px; /* Set a larger, consistent size for social media icons */
+          height: 20px;
+          margin-right: 0.5rem; /* Space between icon and link text */
+          transition: filter 0.3s ease;
+        }
+      
+        .social-links a {
+          color: #f5f5f7;
+          font-size: 0.875rem; /* Adjust the font size for better readability */
+          text-decoration: none;
+          transition: color 0.3s ease;
+        }
+      
+        /* Hover Effects */
+        .social-links:hover img {
+          filter: brightness(0) saturate(100%) invert(93%) sepia(1%) saturate(172%) hue-rotate(170deg) brightness(100%) contrast(88%);
+        }
+      
+        .social-links:hover a {
+          color: #D4FA86;
+        }
+        .footnote {
+          display: grid;
+          font-size: 0.56rem;
+          font-weight: 400;
+          line-height: 1.25rem;
+          text-align: center;
+          }
+      }
