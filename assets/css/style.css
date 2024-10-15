@@ -227,7 +227,7 @@
         padding: 0.5rem;
         border-radius: 1.25rem;
         transform: scale(1.01);
-        transition: transform 0.40s ease;
+        transition: transform 0.35s ease-in-out;
       }
       
       .project-img {
@@ -243,6 +243,7 @@
         font-weight: 500;
         line-height: 1.56rem;
         font-size: 1.063rem;
+        padding-left: 0.5rem;
         text-align: left;
       }
       
@@ -250,6 +251,7 @@
       .project-description {
         font-size: 0.66rem;
         font-weight: 400;
+        padding-left: 0.5rem;
         line-height: 1.25rem;
       }
       
@@ -259,6 +261,8 @@
         text-align: left;
         font-weight: 700;
         line-height: 1.25rem;
+        padding-left: 0.5rem;
+        padding-bottom: 0.5rem;
       }
       
       /* Footer Styling */
