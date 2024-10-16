@@ -73,3 +73,43 @@ function scrollToSectionWithOffset(sectionId) {
   });
   console.log(offset);
 }
+// Event listener for scrolling to manage the arrow's visibility
+
+window.addEventListener('load', function() {
+  // Elements selection
+  const scrollUpButton = document.getElementById('scrollUpButton');
+  const downwardArrow = document.getElementById('scrollDownArrow');
+
+
+  window.addEventListener('scroll', function() {
+    const scrollPosition = window.scrollY || document.documentElement.scrollTop;
+
+    // Logic for scroll-up button
+    if (scrollPosition > 500) {
+      scrollUpButton.classList.add('show');
+      scrollUpButton.classList.remove('hide');
+    } else {
+      scrollUpButton.classList.add('hide');
+      scrollUpButton.classList.remove('show');
+    }
+
+    // Logic for downward arrow at bottom of landing page
+    if (scrollPosition > 75) {
+      // Hide the arrow if scrolled more than 75px
+      downwardArrow.style.opacity = '0';
+      downwardArrow.style.pointerEvents = 'none'; // Prevent interaction when invisible
+    } else {
+      // Show the arrow if scrolled between 0 and 75px
+      downwardArrow.style.opacity = '1';
+      downwardArrow.style.pointerEvents = 'auto'; // Allow interaction when visible
+    }
+  });
+
+  // Click event to scroll to the top of the page
+  scrollUpButton.addEventListener('click', function() {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
+});

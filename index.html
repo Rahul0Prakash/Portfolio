@@ -22,11 +22,12 @@
     <!-- Preloader HTML with GIF -->
     <!-- Preloader HTML with GIF and fallback spinner -->
     <div id="preloader">
-        <img src="assets/images/loading.gif" alt="Loading" class="loading-gif" onerror="this.style.display='none'">
-        <div class="loader"></div>
+        <img src="assets/images/loading.gif" alt="Loading" class="loading-gif" >
     </div>
     <!-- Navigation Bar -->
- 
+    <div id="scrollDownArrow" class="scroll-down-arrow" onclick="scrollToSectionWithOffset('#about')">
+        <img src="assets/images/downward_arrow.svg" alt="Scroll Down Arrow">
+    </div>
     <nav id="nav">
         <img src="assets/images/youXrahul.svg" class="logo" id="logo" alt="logo"></img> <!-- Logo as a text-based navigation element -->
         <div class="nav-links">
@@ -68,7 +69,10 @@
             </div>
         </section>
     
-
+    <!-- Upward Arrow Button -->
+    <div id="scrollUpButton" class="scroll-up-button">
+        <img src="assets/images/upward_arrow.svg" alt="Scroll to Top">
+    </div>
     <!-- About Me Section -->
     <section class="about-me" id="about">
         <h2 class="Subheading">About Me</h2>

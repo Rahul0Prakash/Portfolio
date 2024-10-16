@@ -4,13 +4,21 @@ window.addEventListener('load', function() {
   // Set transition styles for fade-out effect
   preloader.style.transition = 'opacity 0.5s ease-out';
 
-  // Trigger fade-out by changing the opacity to 0
+  // Trigger fade-out by changing the opacity to 0 after the page loads
   preloader.style.opacity = '0';
 
-  // After the transition ends, set display to 'none' to remove it from the layout
+  // After the transition ends (500ms), set display to 'none' to remove it from the layout
   setTimeout(function() {
     preloader.style.display = 'none';
   }, 500); // Set timeout equal to the transition duration (500ms)
+
+  // Set a maximum timeout of 3 seconds to definitely remove the preloader
+  setTimeout(function() {
+    if (preloader.style.display !== 'none') {
+      preloader.style.opacity = '0'; // Ensure opacity is 0
+      preloader.style.display = 'none'; // Remove it from the layout
+    }
+  }, 3000); // Maximum timeout of 3 seconds
 });
 
 // Float image link to external page

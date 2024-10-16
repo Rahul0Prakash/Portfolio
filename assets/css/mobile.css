@@ -46,9 +46,43 @@
   }
 
 
-    .loading-gif {
-      width: 100px; /* Smaller size for mobile devices */
-    }
+  .loading-gif {
+    width: 150px; /* Smaller size for mobile devices */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  /* Scroll Down Arrow Styling */
+    .scroll-down-arrow {
+    width: 60px; /* Size of the container */
+    height: 60px; /* Size of the container */
+
+  }
+  
+  .scroll-down-arrow img {
+    width: 40px; /* Adjust the size of the SVG inside the circle */
+    height: auto;
+  }
+  .scroll-up-button {
+    position: fixed;
+    bottom: 2rem; /* Position from the bottom of the screen */
+    right: 2rem; /* Position from the right of the screen */
+    width: 70px; /* Size of the container */
+    height: 70px; /* Size of the container */
+    background-color: rgba(255, 255, 255, 0.9); /* Light circle background */
+    border-radius: 50%; /* Makes the circle */
+    cursor: pointer;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.6); /* Shadow for a lifted effect */
+    display: none; /* Initially hidden */
+    align-items: center;
+    justify-content: center;
+    z-index: 1000; /* Make sure it's above other elements */
+    transition: opacity 0.5s ease; /* Smooth fade-in/out transition */
+  }
+  
+  .scroll-up-button img {
+    width: 50px; /* SVG size */
+    height: auto;
+  }
     /* Hamburger button default styling */
   .hamburger {
     cursor: pointer;
@@ -87,7 +121,7 @@
   #dropdownMenu.expand {
     display: grid; /* Show dropdown when expanded */
     backdrop-filter: blur(100px);
-    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.6), 2.5px 2.5px 7.5px #00000;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.6), 2.5px 2.5px 7.5px rgb(0, 0, 0);
     animation: slideDown 0.3s ease-in-out; /* Optional animation */
   }
 
@@ -126,7 +160,6 @@
     backdrop-filter: blur(100px);
     background-color: rgba(255, 255, 255, 0.102);
     transition: background-color 0.3s ease;
-
   }
   
   .grid-item a:hover {
@@ -134,7 +167,6 @@
     transform: translate(1.05);
     font-weight: 600;
     transition: background-color 0.3s ease;
-  
   }
 
   nav ul {
@@ -147,7 +179,7 @@
     padding: 30% 3% 0%;  /* Reduce padding for smaller screens */
     max-width: 100%;      /* Allow the section to use full width of the screen */
     min-height: 55vh;
-    text-align: left;   /* Center align text for better presentation on mobile */
+    text-align:center;   /* Center align text for better presentation on mobile */
   }
 
   .about-columns {
@@ -156,7 +188,7 @@
   }
 
   h1 {
-    font-size: 2rem;*/
+    font-size: 2rem;
     text-align: center !important;
     padding: 1vh 10vw 1vh 10vw;
   }
