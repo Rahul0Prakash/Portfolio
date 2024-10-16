@@ -269,6 +269,22 @@
     border-radius: 1.25rem;
     transform: scale(1.01);
   }
+
+    /* Project Name and Description */
+    .project-name {
+      padding-right: 0.5rem;
+    }
+    
+    /* Project Description */
+    .project-description {
+      padding-right: 0.5rem;
+    }
+    
+    /* Outcome Description */
+    .outcome-description {
+      padding-right: 0.5rem;
+    }
+    
     /* Footer Styling */          
   .footer {
     display: flex;

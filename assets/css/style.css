@@ -35,6 +35,22 @@
         transition: opacity 0.5s ease-out; /* Smooth transition for fading out */
       }
       
+      .easing-container {
+        /* No specific styles needed for parent container */
+        }
+        
+        /* Children within Easing Container */
+        .easing-container > * {
+                transition: transform 0.5s ease-out, opacity 0.5s ease-out; /* Smooth transition */
+                transform: translateY(15px); /* Initially positioned 10px down */
+                opacity: 0; /* Initially hidden */
+        }
+        
+        /* When element is in view, move up and show */
+        .easing-container > *.visible {
+                transform: translateY(0); /* Move to normal position */
+                opacity: 1; /* Make fully visible */
+        }
         /* Hide/show navbar on scroll */
         .hidden {
         top: -100px;
@@ -325,7 +341,7 @@
         flex-direction: column;
         align-items: center;
         text-align: center;
-        padding: 5rem 1rem;
+        padding: 3rem 1rem;
         background-color: #0D0D0D;
         color: #f5f5f7;
       }

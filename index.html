@@ -25,9 +25,7 @@
         <img src="assets/images/loading.gif" alt="Loading" class="loading-gif" >
     </div>
     <!-- Navigation Bar -->
-    <div id="scrollDownArrow" class="scroll-down-arrow" onclick="scrollToSectionWithOffset('#about')">
-        <img src="assets/images/downward_arrow.svg" alt="Scroll Down Arrow">
-    </div>
+
     <nav id="nav">
         <img src="assets/images/youXrahul.svg" class="logo" id="logo" alt="logo"></img> <!-- Logo as a text-based navigation element -->
         <div class="nav-links">
@@ -55,12 +53,16 @@
         </div>
     </nav>
 
+    <div class="easing-container">
     <!-- Landing Page Section -->
-    <section class="landing-section">
-        <h1>Hi 👋 , I'm Rahul, a User Experience Enthusiast based in Essen, Germany</h1>
-        <p>I ride the wave of <a class="highlight" target="_blank" href="https://www.nngroup.com/videos/it-depends-ux-context/">
-            <i>‘it depends’</i></a> till dots connect and plans make sense.</p>
-    </section>
+        <section class="landing-section">
+            <h1>Hi 👋 , I'm Rahul, a User Experience Enthusiast based in Essen, Germany</h1>
+            <p>I ride the wave of <a class="highlight" target="_blank" href="https://www.nngroup.com/videos/it-depends-ux-context/">
+                <i>‘it depends’</i></a> till dots connect and plans make sense.</p>
+        </section>
+        <div id="scrollDownArrow" class="scroll-down-arrow" onclick="scrollToSectionWithOffset('#about')">
+            <img src="assets/images/downward_arrow.svg" alt="Scroll Down Arrow">
+        </div>
         <!-- Image Section with Superimposed Images -->
         <section>
             <div class="image-container">
@@ -68,87 +70,90 @@
                 <div class="png-image"></div> <!-- Top PNG image -->
             </div>
         </section>
-    
+    </div>
     <!-- Upward Arrow Button -->
     <div id="scrollUpButton" class="scroll-up-button">
         <img src="assets/images/upward_arrow.svg" alt="Scroll to Top">
     </div>
     <!-- About Me Section -->
-    <section class="about-me" id="about">
-        <h2 class="Subheading">About Me</h2>
-        <div class="about-columns">
-            <!-- First Column: My Journey -->
-            <div class="about-column">
-                <h3>My Journey</h3>
-                <ul style="list-style-type: circle;">
-                    <!-- Highlight the different experiences and skills gained -->
-                    <li>Used Figma to prototype 10+ high-fidelity designs</li>
-                    <li>Conducted 8+ market analyses using Google Trends</li>
-                    <li>Facilitated brainstorming for 10+ key projects using Miro and FigJam boards</li>
-                    <li>Analyzed 20+ site visits with Google Analytics to track user behavior and performance</li>
-                    <li>Performed competitive audit using Similarweb and templates 
-                        <a class="highlight" target="_blank" rel="noopener noreferrer" href="https://coursera-assessments.s3.amazonaws.com/assessments/1623041973496/fa9ddd33-fcea-48d0-81c7-a316e4cb682b/Google%20UX%20Design%20Certificate%20-%20Competitive%20audit%20template%20-%20Template-2.pdf">[1]</a>
-                        <a class="highlight" target="_blank" rel="noopener noreferrer" href="https://www.atlassian.com/dam/jcr:11b8d765-5a53-4193-a70c-fb957c54f07f/Competitive%20Analysis.pdf">[2]</a>,
-                        benchmarking 5 competitors
-                    </li>
-                    <li>Developed skills in ChatGPT prompting and created 
-                        <a class="highlight" target="_blank" rel="noopener noreferrer" href="https://chatgpt.com/g/g-H6NlHYtlA-dachsberg-manager">a custom GPT</a> for 
-                        <a class="highlight" target="_blank" rel="noopener noreferrer" href="https://www.wg-gesucht.de/10851253.html">tenant</a> FAQs, reducing workload by 40% during busy periods
-                    </li>
-                </ul>
-            </div>
+    <div class="easing-container">
+        <section class="about-me" id="about">
+            <h2 class="Subheading">About Me</h2>
+            <div class="about-columns">
+                <!-- First Column: My Journey -->
+                <div class="about-column">
+                    <h3>My Journey</h3>
+                    <ul style="list-style-type: circle;">
+                        <!-- Highlight the different experiences and skills gained -->
+                        <li>Used Figma to prototype 10+ high-fidelity designs</li>
+                        <li>Conducted 8+ market analyses using Google Trends</li>
+                        <li>Facilitated brainstorming for 10+ key projects using Miro and FigJam boards</li>
+                        <li>Analyzed 20+ site visits with Google Analytics to track user behavior and performance</li>
+                        <li>Performed competitive audit using Similarweb and templates 
+                            <a class="highlight" target="_blank" rel="noopener noreferrer" href="https://coursera-assessments.s3.amazonaws.com/assessments/1623041973496/fa9ddd33-fcea-48d0-81c7-a316e4cb682b/Google%20UX%20Design%20Certificate%20-%20Competitive%20audit%20template%20-%20Template-2.pdf">[1]</a>
+                            <a class="highlight" target="_blank" rel="noopener noreferrer" href="https://www.atlassian.com/dam/jcr:11b8d765-5a53-4193-a70c-fb957c54f07f/Competitive%20Analysis.pdf">[2]</a>,
+                            benchmarking 5 competitors
+                        </li>
+                        <li>Developed skills in ChatGPT prompting and created 
+                            <a class="highlight" target="_blank" rel="noopener noreferrer" href="https://chatgpt.com/g/g-H6NlHYtlA-dachsberg-manager">a custom GPT</a> for 
+                            <a class="highlight" target="_blank" rel="noopener noreferrer" href="https://www.wg-gesucht.de/10851253.html">tenant</a> FAQs, reducing workload by 40% during busy periods
+                        </li>
+                    </ul>
+                </div>
 
-            <!-- Second Column: Ambitions and Vision -->
-            <div class="about-column">
-                <h3>Ambitions in UX</h3>
-                <ul style="list-style-type: circle;">
-                    <li>Acquired basic web development skills to enhance my UX expertise</li>
-                    <li>Aspiring to become a <a class="highlight" target="_blank" rel="noopener noreferrer" href=https://jakobnielsenphd.substack.com/p/ux-unicorn>"unicorn"</a> in UI/UX, seamlessly combining user experience and interface design</li>
-                </ul><br>
-                
-                <h3>Vision for the Future</h3>
-                <ul style="list-style-type: circle;">
-                    <li>Aiming to contribute to global projects while fostering a user-centric mindset among peers</li>
-                    <li>Passionate about creating inclusive and sustainable designs that address both user needs and environmental concerns</li>
-                </ul>
+                <!-- Second Column: Ambitions and Vision -->
+                <div class="about-column">
+                    <h3>Ambitions in UX</h3>
+                    <ul style="list-style-type: circle;">
+                        <li>Acquired basic web development skills to enhance my UX expertise</li>
+                        <li>Aspiring to become a <a class="highlight" target="_blank" rel="noopener noreferrer" href=https://jakobnielsenphd.substack.com/p/ux-unicorn>"unicorn"</a> in UI/UX, seamlessly combining user experience and interface design</li>
+                    </ul><br>
+                    
+                    <h3>Vision for the Future</h3>
+                    <ul style="list-style-type: circle;">
+                        <li>Aiming to contribute to global projects while fostering a user-centric mindset among peers</li>
+                        <li>Passionate about creating inclusive and sustainable designs that address both user needs and environmental concerns</li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Work Section with Projects -->
-    <section class="work" id="work">
-        <h2 class="Subheading">My Work</h2>
-        <div class="projects">
-            <!-- Project cards displaying the various projects completed -->
-            <div class="project">
-                <img class="project-img" src="assets/images/projects/FLF.png" alt="Screens of UI related to Lufthansa's innovation space">
-                <span class="project-name">Revamping Lufthansa’s Innovation space</span>
-                <span class="project-description">Enhancing spatial design and digital interaction in the innovation space</span>
-                <span class="outcome-description">COURSEWORK · PRODUCT DESIGN · WEB · 2022</span>
+        </section>
+    </div>
+    <div class="easing-container">
+        <!-- Work Section with Projects -->
+        <section class="work" id="work">
+            <h2 class="Subheading">My Work</h2>
+            <div class="projects">
+                <!-- Project cards displaying the various projects completed -->
+                <div class="project">
+                    <img class="project-img" src="assets/images/projects/FLF.png" alt="Screens of UI related to Lufthansa's innovation space">
+                    <span class="project-name">Revamping Lufthansa’s Innovation space</span>
+                    <span class="project-description">Enhancing spatial design and digital interaction in the innovation space</span>
+                    <span class="outcome-description">COURSEWORK · PRODUCT DESIGN · WEB · 2022</span>
+                </div>
+                <!-- Example Project 2 -->
+                <div class="project">
+                    <img class="project-img" src="assets/images/projects/Balancify.png" alt="UI screens for the Balancify app">
+                    <span class="project-name">Balancify: Work-Life Balance App</span>
+                    <span class="project-description">Designing an app to track emotions and improve work-life balance</span>
+                    <span class="outcome-description">CASE STUDY · PRODUCT DESIGN · APP · 2022</span>
+                </div>
+                <!-- Example Project 3 -->
+                <div class="project">
+                    <img class="project-img" src="assets/images/projects/AudiVerse.png" alt="UI screens for AudiVerse extension">
+                    <span class="project-name">AudiVerse: Extension of myAudi App</span>
+                    <span class="project-description">Enhancing Audi’s customer feedback system through gamification</span>
+                    <span class="outcome-description">COURSEWORK · APP EXTENSION · GAMIFICATION · APP · 2023</span>
+                </div>
+                <!-- Example Project 4 -->
+                <div class="project">
+                    <img class="project-img" src="assets/images/projects/Moodglide.png" alt="UI screens for MoodGlide device">
+                    <span class="project-name">MoodGlide: Emotion Selector Device</span>
+                    <span class="project-description">Developing an emotion selector device to assist individuals with <a class="highlight_apple" target="_blank" rel="noopener noreferrer" href="https://www.alexithymia.us/">Alexithymia</a></span>
+                    <span class="outcome-description">PRODUCT DESIGN · HARDWARE · 2023</span>
+                </div>
             </div>
-            <!-- Example Project 2 -->
-            <div class="project">
-                <img class="project-img" src="assets/images/projects/Balancify.png" alt="UI screens for the Balancify app">
-                <span class="project-name">Balancify: Work-Life Balance App</span>
-                <span class="project-description">Designing an app to track emotions and improve work-life balance</span>
-                <span class="outcome-description">CASE STUDY · PRODUCT DESIGN · APP · 2022</span>
-            </div>
-            <!-- Example Project 3 -->
-            <div class="project">
-                <img class="project-img" src="assets/images/projects/AudiVerse.png" alt="UI screens for AudiVerse extension">
-                <span class="project-name">AudiVerse: Extension of myAudi App</span>
-                <span class="project-description">Enhancing Audi’s customer feedback system through gamification</span>
-                <span class="outcome-description">COURSEWORK · APP EXTENSION · GAMIFICATION · APP · 2023</span>
-            </div>
-            <!-- Example Project 4 -->
-            <div class="project">
-                <img class="project-img" src="assets/images/projects/Moodglide.png" alt="UI screens for MoodGlide device">
-                <span class="project-name">MoodGlide: Emotion Selector Device</span>
-                <span class="project-description">Developing an emotion selector device to assist individuals with <a class="highlight_apple" target="_blank" rel="noopener noreferrer" href="https://www.alexithymia.us/">Alexithymia</a></span>
-                <span class="outcome-description">PRODUCT DESIGN · HARDWARE · 2023</span>
-            </div>
-        </div>
-    </section>
+        </section>
+    </div>
 
   <!-- Footer Section -->
   <footer class="footer">
@@ -195,9 +200,9 @@
     <br><br>
 </span>
 <!-- JavaScript to handle scroll-based navbar behavior -->
-<script src="assets/js/navbar.js"></script>
-<script src="assets/js/dropdown.js"></script>
-<script src="assets/js/script.js"></script>
+<script src="assets/js/navbar.js" ></script>
+<script src="assets/js/dropdown.js" ></script>
+<script src="assets/js/script.js" ></script>
 
 </body>
 </html>
