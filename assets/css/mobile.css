@@ -50,7 +50,29 @@
     width: 150px; /* Smaller size for mobile devices */
     height: auto; /* Maintain aspect ratio */
   }
+  /* Video container styling */
+  .project-content  .mobile-video-container {
+    width: 240px;  /* Slightly smaller width */
+    height: 335px; /* Height adjusted proportionally to maintain the aspect ratio */
+  }
 
+  /* Style the video to fill the container */
+  .project-content  .mobile-video-container video {
+    width: 100%;
+    height: 100%;
+  }
+  
+    /* Desktop Video Container */
+    .project-content  .desktop-video-container {
+      width: 390px;  /* Adjusted width to fit mobile screen */
+      height: 220px;
+  }
+
+  /* Video Styling */
+  .project-content  .desktop-video-container video {
+    width: 100%;
+    height: 100%;
+  }
   /* Scroll Down Arrow Styling */
     .scroll-down-arrow {
     width: 60px; /* Size of the container */
@@ -63,26 +85,38 @@
     height: auto;
   }
   .scroll-up-button {
-    position: fixed;
-    bottom: 2rem; /* Position from the bottom of the screen */
-    right: 2rem; /* Position from the right of the screen */
     width: 70px; /* Size of the container */
     height: 70px; /* Size of the container */
-    background-color: rgba(255, 255, 255, 0.9); /* Light circle background */
-    border-radius: 50%; /* Makes the circle */
-    cursor: pointer;
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.6); /* Shadow for a lifted effect */
-    display: none; /* Initially hidden */
-    align-items: center;
-    justify-content: center;
-    z-index: 1000; /* Make sure it's above other elements */
-    transition: opacity 0.5s ease; /* Smooth fade-in/out transition */
   }
   
   .scroll-up-button img {
     width: 50px; /* SVG size */
     height: auto;
   }
+    
+
+  .project-content .back-button {
+
+      width: 40px; /* Size of the container */
+      height: 40px; /* Size of the container */
+      align-items: center;
+      justify-content: center;
+
+    }
+
+   .project-content .back-button img {
+      width: 30px; /* SVG size */
+      height: 30px;
+  }
+
+  .project-content .project-title {
+    position: relative;
+    font-size: 2.5rem;
+    color: #fff; /* Text color contrast */
+    text-align: center;
+    z-index: 2; /* Ensure it's above the background image */
+  }
+ 
     /* Hamburger button default styling */
   .hamburger {
     cursor: pointer;

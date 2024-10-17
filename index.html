@@ -26,8 +26,7 @@
     <!-- Preloader HTML with GIF and fallback spinner -->
 
     <!-- Navigation Bar -->
-
-    <nav id="nav">
+    <nav class = "nav" id="nav">
         <img src="assets/images/youXrahul.svg" class="logo" id="logo" alt="logo"></img> <!-- Logo as a text-based navigation element -->
         <div class="nav-links">
             <!-- Navigation links to the sections of the page -->
@@ -52,8 +51,8 @@
                     <a href="RahulPrakash_CV.pdf" target="_blank" rel="noopener noreferrer">Resumé</a>
                   </span>
         </div>
-    </nav>
-
+      </nav>
+      
     <div class="easing-container">
     <!-- Landing Page Section -->
         <section class="landing-section">
@@ -126,38 +125,47 @@
             <div class="projects">
                 <!-- Project cards displaying the various projects completed -->
                 <div class="project">
+                    <a href="FLF.html" target="_blank" rel="noopener noreferrer">
                     <img class="project-img" loading="lazy" src="assets/images/projects/FLF.png" alt="Screens of UI related to Lufthansa's innovation space">
-                    <span class="project-name">Revamping Lufthansa’s Innovation space</span>
-                    <span class="project-description">Enhancing spatial design and digital interaction in the innovation space</span>
+                    <span class="project-name">Revamping Lufthansa’s Innovation space</span><br>
+                    <span class="project-description">Enhancing spatial design and digital interaction in the innovation space</span><br>
                     <span class="outcome-description">COURSEWORK · PRODUCT DESIGN · WEB · 2022</span>
+                    </a>
                 </div>
                 <!-- Example Project 2 -->
                 <div class="project">
-                    <img class="project-img" loading="lazy" src="assets/images/projects/Balancify.png" alt="UI screens for the Balancify app">
-                    <span class="project-name">Balancify: Work-Life Balance App</span>
-                    <span class="project-description">Designing an app to track emotions and improve work-life balance</span>
-                    <span class="outcome-description">CASE STUDY · PRODUCT DESIGN · APP · 2022</span>
+                    <a href="balancify.html" target="_blank" rel="noopener noreferrer">
+                        <img class="project-img" loading="lazy" src="assets/images/projects/Balancify.png" alt="UI screens for the Balancify app">
+                        <span class="project-name">Balancify: Work-Life Balance App</span><br>
+                        <span class="project-description">Designing an app to track emotions and improve work-life balance</span><br>
+                        <span class="outcome-description">CASE STUDY · PRODUCT DESIGN · APP · 2022</span>
+                        </a>
                 </div>
+
                 <!-- Example Project 3 -->
                 <div class="project">
+                    <a href="audiverse.html" target="_blank" rel="noopener noreferrer">
                     <img class="project-img"  loading="lazy" src="assets/images/projects/AudiVerse.png" alt="UI screens for AudiVerse extension">
-                    <span class="project-name">AudiVerse: Extension of myAudi App</span>
-                    <span class="project-description">Enhancing Audi’s customer feedback system through gamification</span>
+                    <span class="project-name">AudiVerse: Extension of myAudi App</span><br>
+                    <span class="project-description">Enhancing Audi’s customer feedback system through gamification</span><br>
                     <span class="outcome-description">COURSEWORK · APP EXTENSION · GAMIFICATION · APP · 2023</span>
+                    </a>
                 </div>
                 <!-- Example Project 4 -->
                 <div class="project">
+                    <a href="moodglide.html" target="_blank" rel="noopener noreferrer">
                     <img class="project-img" loading="lazy" src="assets/images/projects/Moodglide.png" alt="UI screens for MoodGlide device">
-                    <span class="project-name">MoodGlide: Emotion Selector Device</span>
+                    <span class="project-name">MoodGlide: Emotion Selector Device</span><br></a>
                     <span class="project-description">Developing an emotion selector device to assist individuals with <a class="highlight_apple" target="_blank" rel="noopener noreferrer" href="https://www.alexithymia.us/">Alexithymia</a></span>
                     <span class="outcome-description">PRODUCT DESIGN · HARDWARE · 2023</span>
+                    
                 </div>
             </div>
         </section>
     </div>
 
   <!-- Footer Section -->
-  <footer class="footer">
+  <footer class="footer" id="footer">
     <!-- Circular image and text-based footer links -->
     
         <div class="float-container" id="float-container">
@@ -186,20 +194,21 @@
         </span>
     </div>
 
+    <span class="footnote">
+        <p>&copy; 2024 Rahul Prakash</p>
+    <span>This site was first designed on Figma with styling inspired by 
+        <a class="highlight_apple" target="_blank" rel="noopener noreferrer" href="https://developer.apple.com/design/human-interface-guidelines/color">
+            Apple’s design system.</a>
+    </span>
+        The basic skeleton was written in HTML, with values extracted from Figma's dev mode.<br>
+        ChatGPT assisted with programming using CSS and JavaScript.<br>
+        Apple® and its design system are trademarks of Apple Inc.
+        <br><br>
+    </span>
+    </footer>
 
-</footer>
-
-<span class="footnote">
-    <p>&copy; 2024 Rahul Prakash</p>
-<span>This site was first designed on Figma with styling inspired by 
-    <a class="highlight_apple" target="_blank" rel="noopener noreferrer" href="https://developer.apple.com/design/human-interface-guidelines/color">
-        Apple’s design system.</a>
-</span>
-    The basic skeleton was written in HTML, with values extracted from Figma's dev mode.<br>
-    ChatGPT assisted with programming using CSS and JavaScript.<br>
-    Apple® and its design system are trademarks of Apple Inc.
-    <br><br>
-</span>
+    <!-- Circular image and text-based footer links -->
+    
 <!-- JavaScript to handle scroll-based navbar behavior -->
 <script src="assets/js/navbar.js" ></script>
 <script src="assets/js/dropdown.js" ></script>
