@@ -83,6 +83,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // Elements selection
     const scrollUpButton = document.getElementById('scrollUpButton');
     const downwardArrow = document.getElementById('scrollDownArrow');
+    const backButton = document.getElementById('backButton');
 
 
     window.addEventListener('scroll', function() {
@@ -92,9 +93,13 @@ document.addEventListener('DOMContentLoaded', function () {
       if (scrollPosition > 500) {
         scrollUpButton.classList.add('show');
         scrollUpButton.classList.remove('hide');
+        backButton.classList.add('hide');
+        backButton.classList.remove('show');
       } else {
         scrollUpButton.classList.add('hide');
         scrollUpButton.classList.remove('show');
+        backButton.classList.add('show');
+        backButton.classList.remove('hide');
       }
 
       // Logic for downward arrow at bottom of landing page

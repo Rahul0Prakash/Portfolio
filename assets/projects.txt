@@ -1,0 +1,570 @@
+
+O
+V
+E
+R
+V
+I
+E
+W
+	
+
+Challenge:/Background				
+Create a representation that effectively showcases the Flying Lab Factory's holistic innovation environment, detailing the available spaces, coaching services, and technology features. Emphasize the ease of booking services and inspire users to experiment with new ways of working. Focus on two user scenarios: planning ahead remotely (from home or work) and booking services while on-site during workshops. Highlight the modular spaces, tailored coaching support, and advanced technology integration that supports every stage of the innovation journey.
+
+Solution:/objectives
+We designed a digital solution to showcase Flying Lab Factory's offerings, integrating a streamlined booking system that supports user-friendly navigation and enhances the overall experience. We created an intuitive interface that simulates the passenger journey, enabling users to explore different service packages and book spaces easily. We focused on providing flexible options, interactive visual aids (like 3D maps), and seamless on-site support with advanced technology features, tailored to meet the demands of both internal and external customers.
+
+
+
+My Role:	
+Myself (UI/UX)	
+4 colleagues from Design and Interaction				 	 	 		
+Competitive Audit			
+				
+					
+Context of Use Report (ISO/IEC 25063:2014)
+Interviews: 1 stakeholder, 1 external client and analysis
+Empathy Maps 				
+User Needs Report (ISO/IEC 25064)   					
+User Requirements Report (ISO/IEC 25065) 
+User Evaluation Report (ISO/IEC 25066) 
+Usability Testing
+Scope: Hours, rationale (Self-started/Course work)
+
+
+
+
+Interview Summary
+I conducted two user interviews—one with a co-founder of FlyingLab Factory and the other with an expert user who utilized their spaces and services. The interview with the co-founder aimed to capture insights from an expert regarding their expectations and experiences related to the services offered by the FlyingLab Factory. The primary focus was to uncover the team's desired outcomes, assess service demand adequacy, understand their strategic practices, and gauge historical and comparative perspectives about workspace preferences. Additionally, the interview aimed to extract success stories on team-building strategies and identify areas for potential improvement in team functioning or processes. 
+The intention behind the expert user interview was to delve into their specific experiences, preferences, and insights regarding the utilization of FlyingLab Factory's spaces and services. The questions were designed to explore the user's perspective on the usefulness of the facilities, their team dynamics, frequency of usage, memorable experiences, preferences for spaces or services, collaboration experiences, travel management to the facility, utilization of catering services, challenges faced, reasons for potential return visits, suggestions for improvement, interest in a virtual tour of the FlyingLab Factory, and any prior experience with similar services or facilities. These inquiries aimed to gather comprehensive feedback, uncover pain points, identify areas of satisfaction, and gather recommendations for enhancing the overall user experience.
+
+Persona: Gabriel - Internal Client
+The user interview insights led us to create Gabriel's persona, defined by his enthusiasm for cutting-edge technology and passion for organizing unique team experiences. As a dynamic and motivated manager at Lufthansa Group, Gabriel prefers traditional channels like the website for booking but relies on mobile apps and social media for information. 
+His frustration with the necessity to buy each of the services separately, the absence of offered packages and the need to bring personal equipment significantly influenced his behaviours as a bold team leader who anticipates innovative solutions for tasks.
+<image here>
+
+The user persona of Gabriel, embodying the traits of Lufthansa's internal client
+
+
+Empathy Map Insights
+Based on interviews with an external customer, an internal stakeholder, and a current employee, an empathy map was created to understand the key challenges and needs of Flying Lab Factory's internal clients.
+Users hear about Flying Lab Factory through internal promotions and word of mouth, highlighting its innovative environment and available services.
+Users find the booking process cumbersome and believe bundling services would improve the experience.
+Users see an innovative space with coaching and event areas but notice gaps in communication about availability.
+Users want a simpler booking process that integrates all services into one step.
+Pain Points: Manual booking, unclear equipment availability, and poor communication.
+Gains: Users value team coaching and collaborative spaces when booking becomes seamless.
+<image here>
+
+4.Affinity map
+Various booking methods: calls, emails, SharePoint, and word of mouth.
+Expectations like suitable tools, genuine innovation space, and added functionality.
+Space preferences: studios, green screens, spaciousness, and customizable areas.
+Tech needs: quality cameras, movable tables, and good audio.
+Factors motivating users, such as event suitability and atmosphere.
+Inconveniences: unavailability of external catering and individual payments.
+Positive feedback on catering, interest in discounts, and packaged rentals.
+Concerns about distance, access, and parking at the location.
+<image here>
+
+
+User Needs
+Efficient Booking System: A simple, automated booking system that provides clear visibility of available rooms and services, streamlining the planning process.
+Integrated Service Access: Ability to book supplementary services (like coaching or technology) along with room bookings.
+Accessible Venue and Support: Easy venue access, with additional mobility support and transport options to address distance and travel difficulties.
+
+4b. User Requirements
+Clear Service Overview: An organized, easy-to-navigate overview of available services, spaces, and pricing to enable informed decision-making.
+Customizable Bookings: Ability to specify equipment and technology requirements during booking, ensuring readiness upon arrival.
+Mobility Assistance: Transportation support for users who may find it challenging to reach the facility.
+
+User Journey Insights
+Discovery: Information about Flying Lab Factory is often scattered and unclear, leading users to rely on word of mouth, emails, or promotions internal to Lufthansa group. This creates ambiguity about what services are offered.
+Registration: Users need a streamlined registration process, with clear details about space options, booking processes, and available services.
+Onboarding and First Use: Users value a guided onboarding experience, with clear signage, equipment readiness, and support from on-site staff.
+Sharing: A positive experience, characterized by clear pricing, accessible spaces, and effective collaboration opportunities, encourages users to recommend Flying Lab Factory.
+<image here>
+<image here>
+<image here>
+
+Outcome
+Improved User Access: Users now have a centralized, digital platform that allows them to explore service details, book spaces, and plan activities efficiently.
+Reduced Manual Work: Automation minimizes the need for repeated communications, enabling quicker decision-making and bookings.
+Enhanced Planning Capability: The platform allows users to preview spaces and services before booking, ensuring they make informed choices.
+Premises Navigation Enhancement aims to solve navigation problems inside the premises and to simplify user experience:
+<image here>
+
+	Signages inspired by Airport-style Signs
+
+Iconic Signage: Like airport directions, clear signs guide users to areas, labelled like airline schedules, promoting easy room identification.
+<image here>
+Luminescent Guides: Similar to aeroplane floor lights, these lead to exits, enhancing safety and navigation.
+	"Emergency Exit" guides-inspired solution for internal navigation
+<image here>
+
+
+Room Signage: Every room has clear door signs and ceiling danglers for easy identification and accessibility.
+<image here>
+	Room Signage and Danglers
+<image here>
+<image here>
+
+
+
+Modular Package Bundling
+User Convenience: To address confusion over equipment availability and lack of information, modular packages bundle services, spaces, and options. This approach simplifies the booking process and enables users to mix and match their requirements without repeated interactions.
+Efficient Use of Services: Bundling services like rooms, catering, and shuttles reduces manual back-and-forths, providing clarity and setting the right expectations.
+Stakeholder Impact: This approach minimizes manual tasks for stakeholders, allowing them to focus on upgrading technology and expanding services. It also increases customer satisfaction by providing a holistic, well-defined service package at a transparent cost.
+<image here>
+<image here>
+
+
+Booking Modality and SharePoint Transition
+Previous Challenges: Booking relied heavily on manual processes via emails, SharePoint, and calls, leading to significant delays (up to 2-3 business days depending on demand).
+The updated booking platform significantly reduces turnaround time. It features a user-friendly calendar, automated service selection, and transparent availability status, making the process faster and more efficient.
+We also introduced a 3D map to enhance user experience. The map provides interactive images of different rooms, displaying their purpose (e.g., Recording studio, flight simulator, workshops, design sprints) when hovered over. It also simulates the user journey, showcasing how different spaces can be used to modify processes for airlines. Additionally, the map displays the rooms and spaces available in the selected package in a modular manner, and highlights how adding another space can provide the best value for users.
+
+Von Restorff’s Bundle Integration: Leveraging von Restorff's bundling theory, the combined service offerings stand out, making them memorable and delivering added value through cohesive packages.
+<image here>
+<image here>
+
+Shuttle Services and Equipment Requests
+Shuttle Services: User interviews revealed challenges with travel time and parking. To address this, a shuttle service booking option has been integrated into the interface, reducing accessibility issues.
+Equipment Requests: Previously, arranging necessary equipment was challenging for users. Now, equipment requests can be added during the booking process. If specific equipment isn’t available in-house, users can bring their own or opt for procurement, reducing logistical hurdles.
+<image here>
+<image here>
+
+Pepper Robot Integration
+We observed that Pepper—the interactive robot—was present at the Flying Lab Factory premises. To leverage this, we offered a solution to integrate a chatbot with Pepper's interface to help answer user FAQs and guide them to FLF representatives when needed. This approach ensures instant responses to user queries, significantly reducing the turnaround time compared to the previous 2-3 business days.
+<image here>
+
+
+Commercial and User Impact
+Offering services to external clients was initially a non-priority but still desirable. We proposed different interfaces to separate internal and external clients while enhancing usability. Suggested outreach efforts included university partnerships, discounted course bookings, and community engagement to increase visibility among new external clients.
+Reduced Manual Effort: The bundling and modular approach significantly reduces manual intervention by the Flying Lab Factory team, allowing them to focus on delivering quality service and investing in technology upgrades as needed.
+Setting Expectations: The new system sets clear, transparent expectations for both users and service providers. Each interaction is documented, accepted, and tracked, ensuring awareness of deliverables and timelines, thereby improving service quality and reliability.
+
+<image here>
+
+
+
+Reflecttion:
+
+Next Steps
+
+More Projects
+
+
+b,c,d
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Balancify: Work-Life Balance App
+Designing an app as a case study to track emotions and improve work-life balance
+
+Project/Challenge:/Background				
+The goal was to empower users to align their actions with personal values, supporting a balanced lifestyle and intentional time management, rather than operating on autopilot. The solution integrated Cognitive Behavioral Therapy (CBT) principles to offer feedback on time use, encouraging mindful choices and a better work-life balance.
+
+Solution:/objectives
+Develop a user-centered app that enables reflection, effective planning, and emotional tracking to support balanced and purposeful living.
+
+
+
+My Role:			
+
+Competitive Audit
+User Interviews
+Interview Analysis
+User Personas
+Wireframes
+Usability Tests
+Usability Test Analysis
+Research and Marketing Strategies
+
+
+
+Scope: Hours, rationale (Self-started/Course work)
+116 hours, 
+Self initiated
+
+
+The Team:
+Myself (UI/UX)
+1 Software Engineer
+1 Psychologist 
+
+
+
+
+
+
+Competitive audit:
+Two direct and one indirect competitor were chosen, all aimed at helping users achieve work-life balance. While these apps integrated helpful features like notes, journals, and diverse navigation options, they struggled with usability and user engagement due to cluttered screens and complex activity logging processes. This analysis highlighted opportunities to improve user experience by simplifying design, enhancing customization, and streamlining functionality.
+<image here>
+
+user interviews:
+We conducted a total of 9 interviews, out of which 6 were students enrolled in higher education: Bachelor’s or mastere’s students and 3 were working professionals. and Typical topics covered within user interviews include
+Background (such as ethnographic data)
+The use of technology in general
+Thir current way of scheduling / plannign their days
+The user’s main objectives and motivations 
+The user’s pain points
+
+on doing a thematic analysis on the interviews, wee found the following keypoints:
+use of Google / outlook calendars and their extensions like reclaim.ai, excel sheets, papeer planners, reminders on phones were the most commonly used tools
+they found the reminder feature could be annoying especially when it distracted them in their current task which makes them lose focus, triggers to use phones unknowingly.
+users usually see a huge delta between expected and actual time taken by them to do a task
+grouping tasks are confusing at a first glance, with losing track of what group they assigned a particular color to and things that aree supposed to be in this group or not. => more cognitive load than expected.
+they need simpler interfaces with ability to flexibly seet reminders.
+Users were interested in tracking time wasters, manage meetings, better time management that is customized to them specifically, strategies emotions contextually and an oveerall positive note in coveying the message.
+Thye would like to visualize their life in weell-defined sectors: areas of life, ability to review daily/weekly/monthly.
+They’d like to see data about most time spent on which task
+ability to divide task into subtasks, ability to sequentially task-block over a few days
+they are very open to share data , but are very rigid when it comes to their data being handled by a third party.
+These were divided into advantages of planners, disadvantages, user needs, suggestions of user as seen here:  _<image here>
+
+Personathis led me to create two personas for the two user groups: Students, working professionals.
+persona for student:-\ <image here>
+
+
+
+affinity map:
+Say:
+Users find planning essential for productivity and long-term goals, particularly for work-related tasks.
+Writing tasks down serves as a reminder, though they don’t plan everything.
+Some users desire a feature to rate task completion satisfaction.
+Think:
+Planning is perceived as time-consuming, and users feel it mostly serves work rather than personal life.
+There is a desire for better integration with tools like Google Calendar, with some users prioritizing functionality over design.
+Users are overwhelmed by multimedia distractions, impacting their focus.
+Do:
+Many users make lists of tasks, focusing on long-term planning, and only plan for critical tasks.
+They use various tools like Google Calendar, Excel sheets, and Microsoft Teams to stay organized.
+Feel:
+Users feel challenged by underestimating or overestimating task durations, impacting planning effectiveness.
+They find predefined templates useful for structuring long-term goals.
+Data privacy concerns are present, especially when sharing personal information within planning tools.
+<image here>
+
+
+
+user story
+As a master’s student who loves gaming, I want to keep a close track of my schedule so that I can graduate successfully while supporting my hobbies.
+
+
+problem statement:
+Silvia is a student and gamer who needs to stick to deadlines and balance personal interests because she wants to graduate successfully while enjoying her hobbies.
+7. Wireframe:
+Calendar view lets users schedule tasks daily, weekly, or monthly, providing an organized view of commitments.
+Users can categorize tasks by life areas (e.g., Family, Leisure) to help balance different aspects of life.
+Allows users to allocate a percentage of time to each life area, setting intentions for time distribution.
+After tasks, users rate their sense of achievement, pleasure, and emotions to encourage self-reflection.
+Summary screen shows visual analytics on time allocation, helping users review balance and adjust as needed.
+<image here>
+<image here>
+
+
+8. usability test #1.
+Task Completion Times and Learning Curve
+Users initially took longer to complete tasks but became faster as they familiarized themselves with the app. By Task 4, their efficiency noticeably improved, indicating that an introductory tutorial or guided tour could help new users get up to speed quickly.
+System Usability Scale (SUS) Feedback
+Users rated the app highly for ease of use and navigation and felt confident using it without technical support. However, they pointed out minor inconsistencies in terminology, with terms like “Ratio” creating some confusion. Simplifying language and maintaining consistent terminology would enhance user comprehension and reduce cognitive load.
+Through usability testing, the app achieved an average SUS score of 84.0, reflecting its high usability and intuitive design. Key insights highlighted user satisfaction with navigation, with minor suggestions for simplifying terminology to enhance clarity.
+User Feedback on Interface and Data Visualization
+Participants found the app layout intuitive and appreciated features like emotion tracking and feedback on their sense of achievement. However, they noted redundancy in metrics, such as “pleasurable” and “satisfying” activities. Streamlining these aspects could improve clarity and user engagement.
+Customizable Features and Notifications
+There was strong interest in having more control over notifications and customizing color options for different categories. Additionally, users suggested using simpler, more accessible terms throughout the app to avoid confusion.
+Task Consolidation and Dashboard Suggestions
+Participants recommended showing daily tasks in a single view on the main screen for easier access and reduced navigation time. Adding a “Today’s Tasks” section would make the interface more efficient and support quicker task management.
+<image here>
+
+
+9. Changes Based on User Insights
+Updated terminology and visuals for clarity, like "ratio" to "desired %" and font from 15 to 18.
+Added a congratulatory message for task completion and simplified feedback metrics by merging similar terms.
+<image here>
+
+10. “How Might We” Questions (Thematic Grouping)
+Time Management: "How might we reduce wasted time and support efficient planning?"
+Motivation: "How might we keep users motivated and positive?"
+Balance: "How might we help users achieve a balanced work-life integration?"
+Reflective Insights: "How might we quantify and provide insights on users’ daily/weekly reflections?"
+<image here>
+
+11. User Opinions and our interpretations
+Users requested more customization (e.g., multiple reminders), simpler language, a unified task view, and clear data privacy policies.
+<image here>
+
+12. Task Analysis
+Assumed Tasks: Users create/manage plans, track emotions, analyze performance, and review insights.
+Competency: Familiarity with mobile navigation, task planning, and reflective behavior are assumed.
+<image here>
+
+
+13. Marketing Strategies
+Pricing Model
+Initial Model: Launch as a Freemium app, offering free access with optional premium features.
+Future Model: Transition to a monthly subscription for advanced features like AI-based insights and one-on-one consultations with psychologists.
+Target Audience
+Primary Users:
+Students pursuing bachelor’s or master’s degrees, seeking balance in academics and personal life.
+Working Professionals managing workload stress, looking for tools to improve work-life balance.
+Demographic Insights
+Keyword Analysis: Google Trends identified seven relevant search terms, including Daily planner 2023, Self-reflection, Procrastination, Work-life balance, and Occupational burnout.
+Country-Based Demand: Analysis of search interest by country revealed high engagement from Australia, South Africa, and Canada. The table shows that users in these regions are actively searching for solutions related to planning, self-reflection, and burnout, making them prime markets for our app.
+The intersection analysis further highlights the most receptive regions based on overlap across multiple search terms. For instance, Australia and South Africa rank highest, confirming strong potential demand in these regions. This data-driven targeting allows us to focus on countries with established interest, increasing the efficiency of our ad spend.
+<image here>
+<image here>
+
+Promotional Strategy
+Early Access Offer: Reward early adopters and beta testers with 15 free psychologist consultations upon new updates.
+Cost-Effective Reach: Aim to maximize Return on Ad Spend (ROAS) with an anticipated reach of approximately 90,000 target users.
+SMART Goals: Establish clear, measurable, and time-bound objectives to guide and assess campaign effectiveness.
+Campaign Execution
+Ad Budget: Allocate $500 over 7 days on LinkedIn to build brand awareness.
+Goals:
+Testing: Measure audience response to ads, gathering data to optimize future campaigns.
+Rapid Exposure: Evaluate initial brand awareness and interest within the target demographics.
+Engagement Strategies
+LinkedIn Advertising: Focused on students, young professionals, and psychologists to directly reach key user groups.
+Social Media Sharing: Promote the app across social networks and interest groups for organic reach.
+User Data Insights: With consent, share user insights with mental health professionals to enhance personalized support in the app.
+Evaluation and Growth
+Data Analytics: Track ad performance, user engagement, and conversion rates to fine-tune marketing.
+Evolving Pricing: Shift from freemium to a paid model, supporting both end-users and professionals with tailored features.
+
+
+
+
+Reflecttion:
+
+Next Steps
+
+More Projects
+
+
+B,c,d
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+O
+V
+E
+R
+V
+I
+E
+W
+	
+
+Challenge / Problem
+The challenge presented was to create a feedback ecosystem for Audi that is both engaging and meaningful for customers. The current system lacked engagement and did not offer tangible value to customers, making it difficult to encourage feedback that could contribute to Audi’s service improvement.
+Solution / Objectives
+The solution focuses on building an interactive, gamified feedback system named AudiVerse, integrated into their existing myAudi app. The goal was to incentivize users to provide feedback by making the process rewarding and fun.
+
+
+My Role:``				Scope: Hours, rationale (Self-started/Course work)
+UXR
+
+
+
+Project: AudiVerse
+The project started with the idea of awarding scale models of Audi cars to loyal customers as part of creating a feedback ecosystem. However, based on preliminary feedback from Audi representatives, this approach proved too expensive to sustain. This led us to ideate new solutions that leveraged existing Audi initiatives to expand their reach and create awareness, focusing on delivering an interactive and rewarding experience for customers.
+Key elements of our solution included:
+Integration of Audi Driving Experience: Utilizing Audi Driving Experience events as a reward, allowing customers to engage with the brand in a more hands-on and exciting way.
+Feedback Integration in myAudi App: Incorporating a feedback system into the myAudi app to create a continuous record of customer feedback, promote transparency, and support a two-way conversation to improve service quality and customer experience.
+Leveraging Metaverse Inspiration: Inspired by role-storming techniques like “How would Meta do this?”, we explored virtual events, product announcements in VR, and community-driven experiences to create a unique offering, which inspired the concept of AudiVerse. The name reflects the expanded universe of Audi experiences accessible to users.
+The concept of AudiVerse received positive responses, particularly when users were informed about the possibility of exclusive access to Audi offerings, upcoming releases, and both online and offline events. We envisioned AudiVerse as a platform where feedback is not only easy to give but also rewarding, encouraging meaningful engagement.
+Screens Representing Key Activities and User Experience
+<images for each of the following paragraph>
+
+Audi Service Feedback Companion Chat
+Captures customer feedback interactively and personally right after a service experience.
+Builds a transparent and engaging feedback ecosystem.
+Main AudiVerse Dashboard
+Central hub for all activities, allowing users to view accumulated AudiXperience Points, access the feedback feature, and explore exclusive offerings.
+Emphasizes ease of navigation for seamless engagement.
+AudiVerse Garage Screen
+Allows users to unlock iconic, aspirational, brand-defining, and unattainable cars by earning AudiXperience Points.
+Users can view cars digitally in 3D, AR, and VR, read about their features, and represent them in AudiVerse (e.g., as stickers on their profile during online events).
+Adds excitement through gamification and motivates continued participation.
+Introductory Slide for Features
+Highlights the features available in the app, ensuring users understand the breadth of offerings.
+Sets expectations and introduces opportunities for engagement, including events and customization options.
+Garage - Car Customization Options
+Users can personalize their virtual Audi with options for colors, rims, and accessories.
+Reinforces ownership and creativity, making the experience enjoyable and personal.
+Garage Car View and Customization Categories
+Provides an organized view of customization categories such as exterior, interior, and engine options.
+Supports a seamless and enjoyable customization experience without overwhelming the user.
+Roadmap View of Cars - Progress Board
+Visual journey that shows categories like "Racing," "Legendary," and "Road Series" cars available for unlocking.
+Motivates users to engage further as they progress towards new rewards.
+My Garage Overview
+Allows users to see all their unlocked cars categorized by type.
+Reinforces a sense of achievement and pride, highlighting rewards earned through participation.
+Overview of Feedbacks Submitted
+Summarizes user feedback along with acknowledgment from Audi.
+Strengthens trust in the brand by reassuring users that their input is valued.
+Special Event Invitation Screen
+Invites users to exclusive AudiVerse events, leveraging Audi's initiatives like the Audi Driving Experience.
+Offers a mix of online and offline events where users can experience Audi's offerings, upcoming releases, and immerse themselves in the brand.
+Design Sprint Process and Key Insights
+Semantic Analysis: Defined the challenge comprehensively by analyzing key terms to frame the problem effectively.
+User-Centered Interviews: Conducted qualitative interviews to empathize with users, understanding their needs, experiences, and pain points related to the existing feedback system.
+Iterative Prototyping and Testing: Refined the solution through iterative testing, focusing on usability and alignment with customer needs. Evaluated user interaction with gamified elements and personalization features.
+Outcome Validation: Ensured that providing feedback was easy, rewarding, and valuable to Audi. Integrated personalization, rewards, and exclusive experiences to foster a loyal and actively engaged customer community.
+Key Feedback from Usability Testing
+Intuitive Interface: Users appreciated the intuitive design, with well-organized features and sections for smooth exploration.
+Gamification Elements: The AudiXperience Points feature was well-received, making the feedback process enjoyable and enhancing users' sense of involvement and loyalty.
+Exclusive Event Access: Participants expressed interest in attending exclusive events, showing a desire for deeper engagement with the Audi community.
+Personalization: The Virtual Car Customization feature sparked excitement, with users enjoying the range of options available for personalization.
+The usability tests provided initial validation for our concept. Users showed enthusiasm for the points system, personalization, and exclusive event access. However, since the testing sample did not include Audi's core customer base, further validation with target users is necessary to ensure the solution resonates effectively.
+Expected Outcome
+Enhanced customer engagement through gamification, personalization, and exclusive opportunities.
+A feedback process that is both rewarding and enjoyable, improving the quantity and quality of feedback while fostering brand loyalty.
+Alignment with Audi’s vision of innovation and premium experience through continued user research, usability testing, and iterations.
+Considerations for Further Refinement
+Core Customer Base Feedback: Further validation is needed with Audi's target users to ensure features resonate effectively with the intended audience.
+Continuous Improvement: Iterative improvements based on user feedback will help align AudiVerse with customer expectations and enhance engagement.
+
+
+
+Reflecttion:
+
+Next Steps
+
+More Projects
+
+
+b,c,d
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+O
+V
+E
+R
+V
+I
+E
+W
+	
+
+
+<poster here>
+
+MoodGlide - Enhancing Emotional Awareness
+Overview MoodGlide is an inclusive emotional regulation device designed to boost emotional awareness and facilitate personal growth. By using an intuitive joystick, users can select among six core emotions, receiving instant haptic and auditory feedback. The device aims to enhance emotional intelligence, improve relationships, and unlock emotional potential for people of all ages, including those with alexithymia.
+My Role As the UX designer and developer, I was responsible for:
+Concept development and user research
+Hardware and software integration
+Prototyping and 3D modeling
+Conducting user testing and iterating on feedback
+This project allowed me to showcase my understanding of both software and hardware tools, including Autodesk Fusion 360 for design and Arduino Micro for prototyping.
+The Problem I discovered the problem through observations and interviews with individuals in my circle. Many tended to overestimate certain emotions, often due to recency bias, seasonal affective disorder during less bright months, or other mental struggles they might be experiencing. Responses like, "I've been feeling low more often," led me to explore alexithymia—a condition characterized by difficulty in recognizing and describing emotions—and the importance of emotional awareness for overall well-being. This insight motivated me to address this user need.
+Many individuals struggle with recognizing and expressing their emotions, which can hinder personal growth and affect relationships. This challenge is especially prevalent among those with mental health conditions like alexithymia. There was a need for an accessible tool that helps users become more emotionally self-aware.
+The Solution MoodGlide offers a tactile and engaging way for users to interact with and track their emotions. Key features include:
+Effortless Emotion Selection: An intuitive joystick interface allows users to toggle between six core emotions—happiness, sadness, fear, anger, surprise, and disgust, based on Paul Ekman's theory of universal emotions.
+Inclusive Design: Braille labels and clear emoticons make the device accessible to users with visual impairments.
+Auditory & Haptic Feedback: Immediate feedback enhances user interaction and confirms emotion selection.
+Reminders for Use: Gentle nudges encourage consistent emotional check-ins throughout the day, facilitated by a real-time clock module.
+Emotion Tracking: The device logs date, time, and selected emotions to help users identify patterns over time.
+User Demographics
+High-Stress Professionals: Individuals in demanding jobs seeking better emotional management.
+Individuals with Mental Health Conditions: Especially those who find it challenging to recognize or express emotions, such as people with alexithymia.
+Students and Educators: Those in educational settings looking to manage stress and improve emotional awareness.
+Process
+Hardware & Software Integration
+Hardware: Arduino Micro, joystick, buzzer, vibration motor, battery, and a real-time clock module.
+Software: Autodesk Fusion 360 was used for 3D modeling, and the Arduino platform was used for programming.
+Prototyping: Utilized Ultimaker S5 3D printer with PLA filament for a durable prototype.
+Prototyping and Development
+The joystick enables users to effortlessly switch between six basic emotions. Accessible emoticon labels and Braille were incorporated to ensure inclusivity for visually impaired users.
+Haptic feedback (vibration motor) and auditory signals (buzzer) provided immediate confirmation of emotion selection, enhancing engagement.
+The real-time clock module managed reminders, prompting users to engage with the device throughout the day.
+<gif here>
+<gif here>
+<gif here>
+<gif here>
+
+
+
+User Testing
+Conducted usability studies with six participants, including three with alexithymia traits, selected using the Toronto Alexithymia Scale (TAS-20).
+Feedback was gathered using the System Usability Scale (SUS), with scores ranging from 67.5 to 92.5, indicating a strong user experience.
+Users found the device engaging and easy to use, appreciating the tactile and auditory feedback. Participants compared it to a toy, which helped reduce pressure around emotion identification.
+Outcomes & Learnings
+Positive Reception: Users found MoodGlide engaging and easy to use, appreciating the tactile and auditory feedback.
+Areas for Improvement:
+Emoticon Clarity: Simplify emoticons for better clarity and reduce confusion between similar emotions.
+Device Portability: Make the device more compact and portable, as users found the current version somewhat bulky.
+Enhanced Tracking: Develop a mobile app for detailed emotional data visualization and personalized recommendations.
+Adaptability and Technical Proficiency This project showcased my ability to:
+Navigate New Technologies: Quickly learned and applied tools like Autodesk Fusion 360, Ultimaker S5, and Arduino microcontrollers.
+Integrate Hardware and Software: Combined physical components with software programming to create a functional prototype.
+Apply User-Centered Design: Employed iterative design methodologies, incorporating user feedback to enhance the device's usability and accessibility.
+Reflection This project underscored the importance of inclusive design and user-centered development. By bridging software and hardware, I was able to create a tool that not only meets a significant need but also enhances user engagement through tactile interaction. The iterative process and user feedback were crucial in refining MoodGlide, and I look forward to implementing further improvements based on these insights.
+Next Steps
+Expand Emotion Range: Incorporate additional emotions to provide a more granular emotional spectrum.
+Refine Design: Reduce the device's size and weight for improved portability.
+Data Visualization: Develop a mobile application to visualize emotional data and provide personalized insights.
+Long-Term Testing: Conduct extended user studies to assess the impact on emotional development over time.
+Conclusion MoodGlide represents a significant step toward empowering individuals to enhance their emotional awareness. By combining inclusive design principles with innovative hardware and software integration, the device offers a user-friendly tool for personal growth. Ongoing iterations and user feedback will continue to shape its development, aiming to make emotional intelligence accessible to all.
+Keywords: UX Design, Hardware Integration, Emotional Awareness, Inclusive Design, Arduino, Prototyping, User Testing, Emotional Intelligence, Assistive Technology
+
+
+
+
+
+
+
+Reflecttion:
+
+Next Steps
+
+More Projects
+
+
+b,c,d
