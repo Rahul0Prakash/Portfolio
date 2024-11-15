@@ -124,14 +124,14 @@
       /* Back Button Styling */
         .back-button {
         position: fixed;
-        top: 10rem; /* Position from the top of the screen */
+        top: 4rem; /* Position from the top of the screen */
         left: 2rem; /* Position from the left of the screen */
-        width: 90px; /* Size of the container */
-        height: 90px; /* Size of the container */
+        width: 50px; /* Size of the container */
+        height: 50px; /* Size of the container */
         background-color: rgba(255, 255, 255, 0.9); /* Light circle background */
         border-radius: 50%; /* Makes the circle */
         cursor: pointer;
-        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.6); /* Shadow for a lifted effect */
+        /*box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.6); /* Shadow for a lifted effect */
         display: flex; /* To center the image inside */
         align-items: center;
         justify-content: center;
@@ -140,7 +140,7 @@
     }
     
     .back-button img {
-        width: 70px; /* SVG size */
+        width: 60px; /* SVG size */
         height: auto;
     }
     
@@ -466,198 +466,160 @@
         z-index: -1; /* Send the image behind the text and video */
         opacity: 0.2; /* Optional: Set transparency for a subtle effect */
     }
-    
-    /* Project title (h1) styling *
-    .project-title {
-        position: relative;
-        text-align: center;
-        z-index: 50; /* Ensure it's above the background image *
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 10% 10% 3%;
-        max-width: 60rem;
-        min-height: 30vh;
-        height: auto;
-        margin: 0 auto;
+        
+    .project-title-container {
+      position: relative;
+      text-align: center;
+      z-index: 1; /* Ensure it's above other elements */
+      display: flex;
+      flex-direction: column;
+      justify-content: center; /* Center the text vertically */
+      align-items: center;
+      width: 100%;
+      height: 60vh; /* Cover 60% of the screen height */
+      overflow: hidden;
     }
+
+    /* Triple Diamond Image as Background */
 
     .triple-diamond-image {
-      justify-content: center;
       position: absolute;
-
-      align-items: center;
-      padding: 10% 10% 3%;
-      max-width: 60rem;
-      min-height: 30vh;
-      margin: 0 auto;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+                  url('../triplediamond.png') no-repeat center center;
+      background-size: cover;
       z-index: 1;
+    }
+    /* Project Title Over the Image */
+    .project-title {
+      position: relative;
+      z-index: 2; /* Ensure it's above the background image */
+      width: 60%; /* Restrict text width to about 60% of the container */
+      color: #fff; /* Adjust color for readability */
+      padding: 1rem; /* Padding for better spacing */
+      text-align: center; /* Center text */
+      margin: 0 auto; /* Center horizontally */
+    }
+
+
+    .project-title h1 {
+      font-size: 2.5rem; /* Adjust as needed */
+    }
+
+    .project-title p {
+      font-size: 1.25rem; /* Adjust as needed */
+    }/* CSS for prototype and details layout */
+
+    .prototype-and-details {
+      display: flex;
+      flex-direction: row;
+      gap: 3rem;
+      margin:0 3.25rem;
+      align-items: flex-start;
+      position: relative;
+
+    }
+
+    .prototype-section {
+      flex: 1 1 60%;
+      max-width: 60%;
+      transform: translate(0%, -40%);
+      position: relative;
+      align-self: flex-end;
+      margin: 20px auto; /* Center the prototype between sections */
+    }
+
+    .details-section {
+      flex: 1 1 50%;
+      max-width: 60%;
+    }
+
+    /* Ensure the video container takes the full height and width of its container */
+    .desktop-video-container {
       position: relative;
       width: 100%;
-      max-width: 108.125rem;
-      height:fit-content;
-      margin: 0 auto;
-      background: url('../triplediamond.png');
-      background-size: 100%;
+      height: auto;
+      aspect-ratio: 16 / 9;
+      margin: 0; /* Center the container */
+      overflow: hidden;
+      z-index: 2; /* Ensure it stays above other elements if necessary */
     }
-    
-    /* Video container styling */
-    /* Container for both image and project title */
-/* Container for both image and project title */
-.project-title-container {
-  position: relative;
-  text-align: center;
-  z-index: 1; /* Ensure it's above other elements */
-  display: flex;
-  flex-direction: column;
-  justify-content: center; /* Center the text vertically */
-  align-items: center;
-  width: 100%;
-  height: 60vh; /* Cover 60% of the screen height */
-  overflow: hidden;
-}
 
-/* Triple Diamond Image as Background */
+    .desktop-video-container video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 1.25rem;
+      border-color: #D4FA86;
+      border: 5px;
+      display: block;
+    }
 
-.triple-diamond-image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
-              url('../triplediamond.png') no-repeat center center;
-  background-size: cover;
-  z-index: 1;
-}
-/* Project Title Over the Image */
-.project-title {
-  position: relative;
-  z-index: 2; /* Ensure it's above the background image */
-  width: 60%; /* Restrict text width to about 60% of the container */
-  color: #fff; /* Adjust color for readability */
-  padding: 1rem; /* Padding for better spacing */
-  text-align: center; /* Center text */
-  margin: 0 auto; /* Center horizontally */
-}
+    /* Mobile Video Container */
+    .mobile-video-container {
+      position: relative;
+      width: 280px;  /* iPhone 13 screen width */
+      height: 502px; /* iPhone 13 screen height */
+      max-width: 600px; /* Optional: Restrict the maximum width */
+      margin: 0 auto; /* Center align the video */
+      z-index: 2; /* Ensure it's above the background image */
+    }
 
+    /* Style the video to fill the container */
+    .mobile-video-container video {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 0.5rem; /* Optional: Add rounded corners */
+      box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3); /* Optional: Add shadow for emphasis */
+    }
 
-.project-title h1 {
-  font-size: 2.5rem; /* Adjust as needed */
-}
+    /* Styling for the text sections */
+    .section {
+      margin-bottom: 20px;
+    }
 
-.project-title p {
-  font-size: 1.25rem; /* Adjust as needed */
-}/* CSS for prototype and details layout */
+    .section-title {
+      font-size: 2em;
+      margin-bottom: 10px;
+      font-weight:Bold;
+      color: #D4FA86;
+    }
 
-.prototype-and-details {
-  display: flex;
-  flex-direction: row;
-  gap: 3rem;
-  margin:0 3.25rem;
-  align-items: flex-start;
-  position: relative;
+    .section-content {
+      font-size: 1em;
+      line-height: 1.6;
+      text-align:start;
+    }
 
-}
+    /* Responsive styling for smaller screens */
+    @media (max-width: 768px) {
+      .prototype-and-details {
+          flex-direction: column;
+      }
+      
+      .prototype-section,
+      .details-section {
+          max-width: 100%;
+      }
+    }
 
-.prototype-section {
-  flex: 1 1 60%;
-  max-width: 60%;
-  transform: translate(0%, -40%);
-  position: relative;
-  align-self: flex-end;
-  margin: 20px auto; /* Center the prototype between sections */
-}
+    /* Spacing for better visual appeal */
 
-.details-section {
-  flex: 1 1 50%;
-  max-width: 60%;
-}
-
-/* Ensure the video container takes the full height and width of its container */
-.desktop-video-container {
-  position: relative;
-  width: 100%;
-  height: auto;
-  aspect-ratio: 16 / 9;
-  margin: 0; /* Center the container */
-  overflow: hidden;
-  z-index: 2; /* Ensure it stays above other elements if necessary */
-}
-
-.desktop-video-container video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 1.25rem;
-  border-color: #D4FA86;
-  border: 5px;
-  display: block;
-}
-
-/* Mobile Video Container */
-.mobile-video-container {
-  position: relative;
-  width: 280px;  /* iPhone 13 screen width */
-  height: 502px; /* iPhone 13 screen height */
-  max-width: 600px; /* Optional: Restrict the maximum width */
-  margin: 0 auto; /* Center align the video */
-  z-index: 2; /* Ensure it's above the background image */
-}
-
-/* Style the video to fill the container */
-.mobile-video-container video {
-  width: 100%;
-  height: auto;
-  display: block;
-  border-radius: 0.5rem; /* Optional: Add rounded corners */
-  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3); /* Optional: Add shadow for emphasis */
-}
-
-/* Styling for the text sections */
-.section {
-  margin-bottom: 20px;
-}
-
-.section-title {
-  font-size: 2em;
-  margin-bottom: 10px;
-  font-weight:Bold;
-  color: #D4FA86;
-}
-
-.section-content {
-  font-size: 1em;
-  line-height: 1.6;
-  text-align:start;
-}
-
-/* Responsive styling for smaller screens */
-@media (max-width: 768px) {
-  .prototype-and-details {
-      flex-direction: column;
-  }
-  
-  .prototype-section,
-  .details-section {
-      max-width: 100%;
-  }
-}
-
-/* Spacing for better visual appeal */
-
-.details-section {
-  padding: 0 ;
-}
+    .details-section {
+      padding: 0 ;
+    }
 
 
-.prototype-section {
+    .prototype-section {
 
-}
+    }
 
       /* Bounce Animation */
       @keyframes bounce {
