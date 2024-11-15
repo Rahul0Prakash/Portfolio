@@ -1,1 +1,4 @@
+misc
+.gitignore
 .DS_Store
+.gitignore assets/.DS_Store
