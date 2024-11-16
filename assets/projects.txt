@@ -19,7 +19,9 @@ We designed a digital solution to showcase Flying Lab Factory's offerings, integ
 
 My Role:	
 Myself (UI/UX)	
-4 colleagues from Design and Interaction				 	 	 		
+4 colleagues from Design and Interaction	\
+
+
 Competitive Audit			
 				
 					
@@ -31,7 +33,7 @@ User Requirements Report (ISO/IEC 25065)
 User Evaluation Report (ISO/IEC 25066) 
 Usability Testing
 Scope: Hours, rationale (Self-started/Course work)
-
+Collaboration exercise between Lufthansa's FlyingLab Factory and Hochschule Rhein Waal
 
 
 
@@ -209,11 +211,14 @@ Myself (UI/UX)
 
 
 
-
+1
 Competitive audit:
-Two direct and one indirect competitor were chosen, all aimed at helping users achieve work-life balance. While these apps integrated helpful features like notes, journals, and diverse navigation options, they struggled with usability and user engagement due to cluttered screens and complex activity logging processes. This analysis highlighted opportunities to improve user experience by simplifying design, enhancing customization, and streamlining functionality.
 <image here>
+path: "Balancify/1-competitive-audit.png"
+label: {{generate suitable label}}
+Two direct and one indirect competitor were chosen, all aimed at helping users achieve work-life balance. While these apps integrated helpful features like notes, journals, and diverse navigation options, they struggled with usability and user engagement due to cluttered screens and complex activity logging processes. This analysis highlighted opportunities to improve user experience by simplifying design, enhancing customization, and streamlining functionality.
 
+2
 user interviews:
 We conducted a total of 9 interviews, out of which 6 were students enrolled in higher education: Bachelor’s or mastere’s students and 3 were working professionals. and Typical topics covered within user interviews include
 Background (such as ethnographic data)
@@ -222,25 +227,37 @@ Thir current way of scheduling / plannign their days
 The user’s main objectives and motivations 
 The user’s pain points
 
-on doing a thematic analysis on the interviews, wee found the following keypoints:
+<image here>
+path: "Balancify/2-results-of-thematic analysis-of-user-interviews.png"
+label: {{generate suitable label}}
+
+on doing a thematic analysis on the interviews, wee found the following keypoints: 
 use of Google / outlook calendars and their extensions like reclaim.ai, excel sheets, papeer planners, reminders on phones were the most commonly used tools
 they found the reminder feature could be annoying especially when it distracted them in their current task which makes them lose focus, triggers to use phones unknowingly.
 users usually see a huge delta between expected and actual time taken by them to do a task
 grouping tasks are confusing at a first glance, with losing track of what group they assigned a particular color to and things that aree supposed to be in this group or not. => more cognitive load than expected.
 they need simpler interfaces with ability to flexibly seet reminders.
 Users were interested in tracking time wasters, manage meetings, better time management that is customized to them specifically, strategies emotions contextually and an oveerall positive note in coveying the message.
-Thye would like to visualize their life in weell-defined sectors: areas of life, ability to review daily/weekly/monthly.
+They would like to visualize their life in weell-defined sectors: areas of life, ability to review daily/weekly/monthly.
 They’d like to see data about most time spent on which task
 ability to divide task into subtasks, ability to sequentially task-block over a few days
 they are very open to share data , but are very rigid when it comes to their data being handled by a third party.
 These were divided into advantages of planners, disadvantages, user needs, suggestions of user as seen here:  _<image here>
 
-Personathis led me to create two personas for the two user groups: Students, working professionals.
-persona for student:-\ <image here>
+3
+Persona :
+this led me to create two personas for the two user groups: Students, working professionals.
+<image here>
+path"Balancify/3-persona-usergroup-students.png"
+label:persona for student 
 
 
-
+4
 affinity map:
+<image here>
+path"Balancify/4-affinity-map.png"
+label:affinity map for the user group: Students
+
 Say:
 Users find planning essential for productivity and long-term goals, particularly for work-related tasks.
 Writing tasks down serves as a reminder, though they don’t plan everything.
@@ -256,27 +273,40 @@ Feel:
 Users feel challenged by underestimating or overestimating task durations, impacting planning effectiveness.
 They find predefined templates useful for structuring long-term goals.
 Data privacy concerns are present, especially when sharing personal information within planning tools.
-<image here>
 
 
-
+5
 user story
+
 As a master’s student who loves gaming, I want to keep a close track of my schedule so that I can graduate successfully while supporting my hobbies.
 
-
+6
 problem statement:
+
 Silvia is a student and gamer who needs to stick to deadlines and balance personal interests because she wants to graduate successfully while enjoying her hobbies.
+
 7. Wireframe:
+<image here>
+path"Balancify/7-sketch.png"
+label:A rough sketch based on our ideation and insights from initial interviews
+
+<image here>
+path"Balancify/7-wireframe.png"
+label: A digital wireframe based on the sketches
+
 Calendar view lets users schedule tasks daily, weekly, or monthly, providing an organized view of commitments.
 Users can categorize tasks by life areas (e.g., Family, Leisure) to help balance different aspects of life.
 Allows users to allocate a percentage of time to each life area, setting intentions for time distribution.
 After tasks, users rate their sense of achievement, pleasure, and emotions to encourage self-reflection.
 Summary screen shows visual analytics on time allocation, helping users review balance and adjust as needed.
-<image here>
-<image here>
+
 
 
 8. usability test #1.
+<image here>
+path"Balancify/8-usability-scale.png"
+label: {{repair grammar}} System Usability Scale results from 5 participants on conducting usability test
+
 Task Completion Times and Learning Curve
 Users initially took longer to complete tasks but became faster as they familiarized themselves with the app. By Task 4, their efficiency noticeably improved, indicating that an introductory tutorial or guided tour could help new users get up to speed quickly.
 System Usability Scale (SUS) Feedback
@@ -288,32 +318,44 @@ Customizable Features and Notifications
 There was strong interest in having more control over notifications and customizing color options for different categories. Additionally, users suggested using simpler, more accessible terms throughout the app to avoid confusion.
 Task Consolidation and Dashboard Suggestions
 Participants recommended showing daily tasks in a single view on the main screen for easier access and reduced navigation time. Adding a “Today’s Tasks” section would make the interface more efficient and support quicker task management.
-<image here>
 
 
 9. Changes Based on User Insights
-Updated terminology and visuals for clarity, like "ratio" to "desired %" and font from 15 to 18.
-Added a congratulatory message for task completion and simplified feedback metrics by merging similar terms.
 <image here>
+path"Balancify/8-usability-scale.png"
+label: {{repair grammar}} Interpreted changes from 5 usability tests
+
+Updated terminology and visuals for clarity, like "ratio" to "desired %", font sizes from 15 to 18 to name a few.
+Added a congratulatory message for task completion and simplified feedback metrics by merging similar terms for positive reinforments.
 
 10. “How Might We” Questions (Thematic Grouping)
+<image here>
+path"Balancify/10-HMW-questions.png"
+label: {{repair grammar}} How Might We questions narrowed down. 
+
 Time Management: "How might we reduce wasted time and support efficient planning?"
 Motivation: "How might we keep users motivated and positive?"
 Balance: "How might we help users achieve a balanced work-life integration?"
 Reflective Insights: "How might we quantify and provide insights on users’ daily/weekly reflections?"
-<image here>
 
 11. User Opinions and our interpretations
-Users requested more customization (e.g., multiple reminders), simpler language, a unified task view, and clear data privacy policies.
 <image here>
+path"Balancify/11-needs-solutions.png"
+label: {{repair grammar}} How Might We questions narrowed down. 
+
+Users requested more customization (e.g., multiple reminders), simpler language, a unified task view, and clear data privacy policies.
 
 12. Task Analysis
+<image here>
+path"Balancify/12-task-analysis.png"
+label: {{repair grammar}} The tasks users complete to achieve a desired goal
+
 Assumed Tasks: Users create/manage plans, track emotions, analyze performance, and review insights.
 Competency: Familiarity with mobile navigation, task planning, and reflective behavior are assumed.
-<image here>
 
 
-13. Marketing Strategies
+13. 
+Marketing Strategies
 Pricing Model
 Initial Model: Launch as a Freemium app, offering free access with optional premium features.
 Future Model: Transition to a monthly subscription for advanced features like AI-based insights and one-on-one consultations with psychologists.
@@ -321,13 +363,23 @@ Target Audience
 Primary Users:
 Students pursuing bachelor’s or master’s degrees, seeking balance in academics and personal life.
 Working Professionals managing workload stress, looking for tools to improve work-life balance.
+
+14.
 Demographic Insights
+<image here>
+path"Balancify/13a-countries-list.png"
+label: {{repair grammar}} 
+
 Keyword Analysis: Google Trends identified seven relevant search terms, including Daily planner 2023, Self-reflection, Procrastination, Work-life balance, and Occupational burnout.
+
+<image here>
+path"Balancify/13b-countries-rating-demographic-analysis.png"
+label: {{repair grammar}} List of countries that we identified to have a demand for our tool in decreasing order. 
+
 Country-Based Demand: Analysis of search interest by country revealed high engagement from Australia, South Africa, and Canada. The table shows that users in these regions are actively searching for solutions related to planning, self-reflection, and burnout, making them prime markets for our app.
 The intersection analysis further highlights the most receptive regions based on overlap across multiple search terms. For instance, Australia and South Africa rank highest, confirming strong potential demand in these regions. This data-driven targeting allows us to focus on countries with established interest, increasing the efficiency of our ad spend.
-<image here>
-<image here>
 
+15. 
 Promotional Strategy
 Early Access Offer: Reward early adopters and beta testers with 15 free psychologist consultations upon new updates.
 Cost-Effective Reach: Aim to maximize Return on Ad Spend (ROAS) with an anticipated reach of approximately 90,000 target users.
@@ -388,71 +440,102 @@ W
 
 Challenge / Problem
 The challenge presented was to create a feedback ecosystem for Audi that is both engaging and meaningful for customers. The current system lacked engagement and did not offer tangible value to customers, making it difficult to encourage feedback that could contribute to Audi’s service improvement.
+
 Solution / Objectives
 The solution focuses on building an interactive, gamified feedback system named AudiVerse, integrated into their existing myAudi app. The goal was to incentivize users to provide feedback by making the process rewarding and fun.
 
 
-My Role:``				Scope: Hours, rationale (Self-started/Course work)
-UXR
+My Role:		
+user experience researcher
+
+Scope: Hours, rationale 
+Self-started, Design thinking exercise in Collaboration between Audi Gmbh and Hochschule Rhein-Waal
 
 
-
-Project: AudiVerse
+Ideation:
 The project started with the idea of awarding scale models of Audi cars to loyal customers as part of creating a feedback ecosystem. However, based on preliminary feedback from Audi representatives, this approach proved too expensive to sustain. This led us to ideate new solutions that leveraged existing Audi initiatives to expand their reach and create awareness, focusing on delivering an interactive and rewarding experience for customers.
+
 Key elements of our solution included:
-Integration of Audi Driving Experience: Utilizing Audi Driving Experience events as a reward, allowing customers to engage with the brand in a more hands-on and exciting way.
-Feedback Integration in myAudi App: Incorporating a feedback system into the myAudi app to create a continuous record of customer feedback, promote transparency, and support a two-way conversation to improve service quality and customer experience.
-Leveraging Metaverse Inspiration: Inspired by role-storming techniques like “How would Meta do this?”, we explored virtual events, product announcements in VR, and community-driven experiences to create a unique offering, which inspired the concept of AudiVerse. The name reflects the expanded universe of Audi experiences accessible to users.
+a)Integration of Audi Driving Experience: Utilizing Audi Driving Experience events as a reward, allowing customers to engage with the brand in a more hands-on and exciting way.
+b)Feedback Integration in myAudi App: Incorporating a feedback system into the myAudi app to create a continuous record of customer feedback, promote transparency, and support a two-way conversation to improve service quality and customer experience.
+c)Leveraging Metaverse Inspiration: Inspired by role-storming techniques like “How would Meta do this?”, we explored virtual events, product announcements in VR, and community-driven experiences to create a unique offering, which inspired the concept of AudiVerse. The name reflects the expanded universe of Audi experiences accessible to users.
+
 The concept of AudiVerse received positive responses, particularly when users were informed about the possibility of exclusive access to Audi offerings, upcoming releases, and both online and offline events. We envisioned AudiVerse as a platform where feedback is not only easy to give but also rewarding, encouraging meaningful engagement.
+
+
+
 Screens Representing Key Activities and User Experience
 <images for each of the following paragraph>
 
-Audi Service Feedback Companion Chat
+1.Audi Service Feedback Companion Chat
 Captures customer feedback interactively and personally right after a service experience.
 Builds a transparent and engaging feedback ecosystem.
-Main AudiVerse Dashboard
+2.Main AudiVerse Dashboard
 Central hub for all activities, allowing users to view accumulated AudiXperience Points, access the feedback feature, and explore exclusive offerings.
 Emphasizes ease of navigation for seamless engagement.
-AudiVerse Garage Screen
+
+3.AudiVerse Garage Screen
 Allows users to unlock iconic, aspirational, brand-defining, and unattainable cars by earning AudiXperience Points.
 Users can view cars digitally in 3D, AR, and VR, read about their features, and represent them in AudiVerse (e.g., as stickers on their profile during online events).
 Adds excitement through gamification and motivates continued participation.
-Introductory Slide for Features
+
+4.Introductory Slide for Features
 Highlights the features available in the app, ensuring users understand the breadth of offerings.
 Sets expectations and introduces opportunities for engagement, including events and customization options.
-Garage - Car Customization Options
+
+5.Garage - Car Customization Options
 Users can personalize their virtual Audi with options for colors, rims, and accessories.
 Reinforces ownership and creativity, making the experience enjoyable and personal.
-Garage Car View and Customization Categories
+
+6.Garage Car View and Customization Categories
 Provides an organized view of customization categories such as exterior, interior, and engine options.
 Supports a seamless and enjoyable customization experience without overwhelming the user.
-Roadmap View of Cars - Progress Board
+
+7.Roadmap View of Cars - Progress Board
 Visual journey that shows categories like "Racing," "Legendary," and "Road Series" cars available for unlocking.
 Motivates users to engage further as they progress towards new rewards.
-My Garage Overview
+
+8.My Garage Overview
 Allows users to see all their unlocked cars categorized by type.
 Reinforces a sense of achievement and pride, highlighting rewards earned through participation.
-Overview of Feedbacks Submitted
+
+9.Overview of Feedbacks Submitted
 Summarizes user feedback along with acknowledgment from Audi.
 Strengthens trust in the brand by reassuring users that their input is valued.
-Special Event Invitation Screen
+
+10.Special Event Invitation Screen
 Invites users to exclusive AudiVerse events, leveraging Audi's initiatives like the Audi Driving Experience.
 Offers a mix of online and offline events where users can experience Audi's offerings, upcoming releases, and immerse themselves in the brand.
+
+
 Design Sprint Process and Key Insights
 Semantic Analysis: Defined the challenge comprehensively by analyzing key terms to frame the problem effectively.
 User-Centered Interviews: Conducted qualitative interviews to empathize with users, understanding their needs, experiences, and pain points related to the existing feedback system.
 Iterative Prototyping and Testing: Refined the solution through iterative testing, focusing on usability and alignment with customer needs. Evaluated user interaction with gamified elements and personalization features.
 Outcome Validation: Ensured that providing feedback was easy, rewarding, and valuable to Audi. Integrated personalization, rewards, and exclusive experiences to foster a loyal and actively engaged customer community.
+
+
+
 Key Feedback from Usability Testing
 Intuitive Interface: Users appreciated the intuitive design, with well-organized features and sections for smooth exploration.
 Gamification Elements: The AudiXperience Points feature was well-received, making the feedback process enjoyable and enhancing users' sense of involvement and loyalty.
 Exclusive Event Access: Participants expressed interest in attending exclusive events, showing a desire for deeper engagement with the Audi community.
 Personalization: The Virtual Car Customization feature sparked excitement, with users enjoying the range of options available for personalization.
 The usability tests provided initial validation for our concept. Users showed enthusiasm for the points system, personalization, and exclusive event access. However, since the testing sample did not include Audi's core customer base, further validation with target users is necessary to ensure the solution resonates effectively.
+
+
+
+
+
+
 Expected Outcome
 Enhanced customer engagement through gamification, personalization, and exclusive opportunities.
 A feedback process that is both rewarding and enjoyable, improving the quantity and quality of feedback while fostering brand loyalty.
 Alignment with Audi’s vision of innovation and premium experience through continued user research, usability testing, and iterations.
+
+
+
+
 Considerations for Further Refinement
 Core Customer Base Feedback: Further validation is needed with Audi's target users to ensure features resonate effectively with the intended audience.
 Continuous Improvement: Iterative improvements based on user feedback will help align AudiVerse with customer expectations and enhance engagement.

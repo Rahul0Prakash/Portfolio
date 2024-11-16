@@ -1,243 +1,329 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Balancify: Work-Life Balance App</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="icon" href="../favicon.ico" type="image/x-icon"> <!-- Favicon in ICO format -->
+  <link rel="icon" href="images/Favicon.png" type="image/png"> <!-- Favicon in PNG format -->
+  <link rel="icon" sizes="16x16" href="images/favicon-16x16.png" type="image/png">
+  <link rel="icon" sizes="32x32" href="images/favicon-32x32.png" type="image/png">
+  <link rel="icon" sizes="512x512" href="images/android-chrome-512x512" type="image/png">
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png"> <!-- Apple Touch Icon -->
+
+
+    <title>Rahul Prakash's Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/mobile.css">
     <!--div id="preloader">
         <img src="images/loading.gif" alt="Loading GIF" class="loading-gif" >
     </div-->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap">
+    <a href="https://www.youxrahul.work/#work" class="back-button" id="backButton">
+      <img src="images/back_arrow.svg" alt="Back Button">
+  </a>
     <div id="scrollUpButton" class="scroll-up-button">
-        <img src="assets/images/upward_arrow.svg" loading="lazy" alt="Scroll to Top">
+        <img src="images/upward_arrow.svg" loading="lazy" alt="Scroll to Top">
     </div>
-    <style>
-     
-    </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="../index.html" style="color: #D4FA86; margin-right: 1rem;">Home</a>
-            <a href="#about" style="color: #f5f5f7; margin-right: 1rem;">About Me</a>
-            <a href="#work" style="color: #f5f5f7;">Projects</a>
+         <!-- Navigation Bar -->
+        <nav class = "nav" id="nav">
+          <a href="https://www.youxrahul.work" target="_blank">
+          <img src="images/youXrahul.svg" class="logo" id="logo" alt="logo"></img> <!-- Logo as a text-based navigation element -->
+        </a>
+          <div class="nav-links">
+              <!-- Navigation links to the sections of the page -->
+              <a class="nav-item" href="https://www.youxrahul.work/#about">About Me</a>
+              <a class="nav-item" href="https://www.youxrahul.work/#work">Work</a>
+              <a class="nav-item" href="../RahulPrakash_CV.pdf" target="_blank" rel="noopener noreferrer">Resumé</a>
+          </div>
+          <div class="hamburger" id="hamburger">
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+          </div>
+          <!-- Dropdown Menu -->
+          <div class="dropdown-menu" id="dropdownMenu">
+                  <span class="grid-item">
+                      <a href="#about">About Me</a>
+                    </span>
+                    <span class="grid-item">
+                      <a href="#work">Work</a>
+                    </span>
+                    <span class="grid-item">
+                      <a href="RahulPrakash_CV.pdf" target="_blank" rel="noopener noreferrer">Resumé</a>
+                    </span>
+          </div>
         </nav>
-    </header>
+        <div class="easing-container">
+          <section class="project-title-container">
+            <div class="triple-diamond-image">
+              <!-- Image will be used as background, so no separate image tag needed here -->
+            </div>
+            <div class="project-title">
+              <h1><span style='background-color: #D4FA86; color: black;'>Balancify</span>: Work-Life Balance App</h1>
+              <p>Designing an app as a case study to track emotions and improve work-life balance </p>
+            </div>
+          </section>
+        </div>
+        
+      <!-- Upward Arrow Button -->
+      <div id="scrollUpButton" class="scroll-up-button">
+          <img src="assets/images/upward_arrow.svg" loading="lazy" alt="Scroll to Top">
+      </div>
+    <div class="easing-container">
+      <div class="prototype-and-details">
+        <!-- Left-Hand Side: Prototype Video -->
+        <div class="prototype-section">
+            <div class="mobile-video-container">
+                <video autoplay loop muted playsinline>
+                    <source src="videos/Balancify.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    
+        <!-- Right-Hand Side: Text Sections -->
+        <div class="details-section">
+            <!-- The Challenge Section -->
+            <div class="section">
+                <h3 class="section-title">The Challenge</h3><br>
+                <p class="section-content">
+                  The goal was to empower users to align their actions with personal values, supporting a balanced lifestyle and intentional time management, rather than operating on autopilot. 
+                </p>
+            </div><br><br>
+    
+            <!-- The Solution Section -->
+            <div class="section">
+                <h3 class="section-title">The Solution</h3><br>
+                <p class="section-content">
+                  Develop a user-centered app that enables reflection, effective planning, and emotional tracking. The solution integrated Cognitive Behavioral Therapy (CBT) principles to offer feedback on time use, encouraging mindful choices and a better work-life balance.
+                </p>
+            </div>
+        </div>
+    </div><br><br>
 
-    <h1 class="project-title">Balancify: Work-Life Balance App</h1>
-    <p class="project-subtitle">Designing an app as a case study to track emotions and improve work-life balance</p>
 
-    <div class="mobile-video-container">
-        <video autoplay loop muted playsinline>
-            <source src="videos/Balancify.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
+    <div class="about-columns">
+    <div class="about-column">
+        <h3 class="section-title">My Responsibilities</h3><br>
+        ✅   Competitive Audit  <br>
+        ✅    User Interviews<br>
+        ✅    User Personas<br>
+        ✅    Wireframes<br>
+        ✅    Usability Tests<br>
+        ✅    Research and Marketing Strategies<br>
+        ✅    Documentation<br>
+        ✅    Presentation<br>
+    </div>
+      <div class="about-column">
+        <h3 class="section-title">The Team</h3><br>
+        <ul class="section-content" style="list-style-type: circle;">
+          <li>Myself (UI/UX)	</li>
+          <li>  1 Software Engineer </li> 
+          <li> 1 Psychologist </li> 
+        </ul>
+        </div>
+    </div>
     </div>
 
-    <div class="section">
-        <h3 class="section-title">The Challenge</h3>
-        <p class="section-content">The goal was to empower users to align their actions with personal values, supporting a balanced lifestyle and intentional time management. Balancify integrates Cognitive Behavioral Therapy (CBT) principles to provide feedback on time usage, encouraging mindful decisions.</p>
-    </div>
+       
 
-    <div class="section">
-        <h3 class="section-title">The Solution</h3>
-        <p class="section-content">Developed a user-centered app that allows reflection, effective planning, and emotional tracking for better work-life balance.</p>
-    </div>
-
-    <div class="section">
-        <h3 class="section-title">The Team</h3>
-        <p class="team-content">UX/UI Design by Rahul Prakash, with one software engineer and one psychologist contributing to backend and behavioral insights respectively.</p>
-    </div>
-
-    <div class="section">
-        <h3 class="section-title">Scope</h3>
-        <p class="scope-content">A self-initiated project as an exercise in course; 116 hours dedicated.</p>
-    </div>
-
-
+   
    <!-- HTML Code Snippet -->
 <div id="projects"></div>
 
 <script>
   const data = {
-    "projects": [
-      {
-        "title": "Flying Lab Factory UX Project",
-        "sections": [
-          {
-            "number": 1,
-            "heading": "Interview Summary",
-            "content": "I conducted two user interviews—one with a co-founder of FlyingLab Factory and the other with an expert user who utilized their spaces and services. The interview with the co-founder aimed to capture insights from an expert regarding their expectations and experiences related to the services offered by the FlyingLab Factory. The primary focus was to uncover the team's desired outcomes, assess service demand adequacy, understand their strategic practices, and gauge historical and comparative perspectives about workspace preferences. Additionally, the interview aimed to extract success stories on team-building strategies and identify areas for potential improvement in team functioning or processes. <br> The intention behind the expert user interview was to delve into their specific experiences, preferences, and insights regarding the utilization of FlyingLab Factory's spaces and services. The questions were designed to explore the user's perspective on the usefulness of the facilities, their team dynamics, frequency of usage, memorable experiences, preferences for spaces or services, collaboration experiences, travel management to the facility, utilization of catering services, challenges faced, reasons for potential return visits, suggestions for improvement, interest in a virtual tour of the FlyingLab Factory, and any prior experience with similar services or facilities. These inquiries aimed to gather comprehensive feedback, uncover pain points, identify areas of satisfaction, and gather recommendations for enhancing the overall user experience."
-          },
-          {
-            "number": 2,
-            "heading": "Persona of an internal client",
-            "content": "The user interview insights led us to create Gabriel's persona, defined by his enthusiasm for cutting-edge technology and passion for organizing unique team experiences. As a dynamic and motivated manager at Lufthansa Group, Gabriel prefers traditional channels like the website for booking but relies on mobile apps and social media for information. His frustration with the necessity to buy each of the services separately, the absence of offered packages and the need to bring personal equipment significantly influenced his behaviours as a bold team leader who anticipates innovative solutions for tasks.",
-            "image": {
-              "path": "FLF/2-persona.png",
-              "label": "The user persona of Gabriel, embodying the traits of Lufthansa's internal client"
-            }
-          },
-          {
-            "number": 3,
-            "heading": "Empathy Map Insights",
-            "content": "Based on interviews with an external customer, an internal stakeholder, and a current employee, an empathy map was created to understand the key challenges and needs of Flying Lab Factory's internal clients.<br>- Users hear about Flying Lab Factory through internal promotions and word of mouth, highlighting its innovative environment and available services.<br>- Users find the booking process cumbersome and believe bundling services would improve the experience.<br>- Users see an innovative space with coaching and event areas but notice gaps in communication about availability.<br>- Users want a simpler booking process that integrates all services into one step.<br> <b>Pain Points</b>: Manual booking, unclear equipment availability, and poor communication.<br>- <b>Gains</b>: Users value team coaching and collaborative spaces when booking becomes seamless.",
-            "image": {
-              "path": "FLF/3-empathymap.png",
-              "label": "Empathy Map"
-            }
-          },
-          {
-            "number": 4,
-            "heading": "Affinity Map",
-            "content": "<b>Various booking methods</b>: calls, emails, SharePoint, and word of mouth.<br><b>Expectations</b> like suitable tools, genuine innovation space, and added functionality.<br><b>Space preferences</b>: studios, green screens, spaciousness, and customizable areas.<br>- <b>Tech needs</b>: quality cameras, movable tables, and good audio.<br><b>Factors motivating users</b>, such as event suitability and atmosphere.<br><b>Inconveniences</b>: unavailability of external catering and individual payments.<br><b>Positive feedback</b> on catering, interest in discounts, and packaged rentals.<br><b>Concerns</b> about distance, access, and parking at the location.",
-            "image": {
-              "path": "FLF/4-affinity-map.png",
-              "label": "Affinity Map"
-            }
-          },
-          {
-            "number": 5,
-            "heading": "User Needs",
-            "content": "<b>Efficient Booking System</b>: A simple, automated booking system that provides clear visibility of available rooms and services, streamlining the planning process.<br><b>Integrated Service Access</b>: Ability to book supplementary services (like coaching or technology) along with room bookings.<br><b>Accessible Venue and Support</b>: Easy venue access, with additional mobility support and transport options to address distance and travel difficulties."
-          },
-          {
-            "number": 6,
-            "heading": "User Requirements",
-            "content": "<b>Clear Service Overview</b>: An organized, easy-to-navigate overview of available services, spaces, and pricing to enable informed decision-making.<br><b>Customizable Bookings</b>: Ability to specify equipment and technology requirements during booking, ensuring readiness upon arrival.<br><b>Mobility Assistance</b>: Transportation support for users who may find it challenging to reach the facility."
-          },
-          {
-            "number": 7,
-            "heading": "User Journey Insights",
-            "content": "<b>Discovery</b>: Information about Flying Lab Factory is often scattered and unclear, leading users to rely on word of mouth, emails, or promotions internal to Lufthansa group. This creates ambiguity about what services are offered.<br><b>Registration</b>: Users need a streamlined registration process, with clear details about space options, booking processes, and available services.<br><b>Onboarding and First Use</b>: Users value a guided onboarding experience, with clear signage, equipment readiness, and support from on-site staff.<br><b>Sharing</b>: A positive experience, characterized by clear pricing, accessible spaces, and effective collaboration opportunities, encourages users to recommend Flying Lab Factory.",
-            "images": [
-              {
-                "path": "FLF/5-userjourney1.png",
-                "label": "Lufthansa's internal clients' needs, struggles, and tasks within the FlyingLab Factory"
-              },
-              {
-                "path": "FLF/5-userjourney2.png",
-                "label": "User Journey"
-              },
-              {
-                "path": "FLF/5-userjourney3.png",
-                "label": " After using their product/service, things that can be acheived by the customers"
-              }
-            ]
-          },
-          {
-            "number": 8,
-            "heading": "Expected outcomes",
-            "content": "<b>Improved User Access</b>: Users now have a centralized, digital platform that allows them to explore service details, book spaces, and plan activities efficiently.<br><b>Reduced Manual Work</b>: Automation minimizes the need for repeated communications, enabling quicker decision-making and bookings.<br><br><b>Enhanced Planning Capability</b>: The platform allows users to preview spaces and services before booking, ensuring they make informed choices.<br><b>Premises Navigation Enhancement</b> aims to solve navigation problems inside the premises and to simplify user experience:",
-            "images": [
-              {
-              "path": "FLF/6-onlinebooking.png",
-              "label": "A digital platflorm to explore the space and services offered by FLF"
-               },
-               {
-              "path": "FLF/6-spaces-description.png",
-              "label": "Description of spaces and services "
-               },
-               {
-              "path": "FLF/6-directional signage.png",
-              "label": "Premises Navigation Enhancement"
-               }
-            ]
-          },
-          {
-            "number": 9,
-            "heading": "Signages Inspired by Airport-style Signs",
-            "content": "- <b>Iconic Signage</b>: Like airport directions, clear signs guide users to areas, labelled like airline schedules, promoting easy room identification.",
-            "image": 
-              {
-                "path": "FLF/6-airport-style_status.jpg",
-                "label": "Airport-style Signage"
-              }
-          },
-          {
-            "number": 10,
-            "heading": "Room Signage",
-            "content": "Every room has clear door signs and ceiling danglers for easy identification and accessibility.",
-            "image": 
-              {
-                "path": "FLF/6-signage-hall.jpg",
-                "label": "Signage - Signs on Rooms and Halls"
-              }
-          },
-          {
-            "number": 11,
-            "heading": "Modular Package Bundling",
-            "content": "<b>User Convenience</b>: To address confusion over equipment availability and lack of information, modular packages bundle services, spaces, and options. This approach simplifies the booking process and enables users to mix and match their requirements without repeated interactions.<br><b>Efficient Use of Services</b>: Bundling services like rooms, catering, and shuttles reduces manual back-and-forths, providing clarity and setting the right expectations.<br><b>Stakeholder Impact</b>: This approach minimizes manual tasks for stakeholders, allowing them to focus on upgrading technology and expanding services. It also increases customer satisfaction by providing a holistic, well-defined service package at a transparent cost.",
-            "images": [
-              {
-                "path": "FLF/7-modular packages.png",
-                "label": "Modular Package Bundling"
-              },
-              {
-                "path": "FLF/7-catering .png",
-                "label": "Emphasis on the catering service"
-              }
-            ]
-          },
-          {
-            "number": 12,
-            "heading": "Booking Modality and Transition from SharePoint",
-            "content": "<b>Previous Challenges</b>: Booking relied heavily on manual processes via emails, SharePoint, and calls, leading to significant delays (up to 2-3 business days depending on demand).<br>- <b>Updated Platform</b>: The updated booking platform significantly reduces turnaround time. It features a user-friendly calendar, automated service selection, and transparent availability status, making the process faster and more efficient.<br><br>We also introduced a 3D map to enhance user experience. The map provides interactive images of different rooms, displaying their purpose (e.g., Recording studio, flight simulator, workshops, design sprints) when hovered over. It also simulates the user journey, showcasing how different spaces can be used to modify processes for airlines. Additionally, the map displays the rooms and spaces available in the selected package in a modular manner, and highlights how adding another space can provide the best value for users.<br><br><b>Von Restorff effect</b>: Leveraging von Restorff's theory, a specific service offering stands out, making them memorable and delivering added value through cohesive packages.",
-            "images": [
-              {
-                "path": "FLF/8-FLF map.png",
-                "label": "3D Map Interface"
-              },
-              {
-                "path": "FLF/8-von-restoffs-hifi.png",
-                "label": "Von Restorff's Bundle Integration"
-              }
-            ]
-          },
-          {
-            "number": 13,
-            "heading": "Shuttle Services and Equipment Requests",
-            "content": "<b>Shuttle Services</b>: User interviews revealed challenges with travel time and parking. To address this, a shuttle service booking option has been integrated into the interface, reducing accessibility issues.<br><b>Equipment Requests</b>: Previously, arranging necessary equipment was challenging for users. Now, equipment requests can be added during the booking process. If specific equipment isn\’t available in-house, users can bring their own or opt for procurement, reducing logistical hurdles.",
-            "images": [
-              {
-                "path": "FLF/9-shuttle_need.jpg",
-                "label": "Shuttle Service Booking Option"
-              },
-              {
-                "path": "FLF/9-equipment.png",
-                "label": "Equipment Request Interface"
-              }
-            ]
-          },
-          {
-            "number": 14,
-            "heading": "Pepper Robot Integration",
-            "content": "We observed that Pepper—the interactive robot—was present at the Flying Lab Factory premises. To leverage this, we offered a solution to integrate a chatbot with Pepper's interface to help answer user FAQs and guide them to FLF representatives when needed. This approach ensures instant responses to user queries, significantly reducing the turnaround time compared to the previous 2-3 business days.",
-            "image": {
-              "path": "FLF/10-pepper-showcase.jpg",
-              "label": "Pepper Robot Integration"
-            }
-          },
-          {
-            "number": 15,
-            "heading": "Commercial and User Impact",
-            "content": "Offering services to external clients was initially a non-priority but still desirable. We proposed different interfaces to separate internal and external clients while enhancing usability. Suggested outreach efforts included university partnerships, discounted course bookings, and community engagement to increase visibility among new external clients.<br><b>Reduced Manual Effort</b>: The bundling and modular approach significantly reduces manual intervention by the Flying Lab Factory team, allowing them to focus on delivering quality service and investing in technology upgrades as needed.<br><b>Setting Expectations</b>: The new system sets clear, transparent expectations for both users and service providers. Each interaction is documented, accepted, and tracked, ensuring awareness of deliverables and timelines, thereby improving service quality and reliability.",
-            "image": {
-              "path": "FLF/11-internal-external.jpg",
-              "label": "Services offered for internal and external clients"
-            }
+  "projects": [
+    {
+      "title": "Balancify - Achieving Work-Life Balance",
+      "sections": [
+        {
+          "number": 1,
+          "heading": "Competitive Audit",
+          "content": "Two direct and one indirect competitor were chosen, all aimed at helping users achieve work-life balance. While these apps integrated helpful features like <b>notes</b>, <b>journals</b>, and <b>diverse navigation options</b>, they struggled with <b>usability</b> and <b>user engagement</b> due to <b>cluttered screens</b> and <b>complex activity logging processes</b>. This analysis highlighted opportunities to <b>improve user experience</b> by <b>simplifying design</b>, <b>enhancing customization</b>, and <b>streamlining functionality</b>.",
+          "image": {
+            "path": "Balancify/1-competitive-audit.png",
+            "width": "100%",
+            "label": "Competitive audit comparing features of existing work-life balance apps"
           }
-        ]
-      },
-      // Placeholder for Project 2
-      // Placeholder for Project 3
-      // Placeholder for Project 4
-    ]
-  };
+        },
+        {
+          "number": 2,
+          "heading": "User Interviews",
+          "content": "We conducted a total of <b>9 interviews</b>, out of which <b>6 were students</b> enrolled in higher education: Bachelor's or master's students and <b>3 were working professionals</b>. Typical topics covered within user interviews include:<ul><li><b>Background</b> (such as ethnographic data)</li><li>The <b>use of technology</b> in general</li><li>Their current way of <b>scheduling/planning their days</b></li><li>The user's <b>main objectives and motivations</b></li><li>The user's <b>pain points</b></li></ul>"
+        },
+        {
+          "number": 3,
+          "heading": "",
+          "content": "On doing a <b>thematic analysis</b> on the interviews, we found the following key points:<ul><li>Use of <b>Google/Outlook calendars</b> and their extensions like reclaim.ai, Excel sheets, paper planners, reminders on phones were the most commonly used tools.</li><li>They found the <b>reminder feature could be annoying</b>, especially when it distracted them in their current task, causing loss of focus and triggering unintended phone use.</li><li>Users usually see a huge <b>difference between expected and actual time</b> taken to complete tasks.</li><li><b>Grouping tasks</b> is confusing at first glance, leading to increased cognitive load.</li><li>They need <b>simpler interfaces</b> with the ability to flexibly set reminders.</li><li>Users are interested in <b>tracking time wasters</b>, managing meetings, and better time management customized specifically to them.</li><li>They would like to <b>visualize their life in well-defined sectors</b> and have the <b>ability to review daily/weekly/monthly</b>.</li><li>They want to see data about <b>which tasks they spend the most time on</b>.</li><li>The ability to <b>divide tasks into subtasks</b> and <b>sequentially task-block over a few days</b>.</li><li>They are open to sharing data but are cautious about <b>data being handled by third parties</b>.</li></ul>These were divided into advantages of planners, disadvantages, user needs, and user suggestions as seen here:",
+          "image": {
+            "path": "Balancify/2-results-of-thematic analysis-of-user-interviews.png",
+            "width": "45%",
+            "label": ""
+          }
+        },
+
+        {
+          "number": 5,
+          "heading": "Persona",
+          "content": "The target user, Silvia, represents students who struggle with balancing academic, gaming, and sleep schedules, showing a need for intuitive, supportive tools to manage time effectively despite her deep immersion in digital and gaming culture.",
+          "image": {
+            "path": "Balancify/3-persona-usergroup-students.png",
+            "width": "60%",
+            "label": "Persona for student"
+          }
+        },
+        {
+          "number": 6,
+          "heading": "Affinity Map",
+          "content": "<b>Say:</b><ul><li>Users find planning essential for productivity and long-term goals, particularly for work-related tasks.</li><li>Writing tasks down serves as a reminder, though they don't plan everything.</li><li>Some users desire a feature to rate task completion satisfaction.</li></ul><b>Think:</b><ul><li>Planning is perceived as time-consuming, and users feel it mostly serves work rather than personal life.</li><li>Desire for better integration with tools like Google Calendar.</li><li>Users are overwhelmed by multimedia distractions, impacting their focus.</li></ul><b>Do:</b><ul><li>Many users make lists of tasks, focusing on long-term planning, and only plan for critical tasks.</li><li>They use various tools like Google Calendar, Excel sheets, and Microsoft Teams to stay organized.</li></ul><b>Feel:</b><ul><li>Users feel challenged by underestimating or overestimating task durations.</li><li>They find predefined templates useful for structuring long-term goals.</li><li><b>Data privacy concerns</b> are present, especially when sharing personal information within planning tools.</li></ul>",
+          "image": {
+            "path": "Balancify/4-affinity-map.png",
+            "width": "80%",
+            "label": "Affinity map for the user group: Students"
+          }
+        },
+        {
+          "number": 7,
+          "heading": "User Story",
+          "content": "\"As a master's student who loves gaming, I want to keep a close track of my schedule so that I can graduate successfully while supporting my hobbies.\""
+        },
+        {
+          "number": 8,
+          "heading": "Problem Statement",
+          "content": "<b>Silvia</b> is a <b>student and gamer</b> who needs to <b>stick to deadlines</b> and <b>balance personal interests</b> because she wants to <b>graduate successfully</b> while enjoying her hobbies."
+        },
+        {
+          "number": 9,
+          "heading": "Wireframe",
+          "content": "",
+          "image": {
+            "path": "Balancify/7-sketch.png",
+            "width": "20%",
+            "label": "A rough sketch based on our ideation and insights from initial interviews"
+          }
+        },
+        {
+          "number": 10,
+          "heading": "",
+          "content": "",
+          "image": {
+            "path": "Balancify/7-wireframe.png",
+            "width": "80%",
+            "label": "A digital wireframe based on the sketches"
+          }
+        },
+        {
+          "number": 11,
+          "heading": "",
+          "content": "<ul><li><b>Calendar view</b> lets users schedule tasks daily, weekly, or monthly, providing an organized view of commitments.</li><li>Users can <b>categorize tasks by life areas</b> (e.g., Family, Leisure) to help balance different aspects of life.</li><li>Allows users to <b>allocate a percentage of time</b> to each life area, setting intentions for time distribution.</li><li>After tasks, users <b>rate their sense of achievement, pleasure, and emotions</b> to encourage self-reflection.</li><li><b>Summary screen</b> shows visual analytics on time allocation, helping users review balance and adjust as needed.</li></ul>"
+        },
+        {
+          "number": 12,
+          "heading": "Usability Test #1",
+          "content": "<b>Task Completion Times and Learning Curve</b><br>Users initially took longer to complete tasks but became faster as they familiarized themselves with the app. By Task 3-4 out of 5, their efficiency noticeably improved, indicating that an introductory tutorial or guided tour could help new users get up to speed quickly.<br><br><b>System Usability Scale (SUS) </b><br>conducted on 5 participants, users rated the app highly for ease of use and navigation and felt confident using it without technical support. However, they pointed out minor inconsistencies in terminology, with terms like “Ratio” creating some confusion. Simplifying language and maintaining consistent terminology would enhance user comprehension and reduce cognitive load.<br><br>Through usability testing, the app achieved an average SUS score of <b>84.0</b>, reflecting its high usability and intuitive design. Key insights highlighted user satisfaction with navigation, with minor suggestions for simplifying terminology to enhance clarity.",
+          "image": {
+            "path": "Balancify/8-usability-scale.png",
+            "width": "40%",
+            "label": ""
+          }
+        },
+        {
+          "number": 14,
+          "heading": "",
+          "content": "<b>User Feedback on Interface and Data Visualization</b><br>Participants found the app layout intuitive and appreciated features like emotion tracking and feedback on their sense of achievement. However, they noted redundancy in metrics, such as “pleasurable” and “satisfying” activities. Streamlining these aspects could improve clarity and user engagement.<br><br><b>Customizable Features and Notifications</b><br>There was strong interest in having more control over notifications and customizing color options for different categories. Additionally, users suggested using simpler, more accessible terms throughout the app to avoid confusion.<br><br><b>Task Consolidation and Dashboard Suggestions</b><br>Participants recommended showing daily tasks in a single view on the main screen for easier access and reduced navigation time. Adding a “Today’s Tasks” section would make the interface more efficient and support quicker task management."
+        },
+        {
+          "number": 15,
+          "heading": "Changes Based on User Insights",
+          "content": "Updated terminology and visuals for clarity, like changing \"ratio\" to \"desired %\", and increasing font sizes from 15 to 18 for better readability. Added a congratulatory message for task completion and simplified feedback metrics by merging similar terms for positive reinforcement.",
+          "image": {
+            "path": "Balancify/9-changes-after-usability-test.png",
+            "width": "80%",
+            "label": "Interpreted changes to be made based on 5 usability tests"
+          }
+        },
+        {
+          "number": 16,
+          "heading": "“How Might We” Questions (Thematic Grouping)",
+          "content": "<ul><li><b>Time Management</b>: How might we reduce wasted time and support efficient planning?</li><li><b>Motivation</b>: How might we keep users motivated and positive?</li><li><b>Balance</b>: How might we help users achieve a balanced work-life integration?</li><li><b>Reflective Insights</b>: How might we quantify and provide insights on users’ daily/weekly reflections?</li></ul>",
+          "image": {
+            "path": "Balancify/10-HMW-questions.png",
+            "width": "70%",
+            "label": "How Might We questions narrowed down"
+          }
+        },
+        {
+          "number": 17,
+          "heading": "User Opinions and Our Interpretations",
+          "content": "Users requested more <b>customization</b> (e.g., multiple reminders), <b>simpler language</b>, a <b>unified task view</b>, and clear <b>data privacy policies</b>.",
+          "image": {
+            "path": "Balancify/11-needs-solutions.png",
+            "width": "65%",
+            "label": "Mapping user needs to potential solutions"
+          }
+        },
+        {
+          "number": 20,
+          "heading": "Task Analysis",
+          "content": "",
+          "image": {
+            "path": "Balancify/12-task-analysis.png",
+            "width": "51%",
+            "label": "Tasks users complete to achieve their goals"
+          }
+        },
+        {
+          "number": 22,
+          "heading": "Marketing Strategies",
+          "content": "<b>Pricing Model</b><br><i>Initial Model</i>: Launch as a Freemium app, offering free access with optional premium features.<br><i>Future Model</i>: Transition to a monthly subscription for advanced features like AI-based insights and one-on-one consultations with psychologists.<br><br><b>Target Audience</b><br><i>Primary Users</i>:<ul><li>Students pursuing bachelor's or master's degrees, seeking balance in academics and personal life.</li><li>Working Professionals managing workload stress, looking for tools to improve work-life balance.</li></ul>"
+        },
+        {
+          "number": 23,
+          "heading": "Demographic Insights",
+          "content": "<b>Keyword Analysis</b>: We identified and used Google Trends to lookup interests in the seven relevant search terms, including Daily planner 2023, Self-reflection, Procrastination, Work-life balance, and Occupational burnout.",
+          "image": {
+            "path": "Balancify/13a-countries-list.png",
+            "width": "60%",
+            "label": "List of countries identified with high demand for our tool"
+          }
+        },
+        {
+          "number": 24,
+          "heading": "",
+          "content": "",
+          "image": {
+            "path": "Balancify/13b-countries-rating-demographic-analysis.png",
+            "width": "60%",
+            "label": "Countries ranked by demand for work-life balance tools"
+          }
+        },
+        {
+          "number": 25,
+          "heading": "",
+          "content": "Country-Based Demand: Analysis of search interest by country revealed high engagement from <b>Australia</b>, <b>South Africa</b>, and <b>Canada</b>. The data-driven targeting allows us to focus on countries with established interest, increasing the efficiency of our ad spend."
+        },
+        {
+          "number": 26,
+          "heading": "Promotional Strategy",
+          "content": "<b>Early Access Offer</b>: Reward early adopters and beta testers with 15 free psychologist consultations upon new updates.<br><b>Cost-Effective Reach</b>: Aim to maximize Return on Ad Spend (ROAS) with an anticipated reach of approximately 90,000 target users.<br><b>SMART Goals</b>: Establish clear, measurable, and time-bound objectives to guide and assess campaign effectiveness."
+        },
+        {
+          "number": 27,
+          "heading": "",
+          "content": "<b>Campaign Execution</b><br><i>Ad Budget</i>: Allocate $500 over 7 days on LinkedIn to build brand awareness.<br><i>Goals</i>:<ul><li><b>Testing</b>: Measure audience response to ads, gathering data to optimize future campaigns.</li><li><b>Rapid Exposure</b>: Evaluate initial brand awareness and interest within the target demographics.</li></ul><br><b>Engagement Strategies</b><ul><li><b>LinkedIn Advertising</b>: Focused on students, young professionals, and psychologists to directly reach key user groups.</li><li><b>Social Media Sharing</b>: Promote the app across social networks and interest groups for organic reach.</li><li><b>User Data Insights</b>: With consent, share user insights with mental health professionals to enhance personalized support in the app.</li></ul><br><b>Evaluation and Growth</b><br><i>Data Analytics</i>: Track ad performance, user engagement, and conversion rates to fine-tune marketing.<br><i>Evolving Pricing</i>: Shift from freemium to a paid model, supporting both end-users and professionals with tailored features."
+        }
+      ]
+    },
+    // Placeholder for Project 3
+    // Placeholder for Project 4
+  ]
+};
+
 
   function renderProjects(projects) {
     const container = document.getElementById('projects');
@@ -246,59 +332,152 @@
       if (!project.title) return; // Skip placeholders
 
       const projectDiv = document.createElement('div');
+      projectDiv.style.margin = '4.25rem'; // Set margin for the entire project
 
-      // Project Title
-      const title = document.createElement('h1');
-      title.textContent = project.title;
-      projectDiv.appendChild(title);
-
+    
       // Render Sections
-      project.sections.forEach(section => {
+      for (let i = 0; i < project.sections.length; i++) {
+        const section = project.sections[i];
+
+        // Create a wrapper for the heading, content, and images
+        const sectionWrapper = document.createElement('div');
+        sectionWrapper.classList.add('easing-container'); 
+        sectionWrapper.style.marginBottom = '3.25rem'; // Add bottom margin for spacing
+        
         // Serial Number and Heading
-        const heading = document.createElement('h2');
-        heading.textContent = `${section.heading}`;
-        projectDiv.appendChild(heading);
-
-        // Content
-        const content = document.createElement('p');
-        content.innerHTML = section.content;
-        projectDiv.appendChild(content);
-
-     /*   const content = document.createElement('p');
-         content.innerHTML = section.content; // Render the HTML content directly
-        projectDiv.appendChild(content);
-    */
-
-        // Single Image
-        if (section.image) {
-          const img = document.createElement('img');
-          img.src = section.image.path;
-          img.alt = section.image.label;
-          img.style.width = '65%';
-          img.style.display = 'block';
-          projectDiv.appendChild(img);
-
-          const imgLabel = document.createElement('p');
-          imgLabel.textContent = section.image.label;
-          projectDiv.appendChild(imgLabel);
+        if (section.heading && section.heading.trim() !== '') {
+          const heading = document.createElement('h2');
+          heading.textContent = `${section.heading}`;
+          heading.style.color = '#D4FA86';
+          heading.style.fontWeight='700';
+          heading.style.paddingTop = '3.25rem';
+          sectionWrapper.appendChild(heading);
         }
 
-        // Multiple Images
-        if (section.images) {
-          section.images.forEach(image => {
+        const contentWrapper = document.createElement('div');
+        contentWrapper.style.display = 'flex';
+        contentWrapper.style.flexDirection = 'column';
+        contentWrapper.style.alignItems = 'center';
+        contentWrapper.style.gap = '1.25rem'; // Gap between image and content
+        contentWrapper.style.marginLeft = '6.25rem';
+
+        // Check if content is empty
+        const isContentEmpty = !section.content || section.content.trim() === '';
+
+        if (isContentEmpty) {
+          // Collect consecutive images when content is empty
+          const images = [];
+          const labels = [];
+          let j = i;
+          while (
+            j < project.sections.length &&
+            (!project.sections[j].content || project.sections[j].content.trim() === '')
+          ) {
+            if (project.sections[j].image) {
+              images.push(project.sections[j].image);
+              labels.push(project.sections[j].image.label);
+            }
+            j++;
+          }
+          i = j - 1; // Update the index to skip processed sections
+
+          // Create a wrapper for the images
+          const imagesWrapper = document.createElement('div');
+          imagesWrapper.style.display = 'flex';
+          imagesWrapper.style.flexDirection = 'row';
+          imagesWrapper.style.gap = '1rem';
+          imagesWrapper.style.justifyContent = 'center'; // Add this line
+          imagesWrapper.style.margin = '0 auto'; // Add this line
+
+
+          images.forEach(image => {
             const img = document.createElement('img');
             img.src = image.path;
             img.alt = image.label;
-            img.style.width = '65%';
+            img.style.width = image.width;
             img.style.display = 'block';
-            projectDiv.appendChild(img);
+            img.style.alignItems='center';
+            img.style.marginTop = '1.25rem';
 
-            const imgLabel = document.createElement('p');
-            imgLabel.textContent = image.label;
-            projectDiv.appendChild(imgLabel);
+            // Apply styles to make it look like it's floating
+            img.style.borderRadius = '1.25rem';
+            img.style.boxShadow = '0 10px 20px rgba(100, 100, 100, 0.5)';
+
+            imagesWrapper.appendChild(img);
           });
+          // Image Labels
+          const imgLabel = document.createElement('p');
+          imgLabel.textContent = labels.join(' | ');
+          imgLabel.style.marginTop = '0.5rem';
+          imgLabel.style.fontStyle = 'italic';
+          imgLabel.style.textAlign = 'center'; // Add this line
+
+          contentWrapper.appendChild(imagesWrapper);
+          contentWrapper.appendChild(imgLabel);
+
+         
+        } else {
+          // Content is not empty
+          // Create content container with background
+          const contentContainer = document.createElement('div');
+          contentContainer.style.backgroundColor = '#333'; // Dark grey shade
+          contentContainer.style.padding = '1rem';
+          contentContainer.style.borderRadius = '0.5rem';
+          //contentContainer.style.boxShadow = '0 10px 20px rgba(255, 25, 25, 1000)';
+          contentContainer.style.boxShadow = '0 10px 20px rgba(255, 255, 255, 0.05)'; // Light shadow for 3D effect
+          contentContainer.style.borderBottom = '5px solid rgba(215, 250, 134, 0.5)'; // Light border line at the bottom
+          contentContainer.style.borderRight = '3px solid rgba(255, 255, 255, 0.3)'; // Side border for extra depth
+
+          //contentContainer.style.color = '#fff'; // For readability
+
+          const content = document.createElement('p');
+          content.innerHTML = section.content;
+          content.style.lineHeight = '1.56'; // Line height adjustment
+          contentContainer.appendChild(content);
+
+          // Handle image if exists
+          if (section.image) {
+            const imgWidthNum = parseInt(section.image.width);
+            if (imgWidthNum < 50) {
+              contentWrapper.style.flexDirection = 'row'; // Align image and content side by side
+            }
+
+            const img = document.createElement('img');
+            img.src = section.image.path;
+            img.alt = section.image.label;
+            img.style.width = section.image.width;
+            img.style.display = 'block';
+            img.style.marginTop = '1.25rem';
+            img.style.alignItems='center';
+
+
+            // Apply styles to make it look like it's floating
+            img.style.borderRadius = '1.25rem';
+            img.style.boxShadow = '0 10px 20px rgba(100, 100, 100, 0.5)';
+
+            // Append image and content side by side
+            contentWrapper.appendChild(img);
+               // Image Label
+            const imgLabel = document.createElement('p');
+            imgLabel.textContent = section.image.label;
+            imgLabel.style.marginTop = '0.5rem';
+            imgLabel.style.fontStyle = 'italic';
+            contentWrapper.appendChild(imgLabel);
+            contentWrapper.appendChild(contentContainer);
+
+         
+          } else {
+            // Only content
+            contentWrapper.appendChild(contentContainer);
+          }
         }
-      });
+
+        // Append contentWrapper to sectionWrapper
+        sectionWrapper.appendChild(contentWrapper);
+
+        // Append the sectionWrapper to the projectDiv
+        projectDiv.appendChild(sectionWrapper);
+      }
 
       // Append the projectDiv to the container
       container.appendChild(projectDiv);
@@ -306,15 +485,54 @@
   }
 
   renderProjects(data.projects);
+</script>
 
-    </script>
+
+  <!-- Footer Section -->
+  <footer class="footer" id="footer">
+    <!-- Circular image and text-based footer links -->
     
+        <div class="float-container" id="float-container">
+            <img src="images/Rahul.png" loading="lazy" alt="Image of Rahul Prakash" class="float-image">
+        </div>
 
+    <br>
+    <div class="footer-text">
+        <span class="social-links">
+            <img src="images/Email.svg" loading="lazy" class="social-img"  data-href="mailto:rahul.prksh1998@gmail.com" alt="Rahul's Email ID">
+            <a href="mailto:rahul.prksh1998@gmail.com" target="_blank">Email</a>
+        </span>
+        <span class="social-links">
+            <img src="images/linkedin.svg" loading="lazy" class="social-img" data-href="https://www.linkedin.com/in/rahul-prakash-651106145/" alt="Rahul's LinkedIn"> 
+            <a href="https://www.linkedin.com/in/rahul-prakash-651106145/" target="_blank">LinkedIn
+            </a>
+        </span>
 
+        <span class="social-links">
+            <img src="images/Whatsapp.svg" loading="lazy" class="social-img" data-href="https://wa.me/qr/JUSH3EORLHRFP1"  alt="Rahul's WhatsApp">
+            <a href="https://wa.me/qr/JUSH3EORLHRFP1" target="_blank">WhatsApp</a>
+        </span>
+        <span class="social-links">
+            <img src="images/Github.svg" loading="lazy" class="social-img" data-href="https://github.com/Rahul0Prakash/Portfolio" alt="Rahul's Github">
+            <a href="https://github.com/Rahul0Prakash/Portfolio" target="_blank">Github</a>
+        </span>
+    </div>
 
-
-    <footer>
+    <span class="footnote">
         <p>&copy; 2024 Rahul Prakash</p>
+    <span>This site was first designed on Figma with styling inspired by 
+        <a class="highlight_apple" target="_blank" rel="noopener noreferrer" href="https://developer.apple.com/design/human-interface-guidelines/color">
+            Apple’s design system.</a>
+    </span>
+        The basic skeleton was written in HTML, with values extracted from Figma's dev mode.<br>
+        ChatGPT assisted with programming using CSS and JavaScript.<br>
+        Apple® and its design system are trademarks of Apple Inc.
+        <br><br>
+    </span>
     </footer>
+    <script src="js/navbar.js" ></script>
+    <script src="js/dropdown.js" ></script>
+    <script src="js/script.js" ></script>
+
 </body>
 </html>

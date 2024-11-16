@@ -79,7 +79,11 @@
     height: 60px; /* Size of the container */
 
   }
-  
+
+  .one-one-video{
+    width:fit-content;
+    height: auto;
+  }
   .scroll-down-arrow img {
     width: 40px; /* Adjust the size of the SVG inside the circle */
     height: auto;
@@ -219,7 +223,12 @@
     flex-direction: column;
     padding: 0 1rem;
   }
-
+  .about-column {
+    align-items: center;
+    padding: 0 1rem;
+    height: auto;
+    max-width: 50%;
+  }
   h1 {
     font-size: 2rem;
     text-align: center !important;

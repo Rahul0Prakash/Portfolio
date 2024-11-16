@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="icon" href="../favicon.ico" type="image/x-icon"> <!-- Favicon in ICO format -->
+  <link rel="icon" href="images/Favicon.png" type="image/png"> <!-- Favicon in PNG format -->
+  <link rel="icon" sizes="16x16" href="images/favicon-16x16.png" type="image/png">
+  <link rel="icon" sizes="32x32" href="images/favicon-32x32.png" type="image/png">
+  <link rel="icon" sizes="512x512" href="images/android-chrome-512x512" type="image/png">
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png"> <!-- Apple Touch Icon -->
+
+
+    <title>Rahul Prakash's Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <!--div id="preloader">
+        <img src="images/loading.gif" alt="Loading GIF" class="loading-gif" >
+    </div-->
+    <a href="https://www.youxrahul.work/#work" class="back-button" id="backButton">
+      <img src="images/back_arrow.svg" alt="Back Button">
+  </a>
+    <div id="scrollUpButton" class="scroll-up-button">
+        <img src="images/upward_arrow.svg" loading="lazy" alt="Scroll to Top">
+    </div>
+</head>
+<body>
+         <!-- Navigation Bar -->
+        <nav class = "nav" id="nav">
+          <a href="https://www.youxrahul.work" target="_blank">
+          <img src="images/youXrahul.svg" class="logo" id="logo" alt="logo"></img> <!-- Logo as a text-based navigation element -->
+        </a>
+          <div class="nav-links">
+              <!-- Navigation links to the sections of the page -->
+              <a class="nav-item" href="https://www.youxrahul.work/#about">About Me</a>
+              <a class="nav-item" href="https://www.youxrahul.work/#work">Work</a>
+              <a class="nav-item" href="../RahulPrakash_CV.pdf" target="_blank" rel="noopener noreferrer">Resumé</a>
+          </div>
+          <div class="hamburger" id="hamburger">
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+          </div>
+          <!-- Dropdown Menu -->
+          <div class="dropdown-menu" id="dropdownMenu">
+                  <span class="grid-item">
+                      <a href="#about">About Me</a>
+                    </span>
+                    <span class="grid-item">
+                      <a href="#work">Work</a>
+                    </span>
+                    <span class="grid-item">
+                      <a href="RahulPrakash_CV.pdf" target="_blank" rel="noopener noreferrer">Resumé</a>
+                    </span>
+          </div>
+        </nav>
+        <div class="easing-container">
+          <section class="project-title-container">
+            <div class="triple-diamond-image">
+              <!-- Image will be used as background, so no separate image tag needed here -->
+            </div>
+            <div class="project-title">
+                <h1><span style='background-color: #D4FA86; color: black;'>AudiVerse</span>: Engage, Feedback, Reward</h1>
+              <p>A gamified platform that rewards customers for their feedback, fostering a deeper connection with the brand</p>
+            </div>
+          </section>
+        </div>
+        
+      <!-- Upward Arrow Button -->
+      <div id="scrollUpButton" class="scroll-up-button">
+          <img src="assets/images/upward_arrow.svg" loading="lazy" alt="Scroll to Top">
+      </div>
+    <div class="easing-container">
+      <div class="prototype-and-details">
+        <!-- Left-Hand Side: Prototype Video -->
+        <div class="prototype-section">
+            <div class="mobile-video-container">
+                <video autoplay loop muted playsinline>
+                    <source src="videos/myAudi.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    
+        <!-- Right-Hand Side: Text Sections -->
+        <div class="details-section">
+            <!-- The Challenge Section -->
+            <div class="section">
+                <h3 class="section-title">The Challenge</h3><br>
+                <p class="section-content">
+                        The challenge presented was to create a feedback ecosystem for Audi that is both engaging and meaningful for customers. The current system lacked engagement and did not offer tangible value to customers, making it difficult to encourage feedback that could contribute to Audi’s service improvement.
+                </p>
+            </div><br><br>
+    
+            <!-- The Solution Section -->
+            <div class="section">
+                <h3 class="section-title">The Solution</h3><br>
+                <p class="section-content">
+                        The solution focuses on building an interactive, gamified feedback system named AudiVerse, integrated into their existing myAudi app. The goal was to incentivize users to provide feedback by making the process rewarding and fun.
+                </p>
+            </div>
+        </div>
+    </div><br><br>
+
+
+    <div class="about-columns">
+    <div class="about-column">
+        <h3 class="section-title">Scope</h3><br>
+        Design thinking exercise in Collaboration between Audi Gmbh and Hochschule Rhein-Waal
+    </div>
+      <div class="about-column">
+        <h3 class="section-title">The Team</h3><br>
+        <ul class="section-content" style="list-style-type: circle;">
+          <li>Myself (UXR)	</li>
+          <li>One from Quality Assurance</li> 
+          <li>Three Graphic Designers</li> 
+        </ul>
+        </div>
+    </div>
+    </div>
+
+       
+
+   
+   <!-- HTML Code Snippet -->
+<div id="projects"></div>
+
+<script>
+ const data = {
+  "projects": [
+    {
+      "title": "AudiVerse - Enhancing Customer Engagement Through Gamification",
+      "sections": [
+        {
+          "number": 1,
+          "heading": "Ideation",
+          "content": "The project started with the idea of awarding <b>scale models of Audi cars</b> to loyal customers as part of creating a <b>feedback ecosystem</b>. However, based on preliminary feedback from Audi representatives, this approach proved <b>too expensive to sustain</b>. This led us to ideate new solutions that leveraged existing Audi initiatives to expand their reach and create awareness, focusing on delivering an <b>interactive</b> and <b>rewarding experience</b> for customers."
+        },
+        {
+          "number": 2,
+          "heading": "Key Elements of the Solution",
+          "content": "<ul><li><b>Integration of Audi Driving Experience</b>: Utilizing Audi Driving Experience events as a reward, allowing customers to engage with the brand in a more hands-on and exciting way.</li><li><b>Feedback Integration in myAudi App</b>: Incorporating a feedback system into the myAudi app to create a continuous record of customer feedback, promote transparency, and support a two-way conversation to improve service quality and customer experience.</li><li><b>Leveraging Metaverse Inspiration</b>: By using role-storming techniques, we explored “How would Meta do this?” particularly. We ideated towards virtual events, product announcements in VR, and community-driven experiences to create a unique offering, which inspired the concept of <b>AudiVerse</b>. The name reflects the expanded universe of Audi experiences accessible to users.</li></ul>"
+        },
+        {
+          "number": 3,
+          "heading": "AudiVerse Concept",
+          "content": "The concept of <b>AudiVerse</b> received positive responses, particularly when users were informed about the possibility of <b>exclusive access</b> to Audi offerings, upcoming releases, and both online and offline events. We envisioned AudiVerse as a platform where <b>feedback</b> is not only easy to give but also <b>rewarding</b>, encouraging meaningful engagement."
+        },
+        {
+          "number": 5,
+          "heading": "Audi Service Feedback Companion Chat",
+          "content": "<ul><li>Captures customer feedback <b>interactively</b> and <b>personally</b> right after a service experience.</li><li>Builds a <b>transparent</b> and <b>engaging feedback ecosystem</b>.</li></ul>",
+          "image": {
+            "path": "Audiverse/1-audi-service-feedback.jpg",
+            "width": "25%",
+            "label": "Audi Service Feedback Companion Chat interface"
+          }
+        },
+        {
+          "number": 6,
+          "heading": "Main AudiVerse Dashboard",
+          "content": "<ul><li><b>Central hub</b> for all activities, allowing users to view accumulated <b>AudiXperience Points</b>, access the feedback feature, and explore exclusive offerings.</li><li>Emphasizes <b>ease of navigation</b> for seamless engagement.</li></ul>",
+          "image": {
+            "path": "Audiverse/2-audiverse-main.jpg",
+            "width": "25%",
+            "label": "Main AudiVerse Dashboard"
+          }
+        },
+        {
+          "number": 7,
+          "heading": "AudiVerse Garage Screen",
+          "content": "<ul><li>Allows users to <b>unlock iconic, aspirational and brand-defining cars</b> by earning AudiXperience Points.</li><li>Users can view cars digitally in <b>3D, AR, and VR</b>, read about their features, and represent them in AudiVerse (e.g., as stickers on their profile during online events).</li><li>Adds excitement through <b>gamification</b> and motivates continued participation.</li></ul>",
+          "image": {
+            "path": "Audiverse/3-audiverse-garage-view.png",
+            "width": "25%",
+            "label": "AudiVerse Garage Screen"
+          }
+        },
+        {
+          "number": 8,
+          "heading": "Introductory Slide for Features",
+          "content": "<ul><li>Highlights the <b>features available</b> in the app, ensuring users understand the breadth of offerings.</li><li>Sets expectations and introduces opportunities for engagement, including events and customization options.</li></ul>",
+          "image": {
+            "path": "Audiverse/4-feedback-mode.jpg",
+            "width": "25%",
+            "label": "Introductory Slide showcasing app features"
+          }
+        },
+        {
+          "number": 9,
+          "heading": "Garage - Car Customization Options",
+          "content": "<ul><li>Users can <b>personalize</b> their virtual Audi with options for colors, rims, and accessories.</li><li>Reinforces ownership and creativity, making the experience enjoyable and personal.</li></ul>",
+          "image": {
+            "path": "Audiverse/5-garage-car-customization.jpg",
+            "width": "25%",
+            "label": "Garage screen with car customization options"
+          }
+        },
+        {
+          "number": 10,
+          "heading": "Garage Car View and Customization Categories",
+          "content": "<ul><li>Provides an organized view of customization categories such as <b>exterior, interior, and engine options</b>.</li><li>Supports a seamless and enjoyable customization experience without overwhelming the user.</li></ul>",
+          "image": {
+            "path": "Audiverse/6-garage-car-view.jpg",
+            "width": "25%",
+            "label": "Car view with customization categories"
+          }
+        },
+        {
+          "number": 11,
+          "heading": "Roadmap View of Cars - Progress Board",
+          "content": "<ul><li>Visual journey that shows categories like <b>Racing</b>, <b>Legendary</b>, and <b>Road Series</b> cars available for unlocking.</li><li>Motivates users to engage further as they progress towards new rewards.</li></ul>",
+          "image": {
+            "path": "Audiverse/7-garage-roadmap.jpg",
+            "width": "25%",
+            "label": "Roadmap view of cars - Progress Board"
+          }
+        },
+        {
+          "number": 12,
+          "heading": "My Garage Overview",
+          "content": "<ul><li>Allows users to see all their <b>unlocked cars</b> categorized by type.</li><li>Reinforces a sense of <b>achievement</b> and pride, highlighting rewards earned through participation.</li></ul>",
+          "image": {
+            "path": "Audiverse/8-garage.jpg",
+            "width": "25%",
+            "label": "Overview of unlocked cars in My Garage"
+          }
+        },
+        {
+          "number": 13,
+          "heading": "Overview of Feedbacks Submitted",
+          "content": "<ul><li>Summarizes user feedback along with <b>acknowledgment from Audi</b>.</li><li>Strengthens trust in the brand by reassuring users that their <b>input is valued</b>.</li></ul>",
+          "image": {
+            "path": "Audiverse/9-overview-of-feedbacks.jpg",
+            "width": "25%",
+            "label": "Overview of submitted feedbacks with acknowledgments"
+          }
+        },
+        {
+          "number": 14,
+          "heading": "Special Event Invitation Screen",
+          "content": "<ul><li>Invites users to <b>exclusive AudiVerse events</b>, leveraging Audi's initiatives like the Audi Driving Experience.</li><li>Offers a mix of <b>online and offline events</b> where users can experience Audi's offerings, upcoming releases, and immerse themselves in the brand.</li></ul>",
+          "image": {
+            "path": "Audiverse/10-virtual-event-invite-based-on-points.jpg",
+            "width": "25%",
+            "label": "Special event invitation screen"
+          }
+        },
+        {
+          "number": 16,
+          "heading": "Key Feedback from Usability Testing",
+          "content": "<ul><li><b>Intuitive Interface</b>: Users appreciated the intuitive design, with well-organized features and sections for smooth exploration.</li><li><b>Gamification Elements</b>: The AudiXperience Points feature was well-received, making the feedback process enjoyable and enhancing users' sense of involvement and loyalty.</li><li><b>Exclusive Event Access</b>: Participants expressed interest in attending exclusive events, showing a desire for deeper engagement with the Audi community.</li><li><b>Personalization</b>: The Virtual Car Customization feature sparked excitement, with users enjoying the range of options available for personalization.</li></ul>The usability tests provided initial validation for our concept. Users showed enthusiasm for the points system, personalization, and exclusive event access. However, since the testing sample did not include Audi's core customer base, further validation with target users is necessary to ensure the solution resonates effectively."
+        },
+        {
+          "number": 17,
+          "heading": "Expected Outcome",
+          "content": "<ul><li><b>Enhanced customer engagement</b> through gamification, personalization, and exclusive opportunities.</li><li>A <b>feedback process</b> that is both rewarding and enjoyable, improving the quantity and quality of feedback while fostering brand loyalty.</li><li>Alignment with Audi’s vision of <b>innovation</b> and <b>premium experience</b> through continued user research, usability testing, and iterations.</li></ul>"
+        },
+        {
+          "number": 18,
+          "heading": "Considerations for Further Refinement",
+          "content": "<ul><li><b>Core Customer Base Feedback</b>: Further validation is needed with Audi's target users to ensure features resonate effectively with the intended audience.</li><li><b>Continuous Improvement</b>: Iterative improvements based on user feedback will help align AudiVerse with customer expectations and enhance engagement.</li></ul>"
+        }
+      ]
+    },
+    // Placeholder for Project 4
+  ]
+};function renderProjects(projects) {
+  const container = document.getElementById('projects');
+
+  projects.forEach(project => {
+    if (!project.title) return; // Skip placeholders
+
+    const projectDiv = document.createElement('div');
+    projectDiv.style.margin = '4.25rem'; // Set margin for the entire project
+
+    // Render Sections
+    for (let i = 0; i < project.sections.length; i++) {
+      const section = project.sections[i];
+
+      // Create a wrapper for the heading, content, and images
+      const sectionWrapper = document.createElement('div');
+      sectionWrapper.classList.add('easing-container'); 
+      sectionWrapper.style.marginBottom = '3.25rem'; // Add bottom margin for spacing
+
+      // Serial Number and Heading
+      if (section.heading && section.heading.trim() !== '') {
+        const heading = document.createElement('h2');
+        heading.textContent = `${section.heading}`;
+        heading.style.color = '#D4FA86';
+        heading.style.fontWeight = '700';
+        heading.style.paddingTop = '3.25rem';
+        sectionWrapper.appendChild(heading);
+      }
+
+      const contentWrapper = document.createElement('div');
+      contentWrapper.style.display = 'flex';
+      contentWrapper.style.flexDirection = 'column';
+      contentWrapper.style.alignItems = 'center';
+      contentWrapper.style.gap = '1.25rem'; // Gap between image and content
+      contentWrapper.style.marginLeft = '6.25rem';
+
+      // Check if content is empty
+      const isContentEmpty = !section.content || section.content.trim() === '';
+
+      if (isContentEmpty) {
+        // Collect consecutive images when content is empty
+        const images = [];
+        let j = i;
+        while (
+          j < project.sections.length &&
+          (!project.sections[j].content || project.sections[j].content.trim() === '')
+        ) {
+          if (project.sections[j].image) {
+            images.push(project.sections[j].image);
+          }
+          j++;
+        }
+        i = j - 1; // Update the index to skip processed sections
+
+        // Create a wrapper for the images
+        const imagesWrapper = document.createElement('div');
+        imagesWrapper.style.display = 'flex';
+        imagesWrapper.style.flexDirection = 'row';
+        imagesWrapper.style.gap = '1rem';
+        imagesWrapper.style.justifyContent = 'center';
+        imagesWrapper.style.margin = '0 auto';
+
+        images.forEach(image => {
+          // Create image container
+          const imageContainer = document.createElement('div');
+          imageContainer.style.display = 'flex';
+          imageContainer.style.flexDirection = 'column';
+          imageContainer.style.alignItems = 'center';
+          imageContainer.style.flexShrink = '0'; // Prevent shrinking
+          imageContainer.style.flexGrow = '0';   // Prevent growing
+          imageContainer.style.width = image.width; // Set container width
+
+          const img = document.createElement('img');
+          img.src = image.path;
+          img.alt = image.label;
+          img.style.width = '100%'; // Use full width of container
+          img.style.height = 'auto'; // Maintain aspect ratio
+          img.style.display = 'block';
+          img.style.marginTop = '1.25rem';
+
+          // Apply styles to make it look like it's floating
+          img.style.borderRadius = '1.25rem';
+          img.style.boxShadow = '0 10px 20px rgba(100, 100, 100, 0.5)';
+
+          // Image Label
+          const imgLabel = document.createElement('p');
+          imgLabel.textContent = image.label;
+          imgLabel.style.marginTop = '1.5rem';
+          imgLabel.style.fontStyle = 'italic';
+          imgLabel.style.textAlign = 'center';
+
+          // Append img and label to imageContainer
+          imageContainer.appendChild(img);
+          imageContainer.appendChild(imgLabel);
+
+          imagesWrapper.appendChild(imageContainer);
+        });
+
+        contentWrapper.appendChild(imagesWrapper);
+      } else {
+        // Content is not empty
+        // Create content container with background
+        const contentContainer = document.createElement('div');
+        contentContainer.style.backgroundColor = '#333'; // Dark grey shade
+        contentContainer.style.padding = '1rem';
+        contentContainer.style.borderRadius = '0.5rem';
+        contentContainer.style.boxShadow = '0 10px 20px rgba(255, 255, 255, 0.05)';
+        contentContainer.style.borderBottom = '5px solid rgba(215, 250, 134, 0.5)';
+        contentContainer.style.borderRight = '3px solid rgba(255, 255, 255, 0.3)';
+        contentContainer.style.flexGrow = '1'; // Allow content to grow
+        contentContainer.style.flexShrink = '1'; // Allow content to shrink
+        contentContainer.style.flexBasis = '0'; // Initial size before growing
+
+        const content = document.createElement('p');
+        content.innerHTML = section.content;
+        content.style.lineHeight = '1.56';
+        contentContainer.appendChild(content);
+
+        if (section.image) {
+          // Set contentWrapper to display items in a row
+          contentWrapper.style.flexDirection = 'row';
+          contentWrapper.style.alignItems = 'center'; // Align items to the top
+          contentWrapper.style.gap = '6.25rem'; // Adjust gap between image and content
+
+          // Create image container
+          const imageContainer = document.createElement('div');
+          imageContainer.style.display = 'flex';
+          imageContainer.style.flexDirection = 'column';
+          imageContainer.style.alignItems = 'center';
+          imageContainer.style.flexShrink = '0'; // Prevent shrinking
+          imageContainer.style.flexGrow = '0';   // Prevent growing
+          imageContainer.style.width = section.image.width; // Set container width
+
+          const img = document.createElement('img');
+          img.src = section.image.path;
+          img.alt = section.image.label;
+          img.style.width = '100%'; // Use full width of container
+          img.style.height = 'auto'; // Maintain aspect ratio
+          img.style.display = 'block';
+          img.style.marginTop = '1.25rem';
+
+          // Apply styles to make it look like it's floating
+          img.style.borderRadius = '1.25rem';
+          img.style.boxShadow = '0 10px 20px rgba(100, 100, 100, 0.5)';
+
+          // Image Label
+          const imgLabel = document.createElement('p');
+          imgLabel.textContent = section.image.label;
+          imgLabel.style.marginTop = '1.5rem';
+          imgLabel.style.fontStyle = 'italic';
+          imgLabel.style.textAlign = 'center';
+
+          // Append image and label to imageContainer
+          imageContainer.appendChild(img);
+          imageContainer.appendChild(imgLabel);
+
+          // Append imageContainer and contentContainer to contentWrapper
+          contentWrapper.appendChild(imageContainer);
+          contentWrapper.appendChild(contentContainer);
+        } else {
+          // Only content
+          contentWrapper.appendChild(contentContainer);
+        }
+      }
+
+      // Append contentWrapper to sectionWrapper
+      sectionWrapper.appendChild(contentWrapper);
+
+      // Append the sectionWrapper to the projectDiv
+      projectDiv.appendChild(sectionWrapper);
+    }
+
+    // Append the projectDiv to the container
+    container.appendChild(projectDiv);
+  });
+}
+
+renderProjects(data.projects);
+
+</script>
+
+
+  <!-- Footer Section -->
+  <footer class="footer" id="footer">
+    <!-- Circular image and text-based footer links -->
+    
+        <div class="float-container" id="float-container">
+            <img src="images/Rahul.png" loading="lazy" alt="Image of Rahul Prakash" class="float-image">
+        </div>
+
+    <br>
+    <div class="footer-text">
+        <span class="social-links">
+            <img src="images/Email.svg" loading="lazy" class="social-img"  data-href="mailto:rahul.prksh1998@gmail.com" alt="Rahul's Email ID">
+            <a href="mailto:rahul.prksh1998@gmail.com" target="_blank">Email</a>
+        </span>
+        <span class="social-links">
+            <img src="images/linkedin.svg" loading="lazy" class="social-img" data-href="https://www.linkedin.com/in/rahul-prakash-651106145/" alt="Rahul's LinkedIn"> 
+            <a href="https://www.linkedin.com/in/rahul-prakash-651106145/" target="_blank">LinkedIn
+            </a>
+        </span>
+
+        <span class="social-links">
+            <img src="images/Whatsapp.svg" loading="lazy" class="social-img" data-href="https://wa.me/qr/JUSH3EORLHRFP1"  alt="Rahul's WhatsApp">
+            <a href="https://wa.me/qr/JUSH3EORLHRFP1" target="_blank">WhatsApp</a>
+        </span>
+        <span class="social-links">
+            <img src="images/Github.svg" loading="lazy" class="social-img" data-href="https://github.com/Rahul0Prakash/Portfolio" alt="Rahul's Github">
+            <a href="https://github.com/Rahul0Prakash/Portfolio" target="_blank">Github</a>
+        </span>
+    </div>
+
+    <span class="footnote">
+        <p>&copy; 2024 Rahul Prakash</p>
+    <span>This site was first designed on Figma with styling inspired by 
+        <a class="highlight_apple" target="_blank" rel="noopener noreferrer" href="https://developer.apple.com/design/human-interface-guidelines/color">
+            Apple’s design system.</a>
+    </span>
+        The basic skeleton was written in HTML, with values extracted from Figma's dev mode.<br>
+        ChatGPT assisted with programming using CSS and JavaScript.<br>
+        Apple® and its design system are trademarks of Apple Inc.
+        <br><br>
+    </span>
+    </footer>
+    <script src="js/navbar.js" ></script>
+    <script src="js/dropdown.js" ></script>
+    <script src="js/script.js" ></script>
+
+</body>
+</html>

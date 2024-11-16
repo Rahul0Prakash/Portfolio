@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="icon" href="../favicon.ico" type="image/x-icon"> <!-- Favicon in ICO format -->
+  <link rel="icon" href="images/Favicon.png" type="image/png"> <!-- Favicon in PNG format -->
+  <link rel="icon" sizes="16x16" href="images/favicon-16x16.png" type="image/png">
+  <link rel="icon" sizes="32x32" href="images/favicon-32x32.png" type="image/png">
+  <link rel="icon" sizes="512x512" href="images/android-chrome-512x512" type="image/png">
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png"> <!-- Apple Touch Icon -->
+
+
+    <title>Rahul Prakash's Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <!--div id="preloader">
+        <img src="images/loading.gif" alt="Loading GIF" class="loading-gif" >
+    </div-->
+    <a href="https://www.youxrahul.work/#work" class="back-button" id="backButton">
+      <img src="images/back_arrow.svg" alt="Back Button">
+  </a>
+    <div id="scrollUpButton" class="scroll-up-button">
+        <img src="images/upward_arrow.svg" loading="lazy" alt="Scroll to Top">
+    </div>
+</head>
+<body>
+         <!-- Navigation Bar -->
+        <nav class = "nav" id="nav">
+          <a href="https://www.youxrahul.work" target="_blank">
+          <img src="images/youXrahul.svg" class="logo" id="logo" alt="logo"></img> <!-- Logo as a text-based navigation element -->
+        </a>
+          <div class="nav-links">
+              <!-- Navigation links to the sections of the page -->
+              <a class="nav-item" href="https://www.youxrahul.work/#about">About Me</a>
+              <a class="nav-item" href="https://www.youxrahul.work/#work">Work</a>
+              <a class="nav-item" href="../RahulPrakash_CV.pdf" target="_blank" rel="noopener noreferrer">Resumé</a>
+          </div>
+          <div class="hamburger" id="hamburger">
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+          </div>
+          <!-- Dropdown Menu -->
+          <div class="dropdown-menu" id="dropdownMenu">
+                  <span class="grid-item">
+                      <a href="#about">About Me</a>
+                    </span>
+                    <span class="grid-item">
+                      <a href="#work">Work</a>
+                    </span>
+                    <span class="grid-item">
+                      <a href="RahulPrakash_CV.pdf" target="_blank" rel="noopener noreferrer">Resumé</a>
+                    </span>
+          </div>
+        </nav>
+        <div class="easing-container">
+          <section class="project-title-container">
+            <div class="triple-diamond-image">
+              <!-- Image will be used as background, so no separate image tag needed here -->
+            </div>
+            <div class="project-title">
+              <h1><span style='background-color: #D4FA86; color: black;'>MoodGlide</span>: A Novel Emotion Selector Device</h1>
+              <p>
+                Designing an inclusive device that helps users track and regulate emotions through tactile interactions and personalized feedback.
+              </p>
+            </div>
+          </section>
+        </div>
+        
+      <!-- Upward Arrow Button -->
+      <div id="scrollUpButton" class="scroll-up-button">
+          <img src="assets/images/upward_arrow.svg" loading="lazy" alt="Scroll to Top">
+      </div>
+    <div class="easing-container">
+      <div class="prototype-and-details">
+        <!-- Left-Hand Side: Prototype Video -->
+        <div class="prototype-section">
+            <div class="oneone-video-container">
+                <video autoplay loop muted playsinline>
+                    <source src="Moodglide/Moodglide.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    
+        <!-- Right-Hand Side: Text Sections -->
+        <div class="details-section">
+            <!-- The Challenge Section -->
+            <div class="section">
+                <h3 class="section-title">Overview</h3><br>
+                <p class="section-content">
+                  MoodGlide is an inclusive emotional regulation device designed to boost emotional awareness and facilitate personal growth. By using an intuitive joystick, users can select among six core emotions, receiving instant haptic and auditory feedback. The device aims to enhance emotional intelligence, improve relationships, and unlock emotional potential for people of all ages, including those with alexithymia.
+                </p>
+            </div><br>
+            <h3 class="section-title">My Role</h3><br>
+            As the UX designer and developer, I was responsible for:
+        <ul class="section-content" style="list-style-type: circle;">
+
+          <li> Concept development and user research</li> 
+          <li> Hardware and software integration</li> 
+            <li>Prototyping and 3D modeling</li> 
+            <li>Conducting user testing and iterating on feedback</li> 
+
+        </ul><br>
+        <h3 class="section-title">Scope</h3><br>
+        <ul class="section-content">
+          <li> Course work: Digital Fabrication </li> 
+          <li>50 hours dedicated.</li>
+          </ul>
+    
+            
+        </div>
+    </div>
+
+
+
+    </div>
+
+
+   <!-- HTML Code Snippet -->
+<div id="projects"></div>
+
+<script>
+  const data = {
+  "projects": [
+
+    {
+      "title": "MoodGlide - Enhancing Emotional Awareness",
+      "sections": [
+        {
+          "number": 1,
+          "heading": "The Problem",
+          "content": "I discovered the problem through observations and interviews with individuals in my circle. Many tended to <b>overestimate certain emotions</b>, often due to <b>recency bias</b>, <b>seasonal affective disorder</b> during less bright months, or other mental struggles they might be experiencing. Responses like, \"I've been feeling low more often,\" led me to explore <b>alexithymia</b>—a condition characterized by difficulty in recognizing and describing emotions—and the importance of <b>emotional awareness</b> for overall well-being. This insight motivated me to address this user need.<br><br>Many individuals struggle with <b>recognizing and expressing their emotions</b>, which can hinder personal growth and affect relationships. This challenge is especially prevalent among those with mental health conditions like alexithymia. There was a need for an accessible tool that helps users become more emotionally self-aware."
+        },
+        {
+          "number": 2,
+          "heading": "The Solution",
+          "content": "<b>MoodGlide</b> offers a tactile and engaging way for users to interact with and track their emotions. Key features include:<ul><li><b>Effortless Emotion Selection</b>: An intuitive joystick interface allows users to toggle between six core emotions—happiness, sadness, fear, anger, surprise, and disgust, based on Paul Ekman's theory of universal emotions.</li><li><b>Inclusive Design</b>: Braille labels and clear emoticons make the device accessible to users with visual impairments.</li><li><b>Auditory & Haptic Feedback</b>: Immediate feedback enhances user interaction and confirms emotion selection.</li><li><b>Reminders for Use</b>: Gentle nudges encourage consistent emotional check-ins throughout the day, facilitated by a real-time clock module.</li><li><b>Emotion Tracking</b>: The device logs date, time, and selected emotions to help users identify patterns over time.</li></ul>"
+        },
+        {
+          "number": 3,
+          "heading": "User Demographics",
+          "content": "<ul><li><b>High-Stress Professionals</b>: Individuals in demanding jobs seeking better emotional management.</li><li><b>Individuals with Mental Health Conditions</b>: Especially those who find it challenging to recognize or express emotions, such as people with alexithymia.</li><li><b>Students and Educators</b>: Those in educational settings looking to manage stress and improve emotional awareness.</li></ul>"
+        },
+        {
+          "number": 5,
+          "heading": "Hardware & Software Integration",
+          "content": "<b>Hardware</b>: Arduino Micro, joystick, buzzer, vibration motor, battery, and a real-time clock module.<br><b>Software</b>: Autodesk Fusion 360 was used for 3D modeling, and the Arduino platform was used for programming.<br><b>Prototyping</b>: Utilized Ultimaker S5 3D printer with PLA filament for a durable prototype."
+        },
+        {
+          "number": 6,
+          "heading": "",
+          "content": "",
+          "image": {
+            "path": "Moodglide/braille.gif",
+            "width": "35%",
+            "label": "MoodGlide has braille inscriptions for all 6 basic emotions around the circumference of the device, here are examples for Fear and Happiness"
+          }
+        },    
+        {
+          "number": 7,
+          "heading": "",
+          "content": "",
+          "image": {
+            "path": "Moodglide/emojis.gif",
+            "width": "32%",
+            "label": "Inclusive design with labels and emoticons"
+          }
+        },
+        {
+          "number": 8,
+          "heading": "",
+          "content": "",
+          "image": {
+            "path": "Moodglide/shell.gif",
+            "width": "35%",
+            "label": "Ergonomic design of the outer shell to fit between the fingers and to interact with the joystick"
+          }
+        },
+
+        {
+          "number": 10,
+          "heading": "Prototyping and Development",
+          "content": "<ul><li>The joystick enables users to effortlessly switch between six basic emotions. Accessible emoticon labels and Braille were incorporated to ensure inclusivity for visually impaired users.</li><li><b>Haptic feedback</b> (vibration motor) and <b>auditory signals</b> (buzzer) provided immediate confirmation of emotion selection, enhancing engagement.</li><li>The <b>real-time clock module</b> managed reminders, prompting users to engage with the device throughout the day.</li></ul>"
+        },
+        {
+          "number": 11,
+          "heading": "User Testing",
+          "content": "<ul><li>Conducted usability studies with six participants, including three with alexithymia traits, selected using the Toronto Alexithymia Scale (TAS-20).</li><li>Feedback was gathered using the <b>System Usability Scale (SUS)</b>, with scores ranging from <b>67.5 to 92.5</b>, indicating a strong user experience.</li><li>Users found the device engaging and easy to use, appreciating the tactile and auditory feedback. Participants compared it to a toy, which helped reduce pressure around emotion identification.</li></ul>"
+        },
+        {
+          "number": 12,
+          "heading": "Outcomes & Learnings",
+          "content": "<b>Positive Reception</b>: Users found MoodGlide engaging and easy to use, appreciating the tactile and auditory feedback.<br><b>Areas for Improvement</b>:<ul><li><b>Emoticon Clarity</b>: Simplify emoticons for better clarity and reduce confusion between similar emotions.</li><li><b>Device Portability</b>: Make the device more compact and portable, as users found the current version somewhat bulky.</li><li><b>Enhanced Tracking</b>: Develop a mobile app for detailed emotional data visualization and personalized recommendations.</li></ul>"
+        },
+        {
+          "number": 12,
+          "heading": "",
+          "content": "",
+          "image": {
+            "path": "Moodglide/poster.png",
+            "width": "65%",
+            "label": "Produced a Poster, and the <a href='https://www.youtube-nocookie.com/embed/uULBGM-RgEU' target='_blank' style='color: #D4FA86; text-decoration: underline;'>Video</a> as deliverables"
+          }
+        },
+        {
+          "number": 13,
+          "heading": "Adaptability and Technical Proficiency",
+          "content": "This project showcased my ability to:<ul><li><b>Navigate New Technologies</b>: Quickly learned and applied tools like Autodesk Fusion 360, Ultimaker S5, and Arduino microcontrollers.</li><li><b>Integrate Hardware and Software</b>: Combined physical components with software programming to create a functional prototype.</li><li><b>Apply User-Centered Design</b>: Employed iterative design methodologies, incorporating user feedback to enhance the device's usability and accessibility.</li></ul>"
+        },
+        {
+          "number": 14,
+          "heading": "Next Steps",
+          "content": "<ul><li><b>Expand Emotion Range</b>: Incorporate additional emotions to provide a more granular emotional spectrum.</li><li><b>Refine Design</b>: Reduce the device's size and weight for improved portability.</li><li><b>Data Visualization</b>: Develop a mobile application to visualize emotional data and provide personalized insights.</li><li><b>Long-Term Testing</b>: Conduct extended user studies to assess the impact on emotional development over time.</li></ul>"
+        },
+        {
+          "number": 15,
+          "heading": "Conclusion",
+          "content": "<b>MoodGlide</b> represents a significant step toward empowering individuals to enhance their emotional awareness. By combining inclusive design principles with innovative hardware and software integration, the device offers a user-friendly tool for personal growth. Ongoing iterations and user feedback will continue to shape its development, aiming to make emotional intelligence accessible to all."
+        }
+      ]
+    }
+  ]
+};
+
+
+  function renderProjects(projects) {
+    const container = document.getElementById('projects');
+
+    projects.forEach(project => {
+      if (!project.title) return; // Skip placeholders
+
+      const projectDiv = document.createElement('div');
+      projectDiv.style.margin = '4.25rem'; // Set margin for the entire project
+
+    
+      // Render Sections
+      for (let i = 0; i < project.sections.length; i++) {
+        const section = project.sections[i];
+
+        // Create a wrapper for the heading, content, and images
+        const sectionWrapper = document.createElement('div');
+        sectionWrapper.classList.add('easing-container'); 
+        sectionWrapper.style.marginBottom = '3.25rem'; // Add bottom margin for spacing
+        
+        // Serial Number and Heading
+        if (section.heading && section.heading.trim() !== '') {
+          const heading = document.createElement('h2');
+          heading.textContent = `${section.heading}`;
+          heading.style.color = '#D4FA86';
+          heading.style.fontWeight='700';
+          heading.style.paddingTop = '3.25rem';
+          sectionWrapper.appendChild(heading);
+        }
+
+        const contentWrapper = document.createElement('div');
+        contentWrapper.style.display = 'flex';
+        contentWrapper.style.flexDirection = 'column';
+        contentWrapper.style.alignItems = 'center';
+        contentWrapper.style.gap = '1.25rem'; // Gap between image and content
+        contentWrapper.style.marginLeft = '6.25rem';
+
+        // Check if content is empty
+        const isContentEmpty = !section.content || section.content.trim() === '';
+
+        if (isContentEmpty) {
+          // Collect consecutive images when content is empty
+          const images = [];
+          const labels = [];
+          let j = i;
+          while (
+            j < project.sections.length &&
+            (!project.sections[j].content || project.sections[j].content.trim() === '')
+          ) {
+            if (project.sections[j].image) {
+              images.push(project.sections[j].image);
+              labels.push(project.sections[j].image.label);
+            }
+            j++;
+          }
+          i = j - 1; // Update the index to skip processed sections
+
+          // Create a wrapper for the images
+          const imagesWrapper = document.createElement('div');
+          imagesWrapper.style.display = 'flex';
+          imagesWrapper.style.flexDirection = 'row';
+          imagesWrapper.style.gap = '1rem';
+          imagesWrapper.style.justifyContent = 'center'; // Add this line
+          imagesWrapper.style.margin = '0 auto'; // Add this line
+
+
+          images.forEach(image => {
+            const img = document.createElement('img');
+            img.src = image.path;
+            img.alt = image.label;
+            img.style.width = image.width;
+            img.style.display = 'block';
+            img.style.alignItems='center';
+            img.style.marginTop = '1.25rem';
+            img.style.flexShrink = '0'; // Prevent shrinking
+            img.style.flexGrow = '0';   // Prevent growing
+
+            // Apply styles to make it look like it's floating
+            img.style.borderRadius = '1.25rem';
+            //img.style.boxShadow = '0 10px 20px rgba(100, 100, 100, 0.5)';
+
+            imagesWrapper.appendChild(img);
+          });
+          // Image Labels
+          const imgLabel = document.createElement('p');
+          imgLabel.textContent = labels.join(' | ');
+          imgLabel.style.marginTop = '0.5rem';
+          imgLabel.style.fontStyle = 'italic';
+          imgLabel.style.textAlign = 'center'; // Add this line
+          imgLabel.innerHTML = section.image.label;
+
+          contentWrapper.appendChild(imagesWrapper);
+          contentWrapper.appendChild(imgLabel);
+
+         
+        } else {
+          // Content is not empty
+          // Create content container with background
+          const contentContainer = document.createElement('div');
+          contentContainer.style.backgroundColor = '#333'; // Dark grey shade
+          contentContainer.style.padding = '1rem';
+          contentContainer.style.borderRadius = '0.5rem';
+          //contentContainer.style.boxShadow = '0 10px 20px rgba(255, 25, 25, 1000)';
+          contentContainer.style.boxShadow = '0 10px 20px rgba(255, 255, 255, 0.05)'; // Light shadow for 3D effect
+          contentContainer.style.borderBottom = '5px solid rgba(215, 250, 134, 0.5)'; // Light border line at the bottom
+          contentContainer.style.borderRight = '3px solid rgba(255, 255, 255, 0.3)'; // Side border for extra depth
+          contentContainer.style.flexGrow = '1'; // Allow content to grow
+          contentContainer.style.flexShrink = '1'; // Allow content to shrink
+          contentContainer.style.flexBasis = '0'; // Initial size before growing
+
+          //contentContainer.style.color = '#fff'; // For readability
+
+          const content = document.createElement('p');
+          content.innerHTML = section.content;
+          content.style.lineHeight = '1.56'; // Line height adjustment
+          contentContainer.appendChild(content);
+
+          // Handle image if exists
+          if (section.image) {
+            const imgWidthNum = parseInt(section.image.width);
+            if (imgWidthNum < 50) {
+              contentWrapper.style.flexDirection = 'row'; // Align image and content side by side
+            }
+
+            const img = document.createElement('img');
+            img.src = section.image.path;
+            img.alt = section.image.label;
+            img.style.width = section.image.width;
+            img.style.display = 'block';
+            img.style.marginTop = '1.25rem';
+            img.style.alignItems='center';
+            imageContainer.style.flexShrink = '0'; // Prevent shrinking
+            imageContainer.style.flexGrow = '0';   
+
+            // Apply styles to make it look like it's floating
+            img.style.borderRadius = '1.25rem';
+            img.style.boxShadow = '0 10px 20px rgba(100, 100, 100, 0.5)';
+
+            // Append image and content side by side
+            contentWrapper.appendChild(img);
+               // Image Label
+            const imgLabel = document.createElement('p');
+            //imgLabel.textContent = section.image.label;
+            imgLabel.style.marginTop = '0.5rem';
+            imgLabel.style.fontStyle = 'italic';
+            imgLabel.innerHTML = section.image.label;
+            contentWrapper.appendChild(imgLabel);
+            contentWrapper.appendChild(contentContainer);
+
+         
+          } else {
+            // Only content
+            contentWrapper.appendChild(contentContainer);
+          }
+        }
+
+        // Append contentWrapper to sectionWrapper
+        sectionWrapper.appendChild(contentWrapper);
+
+        // Append the sectionWrapper to the projectDiv
+        projectDiv.appendChild(sectionWrapper);
+      }
+
+      // Append the projectDiv to the container
+      container.appendChild(projectDiv);
+    });
+  }
+
+  renderProjects(data.projects);
+</script>
+
+
+
+  <!-- Footer Section -->
+  <footer class="footer" id="footer">
+    <!-- Circular image and text-based footer links -->
+    
+        <div class="float-container" id="float-container">
+            <img src="images/Rahul.png" loading="lazy" alt="Image of Rahul Prakash" class="float-image">
+        </div>
+
+    <br>
+    <div class="footer-text">
+        <span class="social-links">
+            <img src="images/Email.svg" loading="lazy" class="social-img"  data-href="mailto:rahul.prksh1998@gmail.com" alt="Rahul's Email ID">
+            <a href="mailto:rahul.prksh1998@gmail.com" target="_blank">Email</a>
+        </span>
+        <span class="social-links">
+            <img src="images/linkedin.svg" loading="lazy" class="social-img" data-href="https://www.linkedin.com/in/rahul-prakash-651106145/" alt="Rahul's LinkedIn"> 
+            <a href="https://www.linkedin.com/in/rahul-prakash-651106145/" target="_blank">LinkedIn
+            </a>
+        </span>
+
+        <span class="social-links">
+            <img src="images/Whatsapp.svg" loading="lazy" class="social-img" data-href="https://wa.me/qr/JUSH3EORLHRFP1"  alt="Rahul's WhatsApp">
+            <a href="https://wa.me/qr/JUSH3EORLHRFP1" target="_blank">WhatsApp</a>
+        </span>
+        <span class="social-links">
+            <img src="images/Github.svg" loading="lazy" class="social-img" data-href="https://github.com/Rahul0Prakash/Portfolio" alt="Rahul's Github">
+            <a href="https://github.com/Rahul0Prakash/Portfolio" target="_blank">Github</a>
+        </span>
+    </div>
+
+    <span class="footnote">
+        <p>&copy; 2024 Rahul Prakash</p>
+    <span>This site was first designed on Figma with styling inspired by 
+        <a class="highlight_apple" target="_blank" rel="noopener noreferrer" href="https://developer.apple.com/design/human-interface-guidelines/color">
+            Apple’s design system.</a>
+    </span>
+        The basic skeleton was written in HTML, with values extracted from Figma's dev mode.<br>
+        ChatGPT assisted with programming using CSS and JavaScript.<br>
+        Apple® and its design system are trademarks of Apple Inc.
+        <br><br>
+    </span>
+    </footer>
+    <script src="js/navbar.js" ></script>
+    <script src="js/dropdown.js" ></script>
+    <script src="js/script.js" ></script>
+
+</body>
+</html>
