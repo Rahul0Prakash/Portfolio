@@ -266,16 +266,23 @@
         }
       ]
     },
-    // Placeholder for Project 4
   ]
-};function renderProjects(projects) {
+};
+
+function renderProjects(projects) {
   const container = document.getElementById('projects');
+  const isMobile = window.innerWidth <= 1000;
 
   projects.forEach(project => {
     if (!project.title) return; // Skip placeholders
 
     const projectDiv = document.createElement('div');
-    projectDiv.style.margin = '4.25rem'; // Set margin for the entire project
+    if(isMobile){
+        projectDiv.style.margin = '1rem'; // Set margin for the entire project
+      }
+      else{
+        projectDiv.style.margin = '4.25rem'; // Set margin for the entire project
+      }
 
     // Render Sections
     for (let i = 0; i < project.sections.length; i++) {
@@ -284,25 +291,44 @@
       // Create a wrapper for the heading, content, and images
       const sectionWrapper = document.createElement('div');
       sectionWrapper.classList.add('easing-container'); 
-      sectionWrapper.style.marginBottom = '3.25rem'; // Add bottom margin for spacing
+
+      if(isMobile){
+          sectionWrapper.style.marginBottom = '1.25rem'; // Add bottom margin for spacing
+        }
+      else{
+        sectionWrapper.style.marginBottom = '3.25rem'; // Add bottom margin for spacing
+      }
 
       // Serial Number and Heading
       if (section.heading && section.heading.trim() !== '') {
-        const heading = document.createElement('h2');
+        const heading = document.createElement('h3');
         heading.textContent = `${section.heading}`;
         heading.style.color = '#D4FA86';
         heading.style.fontWeight = '700';
         heading.style.paddingTop = '3.25rem';
+        heading.style.paddingBottom = '0.5rem';
+
         sectionWrapper.appendChild(heading);
       }
 
       const contentWrapper = document.createElement('div');
       contentWrapper.style.display = 'flex';
-      contentWrapper.style.flexDirection = 'column';
       contentWrapper.style.alignItems = 'center';
-      contentWrapper.style.gap = '1.25rem'; // Gap between image and content
-      contentWrapper.style.marginLeft = '6.25rem';
+      contentWrapper.style.flexDirection = 'column';
 
+      if(isMobile){
+            contentWrapper.style.gap = '0.1rem'; // Gap between image and content
+            contentWrapper.style.marginLeft = '2rem'; 
+            contentWrapper.style.marginRight = '1.75rem'; 
+        //     contentWrapper.style.flexDirection = 'column';                  
+          }
+          else{
+            contentWrapper.style.gap = '1rem'; // Gap between image and content
+            contentWrapper.style.marginLeft = '6.25rem';
+        //     contentWrapper.style.flexDirection = 'row';
+
+          }
+      
       // Check if content is empty
       const isContentEmpty = !section.content || section.content.trim() === '';
 
@@ -324,7 +350,7 @@
         // Create a wrapper for the images
         const imagesWrapper = document.createElement('div');
         imagesWrapper.style.display = 'flex';
-        imagesWrapper.style.flexDirection = 'row';
+        imagesWrapper.style.flexDirection = 'column';
         imagesWrapper.style.gap = '1rem';
         imagesWrapper.style.justifyContent = 'center';
         imagesWrapper.style.margin = '0 auto';
@@ -335,26 +361,35 @@
           imageContainer.style.display = 'flex';
           imageContainer.style.flexDirection = 'column';
           imageContainer.style.alignItems = 'center';
-          imageContainer.style.flexShrink = '0'; // Prevent shrinking
-          imageContainer.style.flexGrow = '0';   // Prevent growing
-          imageContainer.style.width = image.width; // Set container width
+        //   imageContainer.style.flexShrink = '0'; // Prevent shrinking
+        //   imageContainer.style.flexGrow = '0';   // Prevent growing
+          imageContainer.style.width = '100%'; // Set container width
+          console.log( img.style.width );
+
+        
+          if(isMobile){
+              img.style.width = '500px';
+            }
+            else{
+              img.style.width = section.image.width;
+            }
+            console.log( img.style.width );
 
           const img = document.createElement('img');
           img.src = image.path;
           img.alt = image.label;
-          img.style.width = '100%'; // Use full width of container
           img.style.height = 'auto'; // Maintain aspect ratio
           img.style.display = 'block';
           img.style.marginTop = '1.25rem';
 
           // Apply styles to make it look like it's floating
           img.style.borderRadius = '1.25rem';
-          img.style.boxShadow = '0 10px 20px rgba(100, 100, 100, 0.5)';
+          img.style.boxShadow = '0 10px 20px rgba(150, 150, 150, 0.5)';
 
           // Image Label
           const imgLabel = document.createElement('p');
           imgLabel.textContent = image.label;
-          imgLabel.style.marginTop = '1.5rem';
+          imgLabel.style.marginTop = '0.5rem';
           imgLabel.style.fontStyle = 'italic';
           imgLabel.style.textAlign = 'center';
 
@@ -373,9 +408,10 @@
         contentContainer.style.backgroundColor = '#333'; // Dark grey shade
         contentContainer.style.padding = '1rem';
         contentContainer.style.borderRadius = '0.5rem';
-        contentContainer.style.boxShadow = '0 10px 20px rgba(255, 255, 255, 0.05)';
+        contentContainer.style.boxShadow = '0 10px 20px rgba(255, 255, 255, 0.1)';
         contentContainer.style.borderBottom = '5px solid rgba(215, 250, 134, 0.5)';
         contentContainer.style.borderRight = '3px solid rgba(255, 255, 255, 0.3)';
+        
         contentContainer.style.flexGrow = '1'; // Allow content to grow
         contentContainer.style.flexShrink = '1'; // Allow content to shrink
         contentContainer.style.flexBasis = '0'; // Initial size before growing
@@ -383,11 +419,27 @@
         const content = document.createElement('p');
         content.innerHTML = section.content;
         content.style.lineHeight = '1.56';
+        content.style.textAlign = 'left'; // Add this line
+        if(isMobile)
+          {
+            content.style.padding = '0rem';
+            content.style.paddingRight = '0.1rem';
+          }
+          else{
+            content.style.padding = '1.5rem';
+          }
         contentContainer.appendChild(content);
 
         if (section.image) {
           // Set contentWrapper to display items in a row
-          contentWrapper.style.flexDirection = 'row';
+          if(isMobile)
+          {
+                contentWrapper.style.flexDirection = 'column';
+
+          }
+          else{
+                contentWrapper.style.flexDirection = 'row';
+        }
           contentWrapper.style.alignItems = 'center'; // Align items to the top
           contentWrapper.style.gap = '6.25rem'; // Adjust gap between image and content
 
@@ -396,10 +448,15 @@
           imageContainer.style.display = 'flex';
           imageContainer.style.flexDirection = 'column';
           imageContainer.style.alignItems = 'center';
-          imageContainer.style.flexShrink = '0'; // Prevent shrinking
-          imageContainer.style.flexGrow = '0';   // Prevent growing
-          imageContainer.style.width = section.image.width; // Set container width
-
+        //   imageContainer.style.flexShrink = '0'; // Prevent shrinking
+        //   imageContainer.style.flexGrow = '0';   // Prevent growing
+        if (isMobile)
+        {
+                imageContainer.style.width = '45%';
+        }
+        else{
+                 imageContainer.style.width = section.image.width; // Set container width
+        }
           const img = document.createElement('img');
           img.src = section.image.path;
           img.alt = section.image.label;

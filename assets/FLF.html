@@ -93,7 +93,7 @@
                 <p class="section-content">
                     Create a representation that effectively showcases the Flying Lab Factory's holistic innovation environment, detailing the available spaces, coaching services, and technology features. Emphasize the ease of booking services and inspire users to experiment with new ways of working. 
                 </p>
-            </div><br><br>
+            </div><br>
     
             <!-- The Solution Section -->
             <div class="section">
@@ -101,9 +101,9 @@
                 <p class="section-content">
                   We designed a digital solution to showcase the Flying Lab Factory's offerings, with user-friendly navigation to enhance the overall experience. The interface enables users to explore different service options and book spaces easily. Our focus was on providing flexible options, interactive visual aids (such as 3D maps), and seamless on-site support with advanced technology, tailored to meet the needs of the customers.              
                 </p>
-            </div>
+            </div><br>
         </div>
-    </div><br><br>
+    </div>
 
 
     <div class="about-columns">
@@ -420,6 +420,7 @@
           heading.style.color = '#D4FA86';
           heading.style.fontWeight='700';
           heading.style.paddingTop = '3.25rem';
+          heading.style.paddingBottom = '0.5rem';
 
           sectionWrapper.appendChild(heading);
         }
@@ -431,7 +432,7 @@
         
           if(isMobile){
             contentWrapper.style.gap = '0.5rem'; // Gap between image and content
-            contentWrapper.style.marginLeft = '3.75rem'; 
+            contentWrapper.style.marginLeft = '2.5rem'; 
             contentWrapper.style.marginRight = '1.75rem';                   
           }
           else{
@@ -480,7 +481,7 @@
 
             // Apply styles to make it look like it's floating
             img.style.borderRadius = '1.25rem';
-            img.style.boxShadow = '0 10px 20px rgba(100, 100, 100, 0.5)';
+            img.style.boxShadow = '0 10px 20px rgba(150, 150, 150, 0.5)';
             imagesWrapper.appendChild(img);
           });
 
@@ -506,12 +507,13 @@
             contentContainer.style.padding = '0.5rem';
           }
           contentContainer.style.borderRadius = '0.5rem';
-          //contentContainer.style.boxShadow = '0 10px 20px rgba(255, 25, 25, 1000)';
-          contentContainer.style.boxShadow = '0 10px 20px rgba(255, 255, 255, 0.05)'; // Light shadow for 3D effect
+          contentContainer.style.boxShadow = '0 10px 20px rgba(255, 255, 255, 0.1)'; // Light shadow for 3D effect
           contentContainer.style.borderBottom = '5px solid rgba(215, 250, 134, 0.5)'; // Light border line at the bottom
           contentContainer.style.borderRight = '3px solid rgba(255, 255, 255, 0.3)'; // Side border for extra depth
 
-          //contentContainer.style.color = '#fff'; // For readability
+          contentContainer.style.flexGrow = '1'; // Allow content to grow
+          contentContainer.style.flexShrink = '1'; // Allow content to shrink
+          contentContainer.style.flexBasis = '0'; // Initial size before growing
 
           const content = document.createElement('p');
           content.innerHTML = section.content;
@@ -544,7 +546,7 @@
 
             // Apply styles to make it look like it's floating
             img.style.borderRadius = '1.25rem';
-            img.style.boxShadow = '0 10px 20px rgba(100, 100, 100, 0.5)';
+            img.style.boxShadow = '0 10px 20px rgba(150, 150, 150, 0.5)';
 
             if(isMobile){
               const originalWidth = parseFloat(section.image.width); // Extract numeric value (e.g., 60 from "60%")
