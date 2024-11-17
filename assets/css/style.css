@@ -251,6 +251,11 @@
         align-items: center;
       }
       
+
+      
+      #dropdownMenu{
+        display: none;
+      }
       .about-columns {
         display: flex;
         flex-direction: row;
@@ -259,16 +264,12 @@
         width: 100%;
         padding: 0 6.25rem;
       }
-      
-      #dropdownMenu{
-        display: none;
-      }
       .about-column {
         flex: 1;
         margin-bottom: 0rem;
         line-height: 1.56;
 
-        
+
       }
       
       /* List Styling */
@@ -627,12 +628,9 @@
       line-height: 1.6;
       text-align:start;
     }
-    .one-one-video{
-      width:fit-content;
-      height: auto;
-    }
+
     /* Responsive styling for smaller screens */
-    @media (max-width: 768px) {
+    @media (max-width: 1000px) {
       .prototype-and-details {
           flex-direction: column;
       }

@@ -47,13 +47,13 @@
           <!-- Dropdown Menu -->
           <div class="dropdown-menu" id="dropdownMenu">
                   <span class="grid-item">
-                      <a href="#about">About Me</a>
+                      <a href="https://www.youxrahul.work/#about">About Me</a>
                     </span>
                     <span class="grid-item">
-                      <a href="#work">Work</a>
+                      <a href="https://www.youxrahul.work/#work">Work</a>
                     </span>
                     <span class="grid-item">
-                      <a href="RahulPrakash_CV.pdf" target="_blank" rel="noopener noreferrer">Resumé</a>
+                      <a href="../RahulPrakash_CV.pdf" target="_blank" rel="noopener noreferrer">Resumé</a>
                     </span>
           </div>
         </nav>
@@ -384,12 +384,18 @@
 
   function renderProjects(projects) {
     const container = document.getElementById('projects');
+    const isMobile = window.innerWidth <= 1000;
 
     projects.forEach(project => {
       if (!project.title) return; // Skip placeholders
 
       const projectDiv = document.createElement('div');
-      projectDiv.style.margin = '4.25rem'; // Set margin for the entire project
+      if(isMobile){
+        projectDiv.style.margin = '1rem'; // Set margin for the entire project
+      }
+      else{
+        projectDiv.style.margin = '4.25rem'; // Set margin for the entire project
+      }
 
     
       // Render Sections
@@ -399,15 +405,22 @@
         // Create a wrapper for the heading, content, and images
         const sectionWrapper = document.createElement('div');
         sectionWrapper.classList.add('easing-container'); 
+
+        if(isMobile){
+          sectionWrapper.style.marginBottom = '1.25rem'; // Add bottom margin for spacing
+        }
+      else{
         sectionWrapper.style.marginBottom = '3.25rem'; // Add bottom margin for spacing
+      }
         
         // Serial Number and Heading
         if (section.heading && section.heading.trim() !== '') {
-          const heading = document.createElement('h2');
+          const heading = document.createElement('h3');
           heading.textContent = `${section.heading}`;
           heading.style.color = '#D4FA86';
           heading.style.fontWeight='700';
           heading.style.paddingTop = '3.25rem';
+
           sectionWrapper.appendChild(heading);
         }
 
@@ -415,8 +428,17 @@
         contentWrapper.style.display = 'flex';
         contentWrapper.style.flexDirection = 'column';
         contentWrapper.style.alignItems = 'center';
-        contentWrapper.style.gap = '1.25rem'; // Gap between image and content
-        contentWrapper.style.marginLeft = '6.25rem';
+        
+          if(isMobile){
+            contentWrapper.style.gap = '0.5rem'; // Gap between image and content
+            contentWrapper.style.marginLeft = '3.75rem'; 
+            contentWrapper.style.marginRight = '1.75rem';                   
+          }
+          else{
+            contentWrapper.style.gap = '1rem'; // Gap between image and content
+            contentWrapper.style.marginLeft = '6.25rem';
+          }
+
 
         // Check if content is empty
         const isContentEmpty = !section.content || section.content.trim() === '';
@@ -444,24 +466,24 @@
           imagesWrapper.style.flexDirection = 'row';
           imagesWrapper.style.gap = '1rem';
           imagesWrapper.style.justifyContent = 'center'; // Add this line
-          imagesWrapper.style.margin = '0 auto'; // Add this line
+          imagesWrapper.style.margin = '0 auto'; // Add this line 
 
 
           images.forEach(image => {
             const img = document.createElement('img');
             img.src = image.path;
             img.alt = image.label;
-            img.style.width = image.width;
             img.style.display = 'block';
             img.style.alignItems='center';
             img.style.marginTop = '1.25rem';
+            img.style.width = image.width;
 
             // Apply styles to make it look like it's floating
             img.style.borderRadius = '1.25rem';
             img.style.boxShadow = '0 10px 20px rgba(100, 100, 100, 0.5)';
-
             imagesWrapper.appendChild(img);
           });
+
           // Image Labels
           const imgLabel = document.createElement('p');
           imgLabel.textContent = labels.join(' | ');
@@ -471,14 +493,18 @@
 
           contentWrapper.appendChild(imagesWrapper);
           contentWrapper.appendChild(imgLabel);
-
-         
         } else {
           // Content is not empty
           // Create content container with background
           const contentContainer = document.createElement('div');
           contentContainer.style.backgroundColor = '#333'; // Dark grey shade
-          contentContainer.style.padding = '1rem';
+          
+          if (isMobile){
+            contentContainer.style.padding= '0.1rem';
+          }
+          else{
+            contentContainer.style.padding = '0.5rem';
+          }
           contentContainer.style.borderRadius = '0.5rem';
           //contentContainer.style.boxShadow = '0 10px 20px rgba(255, 25, 25, 1000)';
           contentContainer.style.boxShadow = '0 10px 20px rgba(255, 255, 255, 0.05)'; // Light shadow for 3D effect
@@ -490,6 +516,15 @@
           const content = document.createElement('p');
           content.innerHTML = section.content;
           content.style.lineHeight = '1.56'; // Line height adjustment
+          content.style.textAlign = 'left'; // Add this line
+          if(isMobile)
+          {
+            content.style.padding = '1rem';
+            content.style.paddingRight = '0.15rem';
+          }
+          else{
+            content.style.padding = '1.5rem';
+          }
           contentContainer.appendChild(content);
 
           // Handle image if exists
@@ -502,7 +537,6 @@
             const img = document.createElement('img');
             img.src = section.image.path;
             img.alt = section.image.label;
-            img.style.width = section.image.width;
             img.style.display = 'block';
             img.style.marginTop = '1.25rem';
             img.style.alignItems='center';
@@ -512,17 +546,30 @@
             img.style.borderRadius = '1.25rem';
             img.style.boxShadow = '0 10px 20px rgba(100, 100, 100, 0.5)';
 
+            if(isMobile){
+              const originalWidth = parseFloat(section.image.width); // Extract numeric value (e.g., 60 from "60%")
+              const newWidth = originalWidth + (originalWidth * 0.5); // Increase by 10%
+              if(newWidth >100){
+                img.style.width = `${100}%`;
+              }
+              else{
+                img.style.width = `${newWidth}%`;
+              }
+              console.log( img.style.width );
+            }
+            else{
+              img.style.width = section.image.width;
+            }
             // Append image and content side by side
             contentWrapper.appendChild(img);
                // Image Label
             const imgLabel = document.createElement('p');
             imgLabel.textContent = section.image.label;
+
             imgLabel.style.marginTop = '0.5rem';
             imgLabel.style.fontStyle = 'italic';
             contentWrapper.appendChild(imgLabel);
             contentWrapper.appendChild(contentContainer);
-
-         
           } else {
             // Only content
             contentWrapper.appendChild(contentContainer);

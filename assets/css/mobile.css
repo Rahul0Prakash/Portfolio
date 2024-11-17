@@ -51,25 +51,25 @@
     height: auto; /* Maintain aspect ratio */
   }
   /* Video container styling */
-  .project-content  .mobile-video-container {
+  .mobile-video-container {
     width: 240px;  /* Slightly smaller width */
     height: 335px; /* Height adjusted proportionally to maintain the aspect ratio */
   }
 
   /* Style the video to fill the container */
-  .project-content  .mobile-video-container video {
+  .mobile-video-container video {
     width: 100%;
     height: 100%;
   }
   
     /* Desktop Video Container */
-    .project-content  .desktop-video-container {
-      width: 390px;  /* Adjusted width to fit mobile screen */
-      height: 220px;
+    .desktop-video-container {
+      width: 400px;  /* Adjusted width to fit mobile screen */
+      height: 230px;
   }
 
   /* Video Styling */
-  .project-content  .desktop-video-container video {
+  .desktop-video-container video {
     width: 100%;
     height: 100%;
   }
@@ -99,27 +99,57 @@
   }
     
 
-  .project-content .back-button {
-      width: 40px; /* Size of the container */
-      height: 40px; /* Size of the container */
-      align-items: center;
-      justify-content: center;
 
-    }
-
-   .project-content .back-button img {
-      width: 30px; /* SVG size */
-      height: 30px;
-  }
-
-  .project-content .project-title {
+  .project-title {
     position: relative;
     font-size: 2.5rem;
     color: #fff; /* Text color contrast */
     text-align: center;
+    height: 20vh; /* Cover 60% of the screen height */
+
     z-index: 20; /* Ensure it's above the background image */
   }
  
+
+     
+  .project-title-container {
+    position: relative;
+    text-align: center;
+    z-index: 1; /* Ensure it's above other elements */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center the text vertically */
+    align-items: center;
+    width: 100%;
+    height: 80vh; /* Cover 60% of the screen height */
+    overflow: hidden;
+  }
+
+  /* Triple Diamond Image as Background */
+
+  .triple-diamond-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(100, 100, 100, 0.25), rgba(13, 13, 13, 1.5)),
+                url('../triplediamond.png') no-repeat center center;
+    background-size: cover;
+    z-index: 1;
+  }
+  /* Project Title Over the Image */
+  .project-title {
+    position: relative;
+    z-index: 2; /* Ensure it's above the background image */
+    width: 100%; /* Restrict text width to about 60% of the container */
+    color: #fff; /* Adjust color for readability */
+    padding: 0.5rem; /* Padding for better spacing */
+    text-align: center; /* Center text */
+    margin: 0 auto; /* Center horizontally */
+  }
+
+
     /* Hamburger button default styling */
   .hamburger {
     cursor: pointer;
@@ -225,9 +255,57 @@
   }
   .about-column {
     align-items: center;
-    padding: 0 1rem;
+    padding: 0 1.25rem;
     height: auto;
-    max-width: 50%;
+    line-height: 1.56rem;
+  }
+  .details-section{
+    padding: 0 1rem;
+  }
+
+
+  .prototype-and-details {
+    display: flex;
+    flex-direction: column;
+    margin:0 0rem;
+    align-items: center;
+    position: relative;
+    z-index: 20;
+  }
+
+  .prototype-section {
+    display: flex;              /* Use flex to center the inner content */
+    justify-content: center;    /* Horizontally center the content */
+    align-items: center;        /* Vertically center the content */
+    overflow: hidden;           /* Prevent content from overflowing */
+    max-width: 100%;            /* Make sure content doesn’t exceed the container width */
+    max-height: 100%;           /* Make sure content doesn’t exceed the container height */
+    object-fit: contain; 
+  }
+
+
+  .oneone-video-container {
+    position: relative;
+    max-width: 350px;  /* iPhone 13 screen width */
+    height: auto; /* iPhone 13 screen height */
+    margin: 0 2rem; /* Center align the video */
+    z-index: 2; /* Ensure it's above the background image */
+  }
+  .section {
+    align-items: center;
+    padding: 0 1.25rem;
+    height: auto;
+    line-height: 1.56rem;
+  }
+  .section-title {
+    align-items: center;
+    padding: 0 0rem;
+    height: auto;
+  }
+  .section-content {
+    padding: 0 1.25rem;
+    height: auto;
+    line-height: 1.56rem;
   }
   h1 {
     font-size: 2rem;
