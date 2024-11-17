@@ -373,7 +373,7 @@
   .projects {
     display: flex !important;
     flex-direction: column;
-    gap: 2rem;
+    gap: 2.5rem;
     border-radius: 1.25rem;
     padding: 0 10vw 10vh 10vw;
     width: 100%;
@@ -382,13 +382,16 @@
   .project {
     padding: 2vh 2vw;
     border-radius: 1.25rem;
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
     transition: background-color 0.4s ease, transform 0.45s ease;
   }
 
   .project:hover {
     background-color: #1c1c1c;
     border-radius: 1.25rem;
-    transform: scale(1.01);
+    padding: 0.5rem;
+    transform: scale(1.005);
   }
 
     /* Project Name and Description */
