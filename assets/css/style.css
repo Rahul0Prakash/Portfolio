@@ -528,7 +528,7 @@
     }
 
     .prototype-section {
-      flex: 1 1 60%;
+      flex: 1 1 50%;
       max-width: 50%;
       transform: translate(0%, 0%);
       position: relative;
@@ -538,14 +538,14 @@
       justify-content: center;    /* Horizontally center the content */
       align-items: center;        /* Vertically center the content */
       overflow: hidden;           /* Prevent content from overflowing */
-      max-width: 100%;            /* Make sure content doesn’t exceed the container width */
+      /* max-width: 100%;            Make sure content doesn’t exceed the container width */
       max-height: 100%;           /* Make sure content doesn’t exceed the container height */
       object-fit: contain; 
     }
 
     .details-section {
       flex: 1 1 50%;
-      max-width: 60%;
+      max-width: 50%;
       line-height: 1.56rem;
     }
 

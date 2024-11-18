@@ -67,59 +67,40 @@ document.addEventListener('DOMContentLoaded', function () {
   // Select the "About Me" and "Work" links
 
   // Add click event listeners for the "About Me" and "Work" links
-  document.querySelector('a[href="#about"]').addEventListener('click', function(event) {
-    event.preventDefault();
-    scrollToSectionWithOffset('#about');
+  document.addEventListener('DOMContentLoaded', function () {
+    // Check if we're on the home page by verifying the existence of #about and #work sections
+    const aboutSection = document.getElementById('about');
+    const workSection = document.getElementById('work');
+  
+    const aboutLink = document.querySelector('a[href="#about"]');
+    const workLink = document.querySelector('a[href="#work"]');
+  
+    if (aboutLink) {
+      aboutLink.addEventListener('click', function (event) {
+        event.preventDefault();
+        if (aboutSection) {
+          // Scroll directly to the #about section on the home page
+          scrollToSectionWithOffset('#about');
+        } else {
+          // Navigate to the home page and scroll to the #about section
+          window.location.href = 'https://www.youxrahul.work/#about';
+        }
+      });
+    }
+  
+    if (workLink) {
+      workLink.addEventListener('click', function (event) {
+        event.preventDefault();
+        if (workSection) {
+          // Scroll directly to the #work section on the home page
+          scrollToSectionWithOffset('#work');
+        } else {
+          // Navigate to the home page and scroll to the #work section
+          window.location.href = 'https://www.youxrahul.work/#work';
+        }
+      });
+    }
   });
-
-  document.querySelector('a[href="#work"]').addEventListener('click', function(event) {
-    event.preventDefault();
-    scrollToSectionWithOffset('#work');
-  });
-
   // Event listener for scrolling to manage the arrow's visibility
 
-  window.addEventListener('load', function() {
-    // Elements selection
-    const scrollUpButton = document.getElementById('scrollUpButton');
-    const downwardArrow = document.getElementById('scrollDownArrow');
-    const backButton = document.getElementById('backButton');
-
-
-    window.addEventListener('scroll', function() {
-      const scrollPosition = window.scrollY || document.documentElement.scrollTop;
-
-      // Logic for scroll-up button
-      if (scrollPosition > 500) {
-        scrollUpButton.classList.add('show');
-        scrollUpButton.classList.remove('hide');
-        backButton.classList.add('hide');
-        backButton.classList.remove('show');
-      } else {
-        scrollUpButton.classList.add('hide');
-        scrollUpButton.classList.remove('show');
-        backButton.classList.add('show');
-        backButton.classList.remove('hide');
-      }
-
-      // Logic for downward arrow at bottom of landing page
-      if (scrollPosition > 75) {
-        // Hide the arrow if scrolled more than 75px
-        downwardArrow.style.opacity = '0';
-        downwardArrow.style.pointerEvents = 'none'; // Prevent interaction when invisible
-      } else {
-        // Show the arrow if scrolled between 0 and 75px
-        downwardArrow.style.opacity = '1';
-        downwardArrow.style.pointerEvents = 'auto'; // Allow interaction when visible
-      }
-    });
-
-    // Click event to scroll to the top of the page
-    scrollUpButton.addEventListener('click', function() {
-      window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-      });
-    });
-  });
 });
