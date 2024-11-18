@@ -42,7 +42,7 @@
         /* Children within Easing Container */
         .easing-container > * {
                 transition: transform 0.5s ease-out, opacity 0.5s ease-out; /* Smooth transition */
-                transform: translateY(25px); /* Initially positioned 10px down */
+                transform: translateY(35px); /* Initially positioned 10px down */
                 opacity: 0; /* Initially hidden */
         }
         
@@ -324,12 +324,15 @@
       }
       
       .project:hover {
-        background-color: #1c1c1c;
+        background-color: #333;
         z-index: 100;
         padding: 0.5rem;
         border-radius: 1.25rem;
-        transform: scale(1.01);
+        transform: scale(1.005);
         transition: transform 0.35s ease-in-out;
+        box-shadow: 0 10px 20px rgba(255, 255, 255, 0.1); /* Light shadow for 3D effect */
+        border-bottom: 5px solid rgba(215, 250, 134, 0.5); /* Light border line at the bottom */
+        border-right: 3px solid rgba(255, 255, 255, 0.3); /* Side border for extra depth */
       }
       
       .project-img {
