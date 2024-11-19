@@ -45,7 +45,10 @@
     display: block; /* Show dropdown when the hamburger has the 'open' class */
   }
 
-
+  #loader img {
+    width: 100px; /* Set a smaller width */
+    height: auto; /* Maintain aspect ratio */
+   } 
   .loading-gif {
     width: 150px; /* Smaller size for mobile devices */
     height: auto; /* Maintain aspect ratio */
