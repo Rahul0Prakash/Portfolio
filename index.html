@@ -21,6 +21,10 @@
 
 <body>
     <!-- Preloader HTML with GIF -->
+     <!-- Loader Div -->
+    <div id="loader">
+        <img src="assets/images/loading.gif" alt="Loading...">
+    </div>
     <!-- Preloader HTML with GIF and fallback spinner -->
 
     <!-- Navigation Bar -->
@@ -55,7 +59,7 @@
     <!-- Landing Page Section -->
         <section class="landing-section">
             <h1>👋  I'm Rahul, a User Experience Enthusiast based in Essen, Germany</h1>
-            <p>I ride the wave of <a class="highlight" target="_blank" href="https://www.nngroup.com/videos/it-depends-ux-context/">
+            <p>I ride the wave of <a class="highlight" target="_blank" href="https://www.nngroup.com/videos/it-depends-ux-context/" style="text-decoration: underline;">
                 <i>‘it depends’</i></a> till dots connect and plans make sense.</p>
         </section>
         <div id="scrollDownArrow" class="scroll-down-arrow" onclick="scrollToSectionWithOffset('#about')">
@@ -87,13 +91,13 @@
                         <li>I lead collaborative brainstorming for key projects using Miro and FigJam</li>
                         <li>Analyzed 20+ site visits with Google Analytics to track user behavior and performance</li>
                         <li>Performed competitive audit using Similarweb and templates 
-                            <a class="highlight" target="_blank" rel="noopener noreferrer" href="https://coursera-assessments.s3.amazonaws.com/assessments/1623041973496/fa9ddd33-fcea-48d0-81c7-a316e4cb682b/Google%20UX%20Design%20Certificate%20-%20Competitive%20audit%20template%20-%20Template-2.pdf">[1]</a>
-                            <a class="highlight" target="_blank" rel="noopener noreferrer" href="https://www.atlassian.com/dam/jcr:11b8d765-5a53-4193-a70c-fb957c54f07f/Competitive%20Analysis.pdf">[2]</a>,
+                            <a class="highlight" target="_blank" rel="noopener noreferrer" href="https://coursera-assessments.s3.amazonaws.com/assessments/1623041973496/fa9ddd33-fcea-48d0-81c7-a316e4cb682b/Google%20UX%20Design%20Certificate%20-%20Competitive%20audit%20template%20-%20Template-2.pdf" style="text-decoration: underline;">[1]</a>
+                            <a class="highlight" target="_blank" rel="noopener noreferrer" href="components/Competitive%20Analysis.pdf" style="text-decoration: underline;">[2]</a>,
                             benchmarking 5 competitors
                         </li>
                         <li>Accustomed to working with AI, engineering prompts and creating custom GPTs,
-                            <a class="highlight" target="_blank" rel="noopener noreferrer" href="https://chatgpt.com/g/g-H6NlHYtlA-dachsberg-manager"> one of them</a>, for 
-                            <a class="highlight" target="_blank" rel="noopener noreferrer" href="https://www.wg-gesucht.de/10851253.html">tenant</a> FAQs, reducing workload by 40% during peak hours
+                            <a class="highlight" target="_blank" rel="noopener noreferrer" href="https://chatgpt.com/g/g-H6NlHYtlA-dachsberg-manager" style="text-decoration: underline;"> one of them</a>, for 
+                            <a class="highlight" target="_blank" rel="noopener noreferrer" href="https://www.wg-gesucht.de/10851253.html" style="text-decoration: underline;">tenant</a> FAQs, reducing workload by 40% during peak hours
                         </li>
                     </ul>
                 </div>
@@ -105,9 +109,9 @@
             </div>
         </section>
     </div>
-    <div class="easing-container">
         <!-- Work Section with Projects -->
         <section class="work" id="work">
+            <div class="easing-container">
             <h2 class="Subheading">My Work</h2>
             <div class="projects">
                 <!-- Project cards displaying the various projects completed -->
@@ -128,8 +132,12 @@
                         <span class="outcome-description">CASE STUDY · PRODUCT DESIGN · APP · 2022</span>
                         
                 </div>
-
+        </div>
+        </div>
+        <div class="easing-container">
                 <!-- Example Project 3 -->
+                <div class="projects">
+
                 <div class="project">
                     <a href="assets/AudiVerse.html" target="_blank" rel="noopener noreferrer">
                     <img class="project-img"  loading="lazy" src="assets/images/projects/AudiVerse.png" alt="UI screens for AudiVerse extension">
@@ -143,13 +151,13 @@
                     <a href="assets/Moodglide.html" target="_blank" rel="noopener noreferrer">
                     <img class="project-img" loading="lazy" src="assets/images/projects/Moodglide.png" alt="UI screens for MoodGlide device">
                     <span class="project-name" style="line-height: 0.5;">MoodGlide: Emotion Selector Device</span><br></a>
-                    <span class="project-description">Developing an emotion selector device to assist individuals with <a class="highlight_apple" target="_blank" rel="noopener noreferrer" href="https://www.alexithymia.us/">Alexithymia</a></span>
+                    <span class="project-description">Developing an emotion selector device to assist individuals with <a class="highlight_apple" target="_blank" rel="noopener noreferrer" href="https://www.alexithymia.us/" style="text-decoration: underline;">Alexithymia</a></span>
                     <span class="outcome-description">PRODUCT DESIGN · HARDWARE · 2023</span>
                     
                 </div>
             </div>
+            </div>
         </section>
-    </div>
 
   <!-- Footer Section -->
   <footer class="footer" id="footer">
@@ -195,7 +203,18 @@
     </footer>
 
     <!-- Circular image and text-based footer links -->
-    
+<script>
+    // Prevent scrolling while loading
+    document.body.classList.add('loading');
+
+    // Hide loader after 500ms
+    setTimeout(function() {
+        // Hide the loader
+        document.getElementById('loader').classList.add('hidden');
+        // Allow scrolling again
+        document.body.classList.remove('loading');
+    }, 500); // 500 milliseconds
+</script>
 <!-- JavaScript to handle scroll-based navbar behavior -->
 <script src="assets/js/navbar.js" ></script>
 <script src="assets/js/dropdown.js" ></script>
