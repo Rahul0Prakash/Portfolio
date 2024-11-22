@@ -1,3 +1,29 @@
+
+HIGH
+It is recommended to avoid URL parameters and to use hyphens to separate words in the URL structure, rather than underscores.
+HIGH
+To ensure that Search Engines can accurately identify the topic of this webpage, it is important to include the most common keywords in the title tag, meta description, and heading tags.
+HIGH
+To improve the website experience for your visitors, it is recommended to eliminate any render-blocking resources on this webpage.
+HIGH
+Using images in a modern format can significantly reduce the file size and improve the loading speed of a webpage, providing a better user experience and potentially increasing engagement.
+HIGH
+Connect your webpage with social media networks using APIs or AddThis, as social signals are becoming increasingly important for search engines to validate a site's trustworthiness and authority.
+MEDIUM
+Add a robots.txt file to properly communicate with web crawlers and prevent unwanted access to sensitive content.
+MEDIUM
+Serve properly sized images to reduce page loading times and to improve user's experience.
+MEDIUM
+Avoid performance and security issues by adding "rel=noopener" or "rel=noreferrer" to your "target=_blank" links.
+MEDIUM
+Using social media meta tags can improve the appearance and content of shared links on social media platforms, potentially increasing click-through rates and engagement with the page.
+LOW
+Consider adding the Strict-Transport-Security header to your webpage to ensure that web traffic is encrypted over HTTPS, mitigating the risk of man-in-the-middle attacks and other security threats.
+LOW
+Using more than 20 HTTP requests on a webpage can negatively impact the loading time.
+LOW
+Consider moving inline CSS styles to an external stylesheet to improve site performance and maintain separation of content and design.
+
 Keyword Text,Competition,Competition Index,Search Volume,Low Top Page Bid,High Top Page Bid
 web design,LOW,26,110000,5.53,25.51
 design and ux,LOW,25,74000,2.65,9.39
