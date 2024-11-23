@@ -347,8 +347,8 @@
         z-index: 100;
         padding: 0.5rem;
         border-radius: 1.25rem;
-        transform: scale(1.005);
-        transition: transform 0.35s ease-in-out;
+        transform: scale(1);
+        transition: transform 1.55s ease;
         box-shadow: 0 10px 20px rgba(255, 255, 255, 0.1); /* Light shadow for 3D effect */
         border-bottom: 5px solid rgba(215, 250, 134, 0.5); /* Light border line at the bottom */
         border-right: 3px solid rgba(255, 255, 255, 0.3); /* Side border for extra depth */
